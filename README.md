@@ -130,6 +130,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * sukebei.Nyaa.si
  * The Pirate Bay (TPB)
  * Tjangto (짱토)
+ * TNTfork
  * Tokyo Tosho
  * Torlock
  * TOROS
@@ -508,6 +509,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TheAudioScene
  * TheEmpire (TE) [![(invite needed)][inviteneeded]](#)
  * TheLeachZone
+ * TheScenePlace (TSP)
  * TJUPT
  * TLFBits [![(invite needed)][inviteneeded]](#)
  * ToTheGlory (TTG)
