@@ -311,6 +311,7 @@ namespace Jackett.Updater
                 "Definitions/exoticaz.yml", // migrated to C#
                 "Definitions/extratorrent-ag.yml",
                 "Definitions/extratorrentclone.yml",
+                "Definitions/extremlymtorrents.yml",
                 "Definitions/filmsclub.yml",
                 "Definitions/freakstrackingsystem.yml",
                 "Definitions/freedomhd.yml",
@@ -436,6 +437,7 @@ namespace Jackett.Updater
                 "Definitions/torrentwal.yml",
                 "Definitions/torrentwtf.yml",
                 "Definitions/torrentz2.yml",
+                "Definitions/torrentz2k.yml",
                 "Definitions/torrof.yml",
                 "Definitions/torviet.yml",
                 "Definitions/tspate.yml",
