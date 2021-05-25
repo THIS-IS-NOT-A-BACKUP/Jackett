@@ -306,6 +306,7 @@ namespace Jackett.Updater
                 "Definitions/elittracker.yml",
                 "Definitions/epizod.yml",
                 "Definitions/eotforum.yml",
+                "Definitions/erzsebet.yml",
                 "Definitions/estrenosdtl.yml",
                 "Definitions/ethor.yml",
                 "Definitions/evolutionpalace.yml",
@@ -318,6 +319,7 @@ namespace Jackett.Updater
                 "Definitions/freedomhd.yml",
                 "Definitions/fullmixmusic.yml",
                 "Definitions/funreleases.yml",
+                "Definitions/galeriens.yml",
                 "Definitions/gdf76.yml",
                 "Definitions/gfxnews.yml",
                 "Definitions/gods.yml",
@@ -430,6 +432,7 @@ namespace Jackett.Updater
                 "Definitions/torrentgalaxyorg.yml", // renamed to torrentgalaxy
                 "Definitions/torrenthane.yml",
                 "Definitions/torrentkim.yml",
+                "Definitions/torrentproject.yml",
                 "Definitions/torrentquest.yml",
                 "Definitions/torrentrex.yml",
                 "Definitions/torrentseed.yml", // renamed to latinop2p #9065
