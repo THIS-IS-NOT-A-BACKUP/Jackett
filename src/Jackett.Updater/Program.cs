@@ -284,6 +284,7 @@ namespace Jackett.Updater
                 "Definitions/btkitty.yml",
                 "Definitions/btstornet.yml",
                 "Definitions/btxpress.yml",
+                "Definitions/casstudiotv.yml",
                 "Definitions/channelx.yml",
                 "Definitions/cili180.yml", // renamed to liaorencili
                 "Definitions/cinefilhd.yml",
@@ -397,6 +398,7 @@ namespace Jackett.Updater
                 "Definitions/scenehd.yml", // migrated to C# (use JSON API)
                 "Definitions/scenereactor.yml",
                 "Definitions/scenexpress.yml",
+                "Definitions/sdkino.yml",
                 "Definitions/secretcinema.yml", // migrated to C# gazelle base tracker
                 "Definitions/seedpeer.yml",
                 "Definitions/sharespacedb.yml",
