@@ -308,11 +308,13 @@ namespace Jackett.Updater
                 "Definitions/epizod.yml",
                 "Definitions/eotforum.yml",
                 "Definitions/erzsebet.yml",
+                "Definitions/erzsebetpl.yml",
                 "Definitions/estrenosdtl.yml",
                 "Definitions/ethor.yml",
                 "Definitions/evolutionpalace.yml",
                 "Definitions/exoticaz.yml", // migrated to C#
                 "Definitions/extratorrent-ag.yml",
+                "Definitions/extratorrent-it.yml",
                 "Definitions/extratorrentclone.yml",
                 "Definitions/extremlymtorrents.yml",
                 "Definitions/filmsclub.yml",
