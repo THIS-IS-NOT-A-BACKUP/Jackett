@@ -256,6 +256,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Araba Fenice (Phoenix) [![(invite needed)][inviteneeded]](#)
  * ArabP2P
  * AsianCinema
+ * AsianDVDClub
  * Asylum Share
  * AudioNews (AN)
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
@@ -267,6 +268,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BeyondHD (BHD)
  * Bibliotik
  * BIGTorrent
+ * Bitded
  * Bit-City Reloaded [![(invite needed)][inviteneeded]](#)
  * BIT-HDTV
  * BiT-TiTAN
