@@ -56,7 +56,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * dmhy
  * E-Hentai
  * elitetorrent
- * emtrek
  * EpubLibre
  * Erai-Raws
  * ETTV
@@ -69,7 +68,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * GamesTorrents
  * GkTorrent
  * GloDLS
- * GTorrent
  * GTorrent.pro
  * HDhouse (HDReactor)
  * IBit
