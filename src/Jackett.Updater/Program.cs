@@ -280,6 +280,7 @@ namespace Jackett.Updater
                 "Definitions/brobits.yml",
                 "Definitions/bt-scene.yml",
                 "Definitions/btbit.yml",
+                "Definitions/btdb.yml",
                 "Definitions/bteye.yml",
                 "Definitions/btgigs.yml",
                 "Definitions/btkitty.yml",
@@ -342,6 +343,7 @@ namespace Jackett.Updater
                 "Definitions/hdplus.yml",
                 "Definitions/hdreactor.yml", // renamed to hdhouse
                 "Definitions/hdstreet.yml",
+                "Definitions/hon3yhd.yml",
                 "Definitions/hon3yhd-net.yml",
                 "Definitions/horriblesubs.yml",
                 "Definitions/horrorsite.yml",
@@ -400,6 +402,7 @@ namespace Jackett.Updater
                 "Definitions/rockethd.yml",
                 "Definitions/rockhardlossless.yml",
                 "Definitions/rodvd.yml",
+                "Definitions/rofd.yml",
                 "Definitions/scenefz.yml", // migrated to C# XtremeZone base tracker
                 "Definitions/scenehd.yml", // migrated to C# (use JSON API)
                 "Definitions/scenereactor.yml",
@@ -413,6 +416,7 @@ namespace Jackett.Updater
                 "Definitions/shellife.yml",
                 "Definitions/skytorrents.yml",
                 "Definitions/skytorrents-lol.yml",
+                "Definitions/skytorrents-to.yml",
                 "Definitions/skytorrentsclone.yml", // renamed to skytorrents-lol
                 "Definitions/skytorrentsclone2.yml", // renamed to skytorrents-to
                 "Definitions/solidtorrents.yml", // migrated to C#
