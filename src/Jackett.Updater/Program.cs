@@ -288,11 +288,13 @@ namespace Jackett.Updater
                 "Definitions/casstudiotv.yml",
                 "Definitions/channelx.yml",
                 "Definitions/cili180.yml", // renamed to liaorencili
+                "Definitions/cilipro.yml",
                 "Definitions/cinefilhd.yml",
                 "Definitions/cooltorrent.yml",
                 "Definitions/crazyscorner.yml",
                 "Definitions/czteam.yml",
                 "Definitions/cztorrent.yml",
+                "Definitions/datascene.yml",
                 "Definitions/darmowetorenty.yml", // migrated to C#
                 "Definitions/danishbytes.yml", // migrated to C#
                 "Definitions/demonsite.yml",
