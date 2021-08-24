@@ -388,6 +388,7 @@ namespace Jackett.Updater
                 "Definitions/nyoo.yml",
                 "Definitions/onlineselfeducation.yml",
                 "Definitions/onlyscene.yml",
+                "Definitions/obscure.yml",
                 "Definitions/passionetorrent.yml",
                 "Definitions/polishtracker.yml",
                 "Definitions/pt99.yml",
@@ -435,6 +436,7 @@ namespace Jackett.Updater
                 "Definitions/themoviecave.yml",
                 "Definitions/thepiratebay.yml", // migrated to c#
                 "Definitions/theresurrection.yml",
+                "Definitions/thespit.yml",
                 "Definitions/thetorrents.yml",
                 "Definitions/theunknown.yml", // became 3evils #9678
                 "Definitions/tigers-dl.yml",
