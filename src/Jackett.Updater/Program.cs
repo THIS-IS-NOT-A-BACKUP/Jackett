@@ -273,6 +273,7 @@ namespace Jackett.Updater
                 "Definitions/awesomehd.yml", // migrated to C#
                 "Definitions/b2s-share.yml",
                 "Definitions/bithq.yml",
+                "Definitions/bigtorrent.yml", // merged with eStone #12352
                 "Definitions/bigtower.yml",
                 "Definitions/bitme.yml",
                 "Definitions/bit-titan.yml", // migrated to C# #10281
@@ -321,6 +322,7 @@ namespace Jackett.Updater
                 "Definitions/extratorrent-ag.yml",
                 "Definitions/extratorrent-it.yml",
                 "Definitions/extratorrentclone.yml",
+                "Definitions/feedurneed.yml", // merged with devilsplayground #6872
                 "Definitions/filmsclub.yml",
                 "Definitions/focusx.yml",
                 "Definitions/freakstrackingsystem.yml",

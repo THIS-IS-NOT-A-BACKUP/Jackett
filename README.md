@@ -262,7 +262,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BeiTai
  * BeyondHD (BHD)
  * Bibliotik
- * BIGTorrent
  * Bit-City Reloaded [![(invite needed)][inviteneeded]](#)
  * BIT-HDTV
  * BiT-TiTAN
@@ -316,7 +315,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * DesiReleasers
  * DesiTorrents
  * Diablo Torrent
- * DICMusic
  * DigitalCore
  * DiscFan
  * DivTeam
@@ -326,7 +324,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * EfectoDoppler
  * Empornium (EMP) [![(invite needed)][inviteneeded]](#)
  * eShareNet
- * eStone (XiDER, BeLoad)
+ * eStone (XiDER, BeLoad, BigTorrent)
  * ExoticaZ (YourExotic)
  * ExtremeBits
  * ExtremeTorrents [![(invite needed)][inviteneeded]](#)
