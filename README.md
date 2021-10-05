@@ -24,6 +24,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
 
 <details> <summary> <b> Supported Public Trackers </b> </summary>
 
+ * ØMagnet
  * 1337x
  * 7torrents
  * ACG.RIP
@@ -238,7 +239,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * 720pier
  * Abnormal
  * ABtorrents (ABT + RNS)
- * Acid Lounge (A-L) [![(invite needed)][inviteneeded]](#)
+ * Acid Lounge (A-L)
  * AcrossTheTasman [![(invite needed)][inviteneeded]](#)
  * Aftershock
  * Aidoru!Online
@@ -276,7 +277,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BJ-Share (BJ)
  * BlueBird [![(invite needed)][inviteneeded]](#)
  * Blutopia (BLU)
- * Borgzelle
+ * Borgzelle  [![(invite needed)][inviteneeded]](#)
  * Boxing Torrents
  * Brasil Tracker
  * BroadcasTheNet (BTN)
@@ -332,7 +333,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Falkon Vision Team
  * FANO.IN
  * Fantastic Heaven
- * Fantastiko
+ * Fantastiko [![(invite needed)][inviteneeded]](#)
  * Femdomcult
  * FileList (FL)
  * Film-Paleis
@@ -344,7 +345,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Gay-Torrents.org [![(invite needed)][inviteneeded]](#)
  * GAYtorrent.ru
  * GazelleGames (GGn) [![(invite needed)][inviteneeded]](#)
- * Generation-Free
+ * Generation-Free [![(invite needed)][inviteneeded]](#)
  * GFXPeers
  * GigaTorrents
  * GimmePeers (formerly ILT)
@@ -406,7 +407,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * M-Team TP (MTTP)
  * MaDs Revolution [![(invite needed)][inviteneeded]](#)
  * magic-heaven
- * Magico (Trellas)
+ * Magico (Trellas) [![(invite needed)][inviteneeded]](#)
  * Majomparádé (TurkDepo)
  * MeseVilág (Fairytale World)
  * MicroBit (µBit)
@@ -511,7 +512,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * The Occult [![(invite needed)][inviteneeded]](#)
  * The Place [![(invite needed)][inviteneeded]](#)
  * The Shinning (TsH)
- * The Show [![(invite needed)][inviteneeded]](#)
+ * The Show
  * The Vault [![(invite needed)][inviteneeded]](#)
  * TheAudioScene
  * TheEmpire (TE)
@@ -558,8 +559,8 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Vizuk
  * WDT (Wrestling Desires Torrents / Ultimate Wrestling Torrents)
  * wOOt [![(invite needed)][inviteneeded]](#)
- * World-In-HD [![(invite needed)][inviteneeded]](#)
- * x-ite.me (XM) [![(invite needed)][inviteneeded]](#)
+ * World-In-HD
+ * x-ite.me (XM)
  * xBytesV2
  * XSpeeds (XS)
  * XWT-Classics
