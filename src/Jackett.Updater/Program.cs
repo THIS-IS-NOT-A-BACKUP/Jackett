@@ -375,6 +375,7 @@ namespace Jackett.Updater
                 "Definitions/leparadisdunet.yml",
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro
+                "Definitions/mactorrents.yml",
                 "Definitions/magnet4you.yml",
                 "Definitions/magnetdl.yml",
                 "Definitions/maniatorrent.yml",
@@ -447,7 +448,6 @@ namespace Jackett.Updater
                 "Definitions/tfile.yml",
                 "Definitions/the-madhouse.yml",
                 "Definitions/themoviecave.yml",
-                "Definitions/thepiratebay.yml", // migrated to c#
                 "Definitions/theresurrection.yml",
                 "Definitions/thespit.yml",
                 "Definitions/thetorrents.yml",
