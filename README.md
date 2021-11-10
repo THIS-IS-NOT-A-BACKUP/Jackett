@@ -87,6 +87,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Legit Torrents
  * LePorno.info
  * LimeTorrents
+ * LimeTorrents clone
  * LinuxTracker
  * Mac Torrents Download
  * MegaPeer
@@ -274,6 +275,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Best-Core
  * BeyondHD (BHD)
  * Bibliotik
+ * Bit-Bázis
  * Bit-City Reloaded [![(invite needed)][inviteneeded]](#)
  * BIT-HDTV
  * BiT-TiTAN
@@ -438,6 +440,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Nbytez
  * NCore
  * Nebulance (NBL) (TransmiTheNet)
+ * nForce
  * NetCosmo
  * NetLab
  * NorBits
@@ -573,6 +576,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * UnlimitZ
  * Vizuk
  * WDT (Wrestling Desires Torrents / Ultimate Wrestling Torrents)
+ * White Angel
  * wOOt [![(invite needed)][inviteneeded]](#)
  * World-In-HD
  * x-ite.me (XM)
