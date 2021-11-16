@@ -415,6 +415,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Le Saloon
  * LearnBits
  * LearnFlakes
+ * leech24
  * LegacyHD (HD4Free)
  * LemonHD
  * Libble
@@ -456,6 +457,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Ourbits (HDPter)
  * P2PBG
  * P2PElite
+ * Partis [![(invite needed)][inviteneeded]](#)
  * PassThePopcorn (PTP)
  * PeerJunkies
  * Peers.FM
@@ -495,7 +497,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * RevolutionTT
  * Romanian Metal Torrents (RMT) [![(invite needed)][inviteneeded]](#)
  * RPTorrents
- * SceneHD
+ * SceneHD  [![(invite needed)][inviteneeded]](#)
  * ScenePalace (SP)
  * SceneRush
  * SceneTime
@@ -528,6 +530,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TEKNO3D [![(invite needed)][inviteneeded]](#)
  * TellyTorrent
  * teracod (Movie Zone)
+ * The-Devils-Lounge
  * The Falling Angels (TFA)
  * The Geeks
  * The Horror Charnel (THC)
