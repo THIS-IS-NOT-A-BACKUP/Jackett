@@ -276,7 +276,6 @@ namespace Jackett.Updater
                 "Definitions/bigtorrent.yml", // merged with eStone #12352
                 "Definitions/bigtower.yml",
                 "Definitions/bitme.yml",
-                "Definitions/bit-titan.yml", // migrated to C# #10281
                 "Definitions/bittorrentam.yml",
                 "Definitions/blubits.yml",
                 "Definitions/brobits.yml",
@@ -603,8 +602,9 @@ namespace Jackett.Updater
                         startInfo.FileName = "mono";
                     }
 
-                    if (variant == Variants.JackettVariant.CoreMacOs || variant == Variants.JackettVariant.CoreLinuxAmdx64
-                    || variant == Variants.JackettVariant.CoreLinuxArm32 || variant == Variants.JackettVariant.CoreLinuxArm64)
+                    if (variant == Variants.JackettVariant.CoreMacOs || variant == Variants.JackettVariant.CoreMacOsArm64
+                    || variant == Variants.JackettVariant.CoreLinuxAmdx64 || variant == Variants.JackettVariant.CoreLinuxArm32
+                    || variant == Variants.JackettVariant.CoreLinuxArm64)
                     {
                         startInfo.UseShellExecute = false;
                         startInfo.CreateNoWindow = true;
