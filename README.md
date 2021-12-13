@@ -288,6 +288,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BiTTuRK
  * BJ-Share (BJ)
  * BlueBird [![(invite needed)][inviteneeded]](#)
+ * Blues-Brothers
  * Blutopia (BLU)
  * Borgzelle  [![(invite needed)][inviteneeded]](#)
  * Boxing Torrents
@@ -388,6 +389,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDCity [![(invite needed)][inviteneeded]](#)
  * HDHome (HDBigger) [![(invite needed)][inviteneeded]](#)
  * HDME
+ * HDMonkey
  * HDRoute [![(invite needed)][inviteneeded]](#)
  * HDSky [![(invite needed)][inviteneeded]](#)
  * HDTime
@@ -409,6 +411,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * JPTV
  * Karagarga
  * Keep Friends [![(invite needed)][inviteneeded]](#)
+ * KrazyZone
  * LastFiles
  * Lat-Team [![(invite needed)][inviteneeded]](#)
  * Le Saloon
@@ -436,6 +439,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Mononoké-BT [![(invite needed)][inviteneeded]](#)
  * MoreThanTV (MTV)
  * MouseBits
+ * Movie-Torrentz
  * Moviesite
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
@@ -456,6 +460,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * P2PElite
  * Partis [![(invite needed)][inviteneeded]](#)
  * PassThePopcorn (PTP)
+ * Peeratiko
  * PeerJunkies
  * Peers.FM
  * Pirata Digital
