@@ -309,6 +309,7 @@ namespace Jackett.Updater
                 "Definitions/dragonworld.yml",
                 "Definitions/dreamteam.yml",
                 "Definitions/dxdhd.yml",
+                "Definitions/efectodoppler.yml",
                 "Definitions/eggmeon.yml",
                 "Definitions/elitehd.yml",
                 "Definitions/elittracker.yml",
@@ -414,6 +415,7 @@ namespace Jackett.Updater
                 "Definitions/rapidetracker.yml",
                 "Definitions/rarbg.yml", // migrated to C#
                 "Definitions/redtopia.yml",
+                "Definitions/renegade.yml",
                 "Definitions/retroflix.yml", // migrated to C#
                 "Definitions/rgu.yml",
                 "Definitions/rns.yml", // site merged with audiobooktorrents
