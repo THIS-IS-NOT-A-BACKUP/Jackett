@@ -444,7 +444,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
  * NBTorrents [![(invite needed)][inviteneeded]](#)
- * Nbytez
  * NCore
  * Nebulance (NBL) (TransmiTheNet)
  * NetCosmo
@@ -517,6 +516,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SpeedCD
  * Speedmaster HD [![(invite needed)][inviteneeded]](#)
  * SpeedTorrent Reloaded [![(invite needed)][inviteneeded]](#)
+ * SpiderTK
  * Spirit of Revolution [![(invite needed)][inviteneeded]](#)
  * SportHD [![(invite needed)][inviteneeded]](#)
  * SportsCult
