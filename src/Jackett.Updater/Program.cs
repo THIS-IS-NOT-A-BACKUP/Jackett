@@ -262,11 +262,13 @@ namespace Jackett.Updater
                 "Definitions/academictorrents.yml",
                 "Definitions/alein.yml",
                 "Definitions/alexfilm.yml",
+                "Definitions/alleenretail.yml",
                 "Definitions/anidex.yml", // migrated to C#
                 "Definitions/aox.yml",
                 "Definitions/apollo.yml", // migrated to C# gazelle base tracker
                 "Definitions/archetorrent.yml",
                 "Definitions/asgaard.yml",
+                "Definitions/asiandvdclub.yml",
                 "Definitions/ast4u.yml", // renamed to animeworld #10578
                 "Definitions/asylumshare.yml",
                 "Definitions/audiobooktorrents.yml", // renamed to abtorrents
