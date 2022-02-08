@@ -381,6 +381,7 @@ namespace Jackett.Updater
                 "Definitions/kikibt.yml",
                 "Definitions/korsar.yml",
                 "Definitions/lapausetorrents.yml",
+                "Definitions/lat-team.yml", // switch to *-API #8682
                 "Definitions/latinop2p.yml",
                 "Definitions/leaguehd.yml", // renamed to lemonhd
                 "Definitions/lechaudron.yml",
@@ -427,6 +428,7 @@ namespace Jackett.Updater
                 "Definitions/qxr.yml",
                 "Definitions/rapidetracker.yml",
                 "Definitions/rarbg.yml", // migrated to C#
+                "Definitions/redbits.yml", // switch to *-API #8682
                 "Definitions/redtopia.yml",
                 "Definitions/reelflix.yml", // switch to *-API #8682
                 "Definitions/renegade.yml",
