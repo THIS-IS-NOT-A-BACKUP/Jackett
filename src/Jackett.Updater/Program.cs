@@ -292,6 +292,7 @@ namespace Jackett.Updater
                 "Definitions/btgigs.yml",
                 "Definitions/btkitty.yml",
                 "Definitions/btstornet.yml",
+                "Definitions/btworld.yml",
                 "Definitions/btxpress.yml",
                 "Definitions/casstudiotv.yml",
                 "Definitions/channelx.yml",
@@ -428,7 +429,6 @@ namespace Jackett.Updater
                 "Definitions/qxr.yml",
                 "Definitions/rapidetracker.yml",
                 "Definitions/rarbg.yml", // migrated to C#
-                "Definitions/redbits.yml", // switch to *-API #8682
                 "Definitions/redtopia.yml",
                 "Definitions/reelflix.yml", // switch to *-API #8682
                 "Definitions/renegade.yml",
