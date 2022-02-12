@@ -258,6 +258,7 @@ namespace Jackett.Updater
                 "Definitions/32pages.yml",
                 "Definitions/3evils.yml",
                 "Definitions/420files.yml",
+                "Definitions/7torrents.yml",
                 "Definitions/angietorrents.yml",
                 "Definitions/academictorrents.yml",
                 "Definitions/alein.yml",
@@ -429,6 +430,7 @@ namespace Jackett.Updater
                 "Definitions/qxr.yml",
                 "Definitions/rapidetracker.yml",
                 "Definitions/rarbg.yml", // migrated to C#
+                "Definitions/redbits.yml", // switch to *-API #11540 #8682
                 "Definitions/redtopia.yml",
                 "Definitions/reelflix.yml", // switch to *-API #8682
                 "Definitions/renegade.yml",
