@@ -81,6 +81,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Internet Archive (archive.org)
  * Isohunt2
  * iTorrent
+ * JAV-Torrent
  * kickasstorrents.ws
  * kickasstorrents.to
  * KissSub
@@ -410,6 +411,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * JPTV
  * Karagarga
  * Keep Friends [![(invite needed)][inviteneeded]](#)
+ * Korsar
  * KrazyZone
  * LastFiles
  * Lat-Team [![(invite needed)][inviteneeded]](#)
