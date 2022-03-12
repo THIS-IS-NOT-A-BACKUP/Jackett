@@ -185,7 +185,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Anime-Free
  * AnimeLayer
  * ArenaBG
- * BaibaKo
  * BookTracker
  * BootyTape
  * Catorrent
@@ -220,6 +219,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * RGFootball
  * RiperAM
  * RockBox
+ * RUDUB (ex-BaibaKoTV)
  * RuTracker
  * Rustorka
  * Sharewood
@@ -347,7 +347,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Falkon Vision Team
  * FANO.IN [![(invite needed)][inviteneeded]](#)
  * Fantastic Heaven [![(invite needed)][inviteneeded]](#)
- * Fantastiko [![(invite needed)][inviteneeded]](#)
+ * Fantastiko
  * Femdomcult
  * FileList (FL)
  * Film-Paleis
@@ -399,6 +399,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDZone
  * Hebits
  * HellasTZ
+ * Hidden-Palace
  * HQSource (HQS)
  * Il Corsaro Verde
  * Indietorrents [![(invite needed)][inviteneeded]](#)
@@ -407,6 +408,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Immortuos [![(invite needed)][inviteneeded]](#)
  * Insane Tracker
  * IPTorrents (IPT)
+ * JME-REUNIT3D
  * JPopsuki [![(invite needed)][inviteneeded]](#)
  * JPTV
  * Karagarga
@@ -533,6 +535,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TEKNO3D [![(invite needed)][inviteneeded]](#)
  * TellyTorrent
  * teracod (Movie Zone)
+ * The-Devils-Lounge
  * The Falling Angels (TFA) [![(invite needed)][inviteneeded]](#)
  * The Geeks
  * The Horror Charnel (THC)
