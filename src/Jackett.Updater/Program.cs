@@ -498,6 +498,7 @@ namespace Jackett.Updater
                 "Definitions/torrentgalaxyorg.yml", // renamed to torrentgalaxy
                 "Definitions/torrenthane.yml",
                 "Definitions/torrentkim.yml",
+                "Definitions/torrentmax.yml",
                 "Definitions/torrentproject.yml",
                 "Definitions/torrentquest.yml",
                 "Definitions/torrentrex.yml",
@@ -516,6 +517,7 @@ namespace Jackett.Updater
                 "Definitions/ttobogo.yml",
                 "Definitions/turknova.yml",
                 "Definitions/u-torrents.yml",
+                "Definitions/uhd-heaven.yml",
                 "Definitions/ultimategamerclub.yml",
                 "Definitions/ultrahdclub.yml",
                 "Definitions/uniotaku.yml", // to be migrated to c#
