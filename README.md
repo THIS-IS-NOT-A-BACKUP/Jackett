@@ -148,7 +148,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TorrentFunk
  * TorrentGalaxy (TGx)
  * TorrentKitty
- * TorrentMafya
  * TorrentParadise
  * TorrentProject2
  * TorrentQQ (토렌트큐큐)
@@ -262,6 +261,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Araba Fenice (Phoenix) [![(invite needed)][inviteneeded]](#)
  * ArabP2P
  * AsianCinema
+ * Audiences
  * AudioNews (AN)
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
  * AvistaZ (AsiaTorrents)
@@ -443,7 +443,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Moviesite
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
- * NBTorrents [![(invite needed)][inviteneeded]](#)
  * NCore
  * Nebulance (NBL) (TransmiTheNet)
  * NetCosmo
