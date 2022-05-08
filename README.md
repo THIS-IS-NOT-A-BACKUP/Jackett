@@ -129,6 +129,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Seedoff
  * seleZen
  * Sexy-Pics
+ * Shana Project
  * ShizaProject
  * ShowRSS
  * Solid Torrents
@@ -257,7 +258,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * AmigosShareClub
  * anasch.cc
  * AnimeBytes (AB)
- * AnimeItalia
  * AnimeTorrents (AnT) [![(invite needed)][inviteneeded]](#)
  * AnimeWorld [![(invite needed)][inviteneeded]](#)
  * Anthelion
