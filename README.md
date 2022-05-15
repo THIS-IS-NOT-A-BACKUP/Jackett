@@ -171,7 +171,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * YourBittorrent
  * YTS.ag
  * zetorrents
- * Zooqle
 </details>
 
 <details> <summary> <b> Supported Semi-Private Trackers </b> </summary>
@@ -269,7 +268,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
  * AvistaZ (AsiaTorrents)
  * Back-ups [![(invite needed)][inviteneeded]](#)
- * bB [![(invite needed)][inviteneeded]](#)
  * BakaBT
  * BeiTai
  * Best-Core
