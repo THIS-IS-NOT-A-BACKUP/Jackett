@@ -255,6 +255,7 @@ namespace Jackett.Updater
                 "CurlSharp.dll",
                 "CurlSharp.pdb",
                 "Definitions/01torrent.yml",
+                "Definitions/24rolika.yml",
                 "Definitions/32pages.yml",
                 "Definitions/3evils.yml",
                 "Definitions/420files.yml",
@@ -371,6 +372,7 @@ namespace Jackett.Updater
                 "Definitions/hdplus.yml",
                 "Definitions/hdreactor.yml", // renamed to hdhouse
                 "Definitions/hdstreet.yml",
+                "Definitions/hellastz.yml",
                 "Definitions/hidden-palace.yml",
                 "Definitions/hon3yhd-net.yml",
                 "Definitions/hon3yhd.yml",
@@ -459,6 +461,7 @@ namespace Jackett.Updater
                 "Definitions/scenexpress.yml",
                 "Definitions/sdkino.yml",
                 "Definitions/secretcinema.yml", // migrated to C# gazelle base tracker
+                "Definitions/seedfile.yml",
                 "Definitions/seedpeer.yml",
                 "Definitions/sexxi.yml",
                 "Definitions/sharefiles.yml",

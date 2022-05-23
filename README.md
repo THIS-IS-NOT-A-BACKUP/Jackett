@@ -27,7 +27,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
 
  * ØMagnet
  * 1337x
- * 24rolika
  * ACG.RIP
  * ACGsou (36DM)
  * Anidex
@@ -396,7 +395,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDU
  * HDZone
  * Hebits
- * HellasTZ
  * House of Devil
  * HQSource (HQS)
  * Il Corsaro Verde
@@ -505,7 +503,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SceneTime
  * SDBits [![(invite needed)][inviteneeded]](#)
  * Secret Cinema
- * SeedFile (SF)
  * Shareisland
  * Shazbat [![(invite needed)][inviteneeded]](#)
  * SiamBIT
