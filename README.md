@@ -45,6 +45,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BT.etree
  * BT4G
  * BTDIGG
+ * BTmirror
  * BTSOW
  * Byrutor
  * comicat
@@ -81,6 +82,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * JAV-Torrent
  * kickasstorrents.to
  * kickasstorrents.ws
+ * Knaben
  * Legit Torrents
  * LePorno.info
  * LimeTorrents
