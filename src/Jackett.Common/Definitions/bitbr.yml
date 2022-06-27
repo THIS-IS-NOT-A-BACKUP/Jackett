@@ -135,6 +135,11 @@ search:
       attribute: title
     title:
       text: "{{ if .Result.title_optional }}{{ .Result.title_optional }}{{ else }}{{ .Result.title_default }}{{ end }}"
+      filters:
+        - name: re_replace
+          args:
+            - "\\bDUAL\\b"
+            - "Portuguese (Brazil) English"
     details:
       selector: a[href^="details.php?id="]
       attribute: href
