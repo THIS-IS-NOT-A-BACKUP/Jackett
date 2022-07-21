@@ -38,7 +38,7 @@ namespace Jackett.Common.Indexers
             set => base.configData = value;
         }
 
-        protected readonly string[] OptionalFields = { "imdb", "imdbid", "rageid", "tmdbid", "tvdbid", "poster", "description", "doubanid" };
+        protected readonly string[] OptionalFields = { "imdb", "imdbid", "tmdbid", "rageid", "tvdbid", "tvmazeid", "traktid", "doubanid", "poster", "description" };
 
         private static readonly string[] _SupportedLogicFunctions =
         {
@@ -1300,8 +1300,9 @@ namespace Jackett.Common.Indexers
             variables[".Query.IMDBID"] = query.ImdbID;
             variables[".Query.IMDBIDShort"] = query.ImdbIDShort;
             variables[".Query.TMDBID"] = query.TmdbID?.ToString() ?? null;
-            variables[".Query.TVMazeID"] = null;
-            variables[".Query.TraktID"] = null;
+            variables[".Query.TVMazeID"] = query.TvmazeID?.ToString() ?? null;
+            variables[".Query.TraktID"] = query.TraktID?.ToString() ?? null;
+            variables[".Query.DoubanID"] = query.DoubanID?.ToString() ?? null;
             variables[".Query.Album"] = query.Album;
             variables[".Query.Artist"] = query.Artist;
             variables[".Query.Label"] = query.Label;
@@ -2043,13 +2044,6 @@ namespace Jackett.Common.Indexers
                     release.TMDb = ParseUtil.CoerceLong(TmdbID);
                     value = release.TMDb.ToString();
                     break;
-                case "doubanid":
-                    var DoubanIDRegEx = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var DoubanIDMatch = DoubanIDRegEx.Match(value);
-                    var DoubanID = DoubanIDMatch.Groups[1].Value;
-                    release.DoubanId = ParseUtil.CoerceLong(DoubanID);
-                    value = release.DoubanId.ToString();
-                    break;
                 case "rageid":
                     var RageIDRegEx = new Regex(@"(\d+)", RegexOptions.Compiled);
                     var RageIDMatch = RageIDRegEx.Match(value);
@@ -2064,11 +2058,46 @@ namespace Jackett.Common.Indexers
                     release.TVDBId = ParseUtil.CoerceLong(TVDBId);
                     value = release.TVDBId.ToString();
                     break;
+                case "tvmazeid":
+                    var TVMazeIdRegEx = new Regex(@"(\d+)", RegexOptions.Compiled);
+                    var TVMazeIdMatch = TVMazeIdRegEx.Match(value);
+                    var TVMazeId = TVMazeIdMatch.Groups[1].Value;
+                    release.TVMazeId = ParseUtil.CoerceLong(TVMazeId);
+                    value = release.TVMazeId.ToString();
+                    break;
+                case "traktid":
+                    var TraktIdRegEx = new Regex(@"(\d+)", RegexOptions.Compiled);
+                    var TraktIdMatch = TraktIdRegEx.Match(value);
+                    var TraktId = TraktIdMatch.Groups[1].Value;
+                    release.TraktId = ParseUtil.CoerceLong(TraktId);
+                    value = release.TraktId.ToString();
+                    break;
+                case "doubanid":
+                    var DoubanIDRegEx = new Regex(@"(\d+)", RegexOptions.Compiled);
+                    var DoubanIDMatch = DoubanIDRegEx.Match(value);
+                    var DoubanID = DoubanIDMatch.Groups[1].Value;
+                    release.DoubanId = ParseUtil.CoerceLong(DoubanID);
+                    value = release.DoubanId.ToString();
+                    break;
+                case "genre":
+                    release.Genres = release.Genres.Union(value.Split(',')).ToList();
+                    value = release.Genres.ToString();
+                    break;
+                case "year":
+                    release.Year = ReleaseInfo.GetBytes(value);
+                    value = release.Year.ToString();
+                    break;
                 case "author":
                     release.Author = value;
                     break;
                 case "booktitle":
                     release.BookTitle = value;
+                    break;
+                case "artist":
+                    release.Artist = value;
+                    break;
+                case "album":
+                    release.Album = value;
                     break;
                 case "poster":
                     if (!string.IsNullOrWhiteSpace(value))

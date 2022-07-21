@@ -13,14 +13,18 @@ namespace Jackett.Common.Models
         ImdbId,
         TvdbId,
         RId,
-        TmdbId
+        TmdbId,
+        TvmazeId,
+        TraktId
     }
 
     public enum MovieSearchParam
     {
         Q,
         ImdbId,
-        TmdbId
+        TmdbId,
+        TraktId,
+        DoubanId
     }
 
     public enum MusicSearchParam
@@ -56,11 +60,15 @@ namespace Jackett.Common.Models
         public bool TvSearchTvdbAvailable => (TvSearchParams.Contains(TvSearchParam.TvdbId));
         public bool TvSearchTvRageAvailable => (TvSearchParams.Contains(TvSearchParam.RId));
         public bool TvSearchTmdbAvailable => (TvSearchParams.Contains(TvSearchParam.TmdbId));
+        public bool TvSearchTvMazeAvailable => (TvSearchParams.Contains(TvSearchParam.TvmazeId));
+        public bool TvSearchTraktAvailable => (TvSearchParams.Contains(TvSearchParam.TraktId));
 
         public List<MovieSearchParam> MovieSearchParams;
         public bool MovieSearchAvailable => (MovieSearchParams.Count > 0);
         public bool MovieSearchImdbAvailable => (MovieSearchParams.Contains(MovieSearchParam.ImdbId));
         public bool MovieSearchTmdbAvailable => (MovieSearchParams.Contains(MovieSearchParam.TmdbId));
+        public bool MovieSearchTraktAvailable => (MovieSearchParams.Contains(MovieSearchParam.TraktId));
+        public bool MovieSearchDoubanAvailable => (MovieSearchParams.Contains(MovieSearchParam.DoubanId));
 
         public List<MusicSearchParam> MusicSearchParams;
         public bool MusicSearchAvailable => (MusicSearchParams.Count > 0);
@@ -187,6 +195,10 @@ namespace Jackett.Common.Models
                 parameters.Add("rid");
             if (TvSearchTmdbAvailable)
                 parameters.Add("tmdbid");
+            if (TvSearchTvMazeAvailable)
+                parameters.Add("tvmazeid");
+            if (TvSearchTraktAvailable)
+                parameters.Add("traktid");
             return string.Join(",", parameters);
         }
 
@@ -197,6 +209,10 @@ namespace Jackett.Common.Models
                 parameters.Add("imdbid");
             if (MovieSearchTmdbAvailable)
                 parameters.Add("tmdbid");
+            if (MovieSearchTraktAvailable)
+                parameters.Add("traktid");
+            if (MovieSearchDoubanAvailable)
+                parameters.Add("doubanid");
             return string.Join(",", parameters);
         }
 
