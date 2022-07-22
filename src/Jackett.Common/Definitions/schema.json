@@ -176,7 +176,7 @@
                     "uniqueItems": true,
                     "items": {
                         "type": "string",
-                        "enum": ["q", "season", "ep", "imdbid", "tvdbid", "tmdbid"]
+                        "enum": ["q", "season", "ep", "imdbid", "tvdbid", "tmdbid", "tvmazeid", "traktid", "doubanid"]
                     }
                 },
                 "movie-search": {
@@ -184,7 +184,7 @@
                     "uniqueItems": true,
                     "items": {
                         "type": "string",
-                        "enum": ["q", "imdbid", "tmdbid"]
+                        "enum": ["q", "imdbid", "tmdbid", "traktid", "doubanid"]
                     }
                 },
                 "music-search": {
@@ -192,7 +192,7 @@
                     "uniqueItems": true,
                     "items": {
                         "type": "string",
-                        "enum": ["q", "album", "artist"]
+                        "enum": ["q", "album", "artist", "label", "track", "year"]
                     }
                 },
                 "book-search": {
@@ -650,7 +650,7 @@
                 "^((category|categorydesc)\\|(noappend|append))?$": {
                     "$ref": "#/definitions/SelectorBlock"
                 },
-                "^(download|magnet|infohash|details|comments|title|description|category|categorydesc|size|leechers|seeders|date|files|grabs|downloadvolumefactor|uploadvolumefactor|minimumratio|minimumseedtime|imdb|imdbid|tmdbid|rageid|traktid|tvdbid|doubanid|poster|genre|year|author|booktitle|artist|album)(_([A-Za-z0-9_])*)?$": {
+                "^(download|magnet|infohash|details|comments|title|description|category|categorydesc|size|leechers|seeders|date|files|grabs|downloadvolumefactor|uploadvolumefactor|minimumratio|minimumseedtime|imdb|imdbid|tmdbid|rageid|tvdbid|tvmazeid|traktid|doubanid|poster|genre|year|author|booktitle|album|artist|label|track)(_([A-Za-z0-9_])*)?$": {
                     "$ref": "#/definitions/SelectorBlock"
                 }
             },
