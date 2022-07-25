@@ -38,7 +38,7 @@ namespace Jackett.Common.Indexers
             set => base.configData = value;
         }
 
-        protected readonly string[] OptionalFields = { "imdb", "imdbid", "tmdbid", "rageid", "tvdbid", "tvmazeid", "traktid", "doubanid", "poster", "genre", "description" };
+        protected readonly string[] OptionalFields = { "imdb", "imdbid", "tmdbid", "rageid", "tvdbid", "tvmazeid", "traktid", "doubanid", "poster", "description" };
 
         private static readonly string[] _SupportedLogicFunctions =
         {
@@ -1311,6 +1311,7 @@ namespace Jackett.Common.Indexers
             variables[".Query.Episode"] = query.GetEpisodeSearchString();
             variables[".Query.Author"] = query.Author;
             variables[".Query.Title"] = query.Title;
+            variables[".Query.Publisher"] = query.Publisher;
 
             var mappedCategories = MapTorznabCapsToTrackers(query);
             if (mappedCategories.Count == 0)
@@ -1622,7 +1623,7 @@ namespace Jackett.Common.Indexers
                                 }
 
                                 var Filters = Definition.Search.Rows.Filters;
-                                var SkipRelease = ParseRowFilters(Filters, release, query, variables, Row);
+                                var SkipRelease = ParseRowFilters(Filters, release, query, variables, Row.ToHtmlPretty());
 
                                 if (SkipRelease)
                                     continue;
@@ -2094,6 +2095,9 @@ namespace Jackett.Common.Indexers
                     break;
                 case "booktitle":
                     release.BookTitle = value;
+                    break;
+                case "publisher":
+                    release.Publisher = value;
                     break;
                 case "artist":
                     release.Artist = value;
