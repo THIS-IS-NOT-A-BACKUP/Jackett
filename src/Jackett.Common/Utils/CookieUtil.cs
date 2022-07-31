@@ -53,9 +53,12 @@ namespace Jackett.Common.Utils
                                                                   BindingFlags.Instance, null, cookieJar, new object[] { });
             foreach (var key in table.Keys)
             {
-                foreach (Cookie cookie in cookieJar.GetCookies(new Uri($"http://{key}")))
+                var domain = (string)key;
+                if (domain.StartsWith("."))
+                    domain = domain.Substring(1);
+                foreach (Cookie cookie in cookieJar.GetCookies(new Uri($"http://{domain}")))
                     cookie.Expired = true;
-                foreach (Cookie cookie in cookieJar.GetCookies(new Uri($"https://{key}")))
+                foreach (Cookie cookie in cookieJar.GetCookies(new Uri($"https://{domain}")))
                     cookie.Expired = true;
             }
         }

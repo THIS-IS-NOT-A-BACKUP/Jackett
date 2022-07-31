@@ -161,8 +161,8 @@ search:
       optional: true
       selector: div.t-tags
       filters:
-        - name: replace
-          args: ["/", ", "]
+        - name: validate
+          args: "Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Family, Fantasy, History, Horror, Kids, Music, Mystery, News, Reality, Romance, SciFi, Soap, Talk, Thriller, War, Western"
     description:
       text: "{{ .Result.genre }}"
     imdbid:

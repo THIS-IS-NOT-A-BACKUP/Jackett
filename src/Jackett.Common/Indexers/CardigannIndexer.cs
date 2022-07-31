@@ -1129,6 +1129,14 @@ namespace Jackett.Common.Indexers
                             strTag = ":";
                         logger.Debug(string.Format("CardigannIndexer ({0}): strdump{1} {2}", Id, strTag, DebugData));
                         break;
+                    case "validate":
+                        char[] delimiters = { ',', ' ', '/', ')', '(', '.', ';', '[', ']' };
+                        var args = (string)Filter.Args;
+                        var argsList = args.ToLower().Split(delimiters, System.StringSplitOptions.RemoveEmptyEntries);
+                        var validList = argsList.ToList();
+                        var validIntersect = validList.Intersect(Data.ToLower().Split(delimiters, System.StringSplitOptions.RemoveEmptyEntries)).ToList();
+                        Data = string.Join(", ", validIntersect);
+                        break;
                     default:
                         break;
                 }
@@ -2084,8 +2092,9 @@ namespace Jackett.Common.Indexers
                 case "genre":
                     if (release.Genres == null)
                         release.Genres = new List<string>();
-                    release.Genres = release.Genres.Union(value.Split(',')).ToList();
-                    value = string.Join(",", release.Genres);
+                    char[] delimiters = { ',', ' ', '/', ')', '(', '.', ';', '[', ']' };
+                    release.Genres = release.Genres.Union(value.Split(delimiters, System.StringSplitOptions.RemoveEmptyEntries)).ToList();
+                    value = string.Join(", ", release.Genres);
                     break;
                 case "year":
                     release.Year = ReleaseInfo.GetBytes(value);
