@@ -518,10 +518,10 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SpeedApp (SceneFZ, XtreMeZone / MYXZ, ICE Torrent)
  * SpeedCD
  * Speedmaster HD [![(invite needed)][inviteneeded]](#)
- * SpeedTorrent Reloaded [![(invite needed)][inviteneeded]](#)
+ * SpeedTorrent Reloaded
  * SpiderTK
  * Spirit of Revolution [![(invite needed)][inviteneeded]](#)
- * SportHD [![(invite needed)][inviteneeded]](#)
+ * SportHD
  * SportsCult
  * SpringSunday [![(invite needed)][inviteneeded]](#)
  * SugoiMusic
