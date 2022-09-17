@@ -367,8 +367,10 @@ namespace Jackett.Updater
                 "Definitions/gtorrent.yml",
                 "Definitions/hachede-c.yml",
                 "Definitions/hachede.yml",
+                "Definitions/hamsterstudio.yml",
                 "Definitions/hd4free.yml",
                 "Definitions/hdbc.yml", // renamed to hdbitscom
+                "Definitions/hdbitscom.yml",
                 "Definitions/hdcenter.yml",
                 "Definitions/hdcity.yml", // moved to pixelados
                 "Definitions/hdclub.yml",
@@ -548,6 +550,7 @@ namespace Jackett.Updater
                 "Definitions/trackeros.yml", // switch to *-API #12807
                 "Definitions/tspate.yml",
                 "Definitions/ttobogo.yml",
+                "Definitions/turktracker.yml",
                 "Definitions/turknova.yml",
                 "Definitions/u-torrents.yml",
                 "Definitions/uhd-heaven.yml",
