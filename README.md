@@ -159,6 +159,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TorrentWhiz ( 토렌트위즈)
  * Torrentz2eu
  * Torrentz2nz
+ * TrahT
  * truPornolabs
  * Underverse
  * UnionDHT
@@ -256,7 +257,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Aither
  * AlphaRatio (AR)
  * AmigosShareClub
- * anasch.cc
  * AnimeBytes (AB)
  * AnimeTracker
  * AnimeTorrents (AnT) [![(invite needed)][inviteneeded]](#)
@@ -288,7 +288,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BiTTuRK
  * BJ-Share (BJ)
  * BlueBird [![(invite needed)][inviteneeded]](#)
- * Blues-Brothers
  * Blutopia (BLU)
  * Borgzelle [![(invite needed)][inviteneeded]](#)
  * Boxing Torrents
@@ -336,7 +335,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * DivTeam
  * DocsPedia
  * Dream Tracker
- * EbookParadijs
  * Ebooks-Shares
  * Empornium (EMP) [![(invite needed)][inviteneeded]](#)
  * eShareNet
@@ -350,7 +348,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Fantastiko
  * Femdomcult
  * FileList (FL)
- * Film-Paleis
  * FinElite (FE)
  * FinVip
  * FunFile (FF)
@@ -432,7 +429,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * magic-heaven
  * Magico (Trellas) [![(invite needed)][inviteneeded]](#)
  * Majomparádé (TurkDepo)
- * MediaMaatjes
  * MegamixTracker
  * MeseVilág (Fairytale World)
  * Milkie
