@@ -319,7 +319,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CrazyHD
  * CrazySpirits
  * CrnaBerza
- * CrypticHaven Comedy Club (CCC)
  * DANISH BYTES
  * Darius Tracker
  * Dark-Shadow
@@ -477,7 +476,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * PuntoTorrent
  * PuroVicio
  * PuTao
- * Puur-Hollands
  * PWTorrents (PWT)
  * R3V WTF! [![(invite needed)][inviteneeded]](#)
  * Racing4Everyone (R4E)
@@ -501,7 +499,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SiamBIT
  * SkipTheCommercials
  * SkipTheTrailers
- * slosoul
  * SnowPT (SSPT)
  * SoulVoice
  * SpeedApp (SceneFZ, XtreMeZone / MYXZ, ICE Torrent)

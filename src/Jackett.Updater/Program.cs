@@ -316,6 +316,7 @@ namespace Jackett.Updater
                 "Definitions/cinefilhd.yml",
                 "Definitions/cooltorrent.yml",
                 "Definitions/crazyscorner.yml",
+                "Definitions/cryptichaven.yml",
                 "Definitions/czteam.yml",
                 "Definitions/cztorrent.yml",
                 "Definitions/danishbytes.yml", // migrated to C#
@@ -470,6 +471,7 @@ namespace Jackett.Updater
                 "Definitions/portugas.yml", // switch to *-API #13542
                 "Definitions/ps4-torrent.yml",
                 "Definitions/pt99.yml",
+                "Definitions/puurhollands.yml",
                 "Definitions/qctorrent.yml",
                 "Definitions/qxr.yml",
                 "Definitions/racing4everyone.yml", // switch to *-API #12870 #8682
@@ -508,6 +510,7 @@ namespace Jackett.Updater
                 "Definitions/skytorrents.yml",
                 "Definitions/skytorrentsclone.yml", // renamed to skytorrents-lol
                 "Definitions/skytorrentsclone2.yml", // renamed to skytorrents-to
+                "Definitions/slosoul.yml",
                 "Definitions/soundpark.yml",
                 "Definitions/spacetorrent.yml",
                 "Definitions/speed-share.yml",
