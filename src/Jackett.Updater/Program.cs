@@ -445,6 +445,7 @@ namespace Jackett.Updater
                 "Definitions/newpct-me.yml",
                 "Definitions/nexttorrent.yml",
                 "Definitions/nforce.yml",
+                "Definitions/nitro.yml",
                 "Definitions/nnm-club.yml", // renamed to noname-club
                 "Definitions/nordichd.yml",
                 "Definitions/nordicplus.yml",
@@ -537,7 +538,7 @@ namespace Jackett.Updater
                 "Definitions/tntfork.yml",
                 "Definitions/tntvillage.yml",
                 "Definitions/topnow.yml",
-                "Definitions/toros.yml",
+                "Definitions/toros.yml", // renamed to bulltorrent
                 "Definitions/torrent-paradise-ml.yml",
                 "Definitions/torrent4you.yml",
                 "Definitions/torrentbomb.yml",
