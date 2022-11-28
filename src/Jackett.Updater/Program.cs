@@ -470,6 +470,7 @@ namespace Jackett.Updater
                 "Definitions/pornolive.yml",
                 "Definitions/pornorip.yml",
                 "Definitions/portugas.yml", // switch to *-API #13542
+                "Definitions/prostylex.yml",
                 "Definitions/ps4-torrent.yml",
                 "Definitions/pt99.yml",
                 "Definitions/puurhollands.yml",
@@ -495,7 +496,6 @@ namespace Jackett.Updater
                 "Definitions/scenexpress.yml",
                 "Definitions/sdkino.yml",
                 "Definitions/secretcinema.yml", // migrated to C# gazelle base tracker
-                "Definitions/seedfile.yml",
                 "Definitions/seedpeer.yml",
                 "Definitions/sexxi.yml",
                 "Definitions/sharefiles.yml",
