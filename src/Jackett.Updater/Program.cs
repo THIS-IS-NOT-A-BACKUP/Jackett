@@ -468,6 +468,7 @@ namespace Jackett.Updater
                 "Definitions/pirateiro.yml",
                 "Definitions/pleasuredome.yml",
                 "Definitions/polishtracker.yml",
+                "Definitions/pornbits.yml",
                 "Definitions/pornolive.yml",
                 "Definitions/pornorip.yml",
                 "Definitions/portugas.yml", // switch to *-API #13542
@@ -549,7 +550,7 @@ namespace Jackett.Updater
                 "Definitions/torrentgalaxyorg.yml", // renamed to torrentgalaxy
                 "Definitions/torrenthane.yml",
                 "Definitions/torrentkim.yml",
-                "Definitions/torrentland.yml", // switch to *-API #13006 #8682
+                "Definitions/torrentland-api.yml", // switch to HTML #13768
                 "Definitions/torrentmax.yml",
                 "Definitions/torrentparadise.yml",
                 "Definitions/torrentproject.yml",
