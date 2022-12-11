@@ -442,6 +442,7 @@ namespace Jackett.Updater
                 "Definitions/music-master.yml",
                 "Definitions/nachtwerk.yml",
                 "Definitions/nbtorrents.yml",
+                "Definitions/netcosmo.yml",
                 "Definitions/netlab.yml",
                 "Definitions/newpct-me.yml",
                 "Definitions/nexttorrent.yml",
@@ -532,6 +533,7 @@ namespace Jackett.Updater
                 "Definitions/the-madhouse.yml",
                 "Definitions/themoviecave.yml",
                 "Definitions/theresurrection.yml",
+                "Definitions/theshinning.yml", // switch to *-API #13751
                 "Definitions/thespit.yml",
                 "Definitions/thetorrents.yml",
                 "Definitions/theunknown.yml", // became 3evils #9678

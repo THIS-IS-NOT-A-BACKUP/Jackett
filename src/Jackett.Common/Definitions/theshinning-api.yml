@@ -1,29 +1,30 @@
 ---
-id: redbits-api
-name: RedBits (API)
-description: "RedBits is a SPANISH site for classic content"
-language: es-ES
+id: theshinning-api
+name: The Shinning (API)
+description: "The Shinning (TsH) is a GERMAN Private Torrent Tracker for MOVIES / TV / GENERAL"
+language: de-DE
 type: private
 encoding: UTF-8
 links:
-  - https://redbits.xyz/
+  - https://theshinning.me/
 legacylinks:
-  - https://red-bits.com/
+  - https://theshinning.org
+  - https://theshinning.org/
 
 caps:
   categorymappings:
-    - {id: 1, cat: Movies, desc: "Películas"}
-    - {id: 2, cat: TV, desc: "Series"}
-    - {id: 10, cat: TV, desc: "Series Completas"}
-    - {id: 6, cat: TV/Documentary, desc: "Documentales"}
-    - {id: 7, cat: TV/Sport, desc: "Deportes"}
-    - {id: 8, cat: Movies, desc: "Hagbard"}
-    - {id: 9, cat: Movies, desc: "Studio Ghibli"}
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV"}
+    - {id: 3, cat: Audio, desc: "Music"}
+    - {id: 4, cat: Console, desc: "Game"}
+    - {id: 5, cat: PC, desc: "Application"}
+    - {id: 6, cat: XXX, desc: "XXX"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
 
 settings:
   - name: apikey
@@ -32,7 +33,7 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://redbits.xyz/\" target =_blank>RedBits</a> account <i>My Security</i> page and clicking on the <b>API Token</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://theshinning.me/\" target =_blank>The Shinning</a> account <i>My Security</i> page and clicking on the <b>API Token</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -95,31 +96,8 @@ search:
   fields:
     category:
       selector: category_id
-    title_vose:
-      selector: name:contains(VOSE)
-      optional: true
-      filters:
-        - name: append
-          args: " English" # Add english to fix Sonarr/Radarr language
-    title_notvose:
-      selector: name:not(:contains(VOSE))
-      optional: true
-      filters:
-        - name: append
-          args: " Spanish" # Add spanish to fix Sonarr/Radarr language
     title:
-      text: "{{ if .Result.title_vose }}{{ .Result.title_vose }}{{ else }}{{ .Result.title_notvose }}{{ end }}"
-      filters:
-        - name: re_replace
-          args: ["(?i)bdfull", "BluRay"] # BDfull  -> BluRay
-        - name: re_replace
-          args: ["(?i)RedBits", ""] # Delete RedBits
-        - name: re_replace
-          args: ["\\[|\\]", " "]
-        - name: re_replace
-          args: ["  ", " "]
-        - name: re_replace
-          args: ["(?i)T(\\d{1,2})\\b", "S$1"]
+      selector: name
     details:
       selector: details_link
     download:
@@ -140,8 +118,6 @@ search:
     genre:
       selector: meta.genres
       filters:
-        - name: re_replace
-          args: ["(?i)(Película de TV)", "Película_de_TV"]
         - name: re_replace
           args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: replace
@@ -177,7 +153,10 @@ search:
       case:
         0: 1 # normal
         1: 2 # double
+# global MR is 0.4 but torrents must be seeded for 7 days regardless of ratio
+#    minimumratio:
+#      text: 0.4
     minimumseedtime:
-      # 4 days (as seconds = 4 x 24 x 60 x 60)
-      text: 345600
+      # 7 day (as seconds = 7 x 24 x 60 x 60)
+      text: 604800
 # json UNIT3D 6.4.1
