@@ -543,6 +543,7 @@ namespace Jackett.Updater
                 "Definitions/tntfork.yml",
                 "Definitions/tntvillage.yml",
                 "Definitions/topnow.yml",
+                "Definitions/torlook.yml",
                 "Definitions/toros.yml", // renamed to bulltorrent
                 "Definitions/torrent-paradise-ml.yml",
                 "Definitions/torrent4you.yml",
@@ -582,6 +583,7 @@ namespace Jackett.Updater
                 "Definitions/ultimategamerclub.yml",
                 "Definitions/ultrahdclub.yml",
                 "Definitions/underverse.yml",
+                "Definitions/underversel.yml",
                 "Definitions/uniotaku.yml", // to be migrated to c#
                 "Definitions/utorrents.yml", // same as SzeneFZ now
                 "Definitions/vanila.yml",
