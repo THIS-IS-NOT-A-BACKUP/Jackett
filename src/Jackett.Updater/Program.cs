@@ -2,7 +2,6 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using CommandLine;
 using CommandLine.Text;
 using Jackett.Common.Models.Config;
@@ -723,7 +722,7 @@ namespace Jackett.Updater
                         startInfo.CreateNoWindow = true;
                     }
 
-                    logger.Info($"Starting Jackett: \"{startInfo.FileName }\" {startInfo.Arguments}");
+                    logger.Info($"Starting Jackett: \"{startInfo.FileName}\" {startInfo.Arguments}");
                     Process.Start(startInfo);
                 }
             }
