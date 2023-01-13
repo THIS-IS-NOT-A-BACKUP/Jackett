@@ -458,6 +458,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Pretome
  * PrivateHD (PHD)
  * ProAudioTorrents (PAT)
+ * PTChina (铂金学院)
  * PTerClub
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
@@ -513,7 +514,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TEKNO3D [![(invite needed)][inviteneeded]](#)
  * TellyTorrent
  * teracod (Movie Zone)
- * The Falling Angels (TFA) [![(invite needed)][inviteneeded]](#)
+ * The Falling Angels (TFA)
  * The Geeks
  * The New Retro
  * The Occult [![(invite needed)][inviteneeded]](#)
@@ -576,6 +577,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * YDYPT
  * Zamunda.net
  * Zelka.org
+ * ZmPT (织梦)
  * ZonaQ
 </details>
 
