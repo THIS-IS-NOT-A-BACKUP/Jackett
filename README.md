@@ -258,6 +258,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * ArabP2P
  * aro.lol
  * AsianCinema
+ * AsianDVDClub
  * Audiences
  * AudioNews (AN)
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
@@ -340,6 +341,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * FileList (FL)
  * FinElite (FE)
  * FinVip
+ * Flux-Zone
  * FunFile (FF)
  * FunkyTorrents (FT)
  * Fuzer (FZ)
