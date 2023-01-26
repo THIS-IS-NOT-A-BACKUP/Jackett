@@ -235,7 +235,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * 2 Fast 4 You [![(invite needed)][inviteneeded]](#)
  * 3ChangTrai (3CT) [![(invite needed)][inviteneeded]](#)
  * 3D Torrents (3DT)
- * 3Evils
  * 4thD (4th Dimension)
  * 52PT
  * Abnormal
@@ -528,6 +527,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * The Vault [![(invite needed)][inviteneeded]](#)
  * The-Crazy-Ones
  * The-New-Fun
+ * TheDarkCommunity (TDC)
  * TheEmpire (TE)
  * TheLeachZone (TLZ)
  * TheScenePlace (TSP)
@@ -566,6 +566,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * U2 (U2分享園@動漫花園) [![(invite needed)][inviteneeded]](#)
  * UHDBits
  * UnionGang
+ * UnleashTheCartoons
  * UnlimitZ
  * White Angel
  * wOOt [![(invite needed)][inviteneeded]](#)
