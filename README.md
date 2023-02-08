@@ -59,6 +59,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * dmhy
  * Dodder (菟丝子资源社区)
  * DonTorrent
+ * EBook Bay (EBB)
  * E-Hentai
  * EpubLibre
  * EXT Torrents
@@ -243,7 +244,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * 52PT
  * Abnormal
  * ABtorrents (ABT + RNS)
- * Acervos
+ * Acervos [![(invite needed)][inviteneeded]](#)
  * Acid Lounge (A-L)
  * AcrossTheTasman [![(invite needed)][inviteneeded]](#)
  * Aftershock
@@ -352,7 +353,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * GAYtorrent.ru
  * GazelleGames (GGn) [![(invite needed)][inviteneeded]](#)
  * Generation-Free
- * GFXPeers
  * GigaTorrents
  * GimmePeers (formerly ILT)
  * GiroTorrent
@@ -371,7 +371,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HD-Torrents (HDT)
  * HD-UNiT3D
  * HD4FANS [![(invite needed)][inviteneeded]](#)
- * HDAI
  * HDArea (HDA)
  * HDAtmos
  * HDBits [![(invite needed)][inviteneeded]](#)

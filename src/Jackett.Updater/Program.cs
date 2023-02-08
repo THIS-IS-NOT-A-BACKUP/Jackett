@@ -359,6 +359,7 @@ namespace Jackett.Updater
                 "Definitions/filebase.yml",
                 "Definitions/film-paleis.yml",
                 "Definitions/filmsclub.yml",
+                "Definitions/gfxpeers.yml",
                 "Definitions/focusx.yml",
                 "Definitions/fouducinema.yml",
                 "Definitions/freakstrackingsystem.yml",
@@ -378,6 +379,7 @@ namespace Jackett.Updater
                 "Definitions/hachede.yml",
                 "Definitions/hamsterstudio.yml",
                 "Definitions/hd4free.yml",
+                "Definitions/hdai.yml",
                 "Definitions/hdbc.yml", // renamed to hdbitscom
                 "Definitions/hdbitscom.yml",
                 "Definitions/hdcenter.yml",
