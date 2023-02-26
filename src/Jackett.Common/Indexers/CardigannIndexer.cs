@@ -1013,19 +1013,14 @@ namespace Jackett.Common.Indexers
                     case "dateparse":
                         var layout = (string)Filter.Args;
 
-                        if (layout.Contains("yy") && DateTime.TryParseExact(Data, layout, CultureInfo.InvariantCulture, DateTimeStyles.None, out var parsedDate))
-                            Data = parsedDate.ToString(DateTimeUtil.Rfc1123ZPattern);
-                        else
+                        try
                         {
-                            try
-                            {
-                                var datetime = DateTimeUtil.ParseDateTimeGoLang(Data, layout);
-                                Data = datetime.ToString(DateTimeUtil.Rfc1123ZPattern);
-                            }
-                            catch (FormatException ex)
-                            {
-                                logger.Debug(ex.Message);
-                            }
+                            var datetime = DateTimeUtil.ParseDateTimeGoLang(Data, layout);
+                            Data = datetime.ToString(DateTimeUtil.Rfc1123ZPattern, CultureInfo.InvariantCulture);
+                        }
+                        catch (FormatException ex)
+                        {
+                            logger.Debug(ex.Message);
                         }
                         break;
                     case "regexp":
@@ -1093,10 +1088,10 @@ namespace Jackett.Common.Indexers
                         break;
                     case "timeago":
                     case "reltime":
-                        Data = DateTimeUtil.FromTimeAgo(Data).ToString(DateTimeUtil.Rfc1123ZPattern);
+                        Data = DateTimeUtil.FromTimeAgo(Data).ToString(DateTimeUtil.Rfc1123ZPattern, CultureInfo.InvariantCulture);
                         break;
                     case "fuzzytime":
-                        Data = DateTimeUtil.FromUnknown(Data).ToString(DateTimeUtil.Rfc1123ZPattern);
+                        Data = DateTimeUtil.FromUnknown(Data).ToString(DateTimeUtil.Rfc1123ZPattern, CultureInfo.InvariantCulture);
                         break;
                     case "validfilename":
                         Data = StringUtil.MakeValidFileName(Data, '_', false);
@@ -1509,7 +1504,7 @@ namespace Jackett.Common.Indexers
                                         variables[variablesKey] = null;
                                         continue;
                                     }
-                                    throw new Exception(string.Format("Error while parsing field={0}, selector={1}, value={2}: {3}", Field.Key, Field.Value.Selector, (value == null ? "<null>" : value), ex.Message));
+                                    throw new Exception($"Error while parsing field={Field.Key}, selector={Field.Value.Selector}, value={value ?? "<null>"}: {ex.Message}", ex);
                                 }
 
                             }
@@ -1646,7 +1641,7 @@ namespace Jackett.Common.Indexers
                                             variables[variablesKey] = null;
                                             continue;
                                         }
-                                        throw new Exception(string.Format("Error while parsing field={0}, selector={1}, value={2}: {3}", Field.Key, Field.Value.Selector, (value == null ? "<null>" : value), ex.Message));
+                                        throw new Exception($"Error while parsing field={Field.Key}, selector={Field.Value.Selector}, value={value ?? "<null>"}: {ex.Message}", ex);
                                     }
                                 }
 
@@ -2041,7 +2036,7 @@ namespace Jackett.Common.Indexers
                     break;
                 case "date":
                     release.PublishDate = DateTimeUtil.FromUnknown(value);
-                    value = release.PublishDate.ToString(DateTimeUtil.Rfc1123ZPattern);
+                    value = release.PublishDate.ToString(DateTimeUtil.Rfc1123ZPattern, CultureInfo.InvariantCulture);
                     break;
                 case "files":
                     release.Files = ParseUtil.CoerceLong(value);
@@ -2073,45 +2068,27 @@ namespace Jackett.Common.Indexers
                     value = release.Imdb.ToString();
                     break;
                 case "tmdbid":
-                    var tmdbIdRegex = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var tmdbIdMatch = tmdbIdRegex.Match(value);
-                    var tmdbId = tmdbIdMatch.Groups[1].Value;
-                    release.TMDb = ParseUtil.CoerceLong(tmdbId);
+                    release.TMDb = ParseUtil.GetLongFromString(value);
                     value = release.TMDb.ToString();
                     break;
                 case "rageid":
-                    var rageIdRegex = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var rageIdMatch = rageIdRegex.Match(value);
-                    var rageId = rageIdMatch.Groups[1].Value;
-                    release.RageID = ParseUtil.CoerceLong(rageId);
+                    release.RageID = ParseUtil.GetLongFromString(value);
                     value = release.RageID.ToString();
                     break;
                 case "tvdbid":
-                    var tvdbIdRegex = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var tvdbIdMatch = tvdbIdRegex.Match(value);
-                    var tvdbId = tvdbIdMatch.Groups[1].Value;
-                    release.TVDBId = ParseUtil.CoerceLong(tvdbId);
+                    release.TVDBId = ParseUtil.GetLongFromString(value);
                     value = release.TVDBId.ToString();
                     break;
                 case "tvmazeid":
-                    var tvMazeIdRegex = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var tvMazeIdMatch = tvMazeIdRegex.Match(value);
-                    var tvMazeId = tvMazeIdMatch.Groups[1].Value;
-                    release.TVMazeId = ParseUtil.CoerceLong(tvMazeId);
+                    release.TVMazeId = ParseUtil.GetLongFromString(value);
                     value = release.TVMazeId.ToString();
                     break;
                 case "traktid":
-                    var traktIdRegex = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var traktIdMatch = traktIdRegex.Match(value);
-                    var traktId = traktIdMatch.Groups[1].Value;
-                    release.TraktId = ParseUtil.CoerceLong(traktId);
+                    release.TraktId = ParseUtil.GetLongFromString(value);
                     value = release.TraktId.ToString();
                     break;
                 case "doubanid":
-                    var doubanIdRegex = new Regex(@"(\d+)", RegexOptions.Compiled);
-                    var doubanIdMatch = doubanIdRegex.Match(value);
-                    var doubanId = doubanIdMatch.Groups[1].Value;
-                    release.DoubanId = ParseUtil.CoerceLong(doubanId);
+                    release.DoubanId = ParseUtil.GetLongFromString(value);
                     value = release.DoubanId.ToString();
                     break;
                 case "genre":
