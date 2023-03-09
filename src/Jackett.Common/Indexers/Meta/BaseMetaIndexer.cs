@@ -14,16 +14,13 @@ namespace Jackett.Common.Indexers.Meta
 {
     public abstract class BaseMetaIndexer : BaseWebIndexer
     {
-        protected BaseMetaIndexer(string name, string id, string description,
-                                  IFallbackStrategyProvider fallbackStrategyProvider,
+        public override string SiteLink { get; protected set; } = "http://127.0.0.1/";
+
+        protected BaseMetaIndexer(IFallbackStrategyProvider fallbackStrategyProvider,
                                   IResultFilterProvider resultFilterProvider, IIndexerConfigurationService configService,
                                   WebClient client, Logger logger, ConfigurationData configData, IProtectionService ps,
                                   ICacheService cs, Func<IIndexer, bool> filter)
-            : base(id: id,
-                   name: name,
-                   description: description,
-                   link: "http://127.0.0.1/",
-                   caps: new TorznabCapabilities(),
+            : base(caps: new TorznabCapabilities(),
                    configService: configService,
                    client: client,
                    logger: logger,
@@ -49,8 +46,10 @@ namespace Jackett.Common.Indexers.Meta
 
         public override async Task<IndexerResult> ResultsForQuery(TorznabQuery query, bool isMetaIndexer)
         {
-            if (!CanHandleQuery(query) || !CanHandleCategories(query, true))
-                return new IndexerResult(this, new ReleaseInfo[0], false);
+            query = query.Clone();
+
+            if (query.Offset > 0 || !CanHandleQuery(query) || !CanHandleCategories(query, true))
+                return new IndexerResult(this, Array.Empty<ReleaseInfo>(), false);
 
             try
             {

@@ -20,24 +20,14 @@ using WebClient = Jackett.Common.Utils.Clients.WebClient;
 namespace Jackett.Common.Indexers
 {
     [ExcludeFromCodeCoverage]
-    public class DonTorrent : BaseWebIndexer
+    public class DonTorrent : IndexerBase
     {
-        private static class DonTorrentCatType
+        public override string Id => "dontorrent";
+        public override string Name => "DonTorrent";
+        public override string Description => "DonTorrent is a SPANISH public tracker for MOVIES / TV / GENERAL";
+        public override string SiteLink { get; protected set; } = "https://dontorrent.cloud/";
+        public override string[] AlternativeSiteLinks => new[]
         {
-            public static string Pelicula => "pelicula";
-            public static string Pelicula4K => "pelicula4k";
-            public static string Serie => "serie";
-            public static string SerieHD => "seriehd";
-            public static string Documental => "documental";
-            public static string Musica => "musica";
-            public static string Variado => "variado";
-            public static string Juego => "juego";
-        }
-
-        private const string NewTorrentsUrl = "ultimos";
-        private const string SearchUrl = "buscar/";
-
-        public override string[] AlternativeSiteLinks { get; protected set; } = {
             "https://dontorrent.cloud/",
             "https://todotorrents.net/",
             "https://tomadivx.net/",
@@ -45,8 +35,8 @@ namespace Jackett.Common.Indexers
             "https://verdetorrent.com/",
             "https://naranjatorrent.com/"
         };
-
-        public override string[] LegacySiteLinks { get; protected set; } = {
+        public override string[] LegacySiteLinks => new[]
+        {
             "https://dontorrent.me/",
             "https://dontorrent.gs/",
             "https://dontorrent.gy/",
@@ -65,6 +55,23 @@ namespace Jackett.Common.Indexers
             "https://dontorrent.ninja/",
             "https://dontorrent.love/"
         };
+        public override string Language => "es-ES";
+        public override string Type => "public";
+
+        private static class DonTorrentCatType
+        {
+            public static string Pelicula => "pelicula";
+            public static string Pelicula4K => "pelicula4k";
+            public static string Serie => "serie";
+            public static string SerieHD => "seriehd";
+            public static string Documental => "documental";
+            public static string Musica => "musica";
+            public static string Variado => "variado";
+            public static string Juego => "juego";
+        }
+
+        private const string NewTorrentsUrl = "ultimos";
+        private const string SearchUrl = "buscar/";
 
         private static Dictionary<string, string> CategoriesMap => new Dictionary<string, string>
             {
@@ -78,10 +85,7 @@ namespace Jackett.Common.Indexers
 
         public DonTorrent(IIndexerConfigurationService configService, WebClient w, Logger l, IProtectionService ps,
             ICacheService cs)
-            : base(id: "dontorrent",
-                   name: "DonTorrent",
-                   description: "DonTorrent is a SPANISH public tracker for MOVIES / TV / GENERAL",
-                   link: "https://dontorrent.cloud/",
+            : base(
                    caps: new TorznabCapabilities
                    {
                        TvSearchParams = new List<TvSearchParam>
@@ -104,10 +108,6 @@ namespace Jackett.Common.Indexers
                    cacheService: cs,
                    configData: new ConfigurationData())
         {
-            Encoding = Encoding.UTF8;
-            Language = "es-ES";
-            Type = "public";
-
             // avoid CLoudflare too many requests limiter
             webclient.requestDelay = 2.1;
 
