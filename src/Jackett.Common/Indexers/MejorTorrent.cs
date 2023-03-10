@@ -26,10 +26,10 @@ namespace Jackett.Common.Indexers
         public override string Id => "mejortorrent";
         public override string Name => "MejorTorrent";
         public override string Description => "MejorTorrent - Hay veces que un torrent viene mejor! :)";
-        public override string SiteLink { get; protected set; } = "https://mejortorrent.wtf/";
+        public override string SiteLink { get; protected set; } = "https://www1.mejortorrent.rip/";
         public override string[] AlternativeSiteLinks => new[]
         {
-            "https://mejortorrent.wtf/",
+            "https://www1.mejortorrent.rip/",
             "https://mejortorrent.unblockit.boo/"
         };
         public override string[] LegacySiteLinks => new[]
@@ -61,10 +61,13 @@ namespace Jackett.Common.Indexers
             "https://mejortorrent.unblockit.blue/",
             "https://mejortorrent.nocensor.sbs/",
             "https://mejortorrent.unblockit.name/",
-            "https://mejortorrent.unblockit.bio/"
+            "https://mejortorrent.unblockit.bio/",
+            "https://mejortorrent.wtf/"
         };
         public override string Language => "es-ES";
         public override string Type => "public";
+
+        public override TorznabCapabilities TorznabCaps => SetCapabilities();
 
         private static class MejorTorrentCatType
         {
@@ -80,26 +83,8 @@ namespace Jackett.Common.Indexers
 
         private const int PagesToSearch = 3;
 
-        public MejorTorrent(IIndexerConfigurationService configService, WebClient w, Logger l, IProtectionService ps,
-                            ICacheService cs)
-            : base(
-                   caps: new TorznabCapabilities
-                   {
-                       TvSearchParams = new List<TvSearchParam>
-                       {
-                           TvSearchParam.Q, TvSearchParam.Season, TvSearchParam.Ep
-                       },
-                       MovieSearchParams = new List<MovieSearchParam>
-                       {
-                           MovieSearchParam.Q
-                       },
-                       MusicSearchParams = new List<MusicSearchParam>
-                       {
-                           MusicSearchParam.Q
-                       },
-                       SupportsRawSearch = true
-                   },
-                   configService: configService,
+        public MejorTorrent(IIndexerConfigurationService configService, WebClient w, Logger l, IProtectionService ps, ICacheService cs)
+            : base(configService: configService,
                    client: w,
                    logger: l,
                    p: ps,
@@ -111,13 +96,35 @@ namespace Jackett.Common.Indexers
 
             // Uncomment to enable FlareSolverr in the future
             //configData.AddDynamic("flaresolverr", new DisplayInfoConfigurationItem("FlareSolverr", "This site may use Cloudflare DDoS Protection, therefore Jackett requires <a href=\"https://github.com/Jackett/Jackett#configuring-flaresolverr\" target=\"_blank\">FlareSolverr</a> to access it."));
+        }
 
-            AddCategoryMapping(MejorTorrentCatType.Pelicula, TorznabCatType.Movies, "Pelicula");
-            AddCategoryMapping(MejorTorrentCatType.Serie, TorznabCatType.TVSD, "Serie");
-            AddCategoryMapping(MejorTorrentCatType.SerieHd, TorznabCatType.TVHD, "Serie HD");
-            AddCategoryMapping(MejorTorrentCatType.Musica, TorznabCatType.Audio, "Musica");
+        private TorznabCapabilities SetCapabilities()
+        {
+            var caps = new TorznabCapabilities
+            {
+                TvSearchParams = new List<TvSearchParam>
+                {
+                    TvSearchParam.Q, TvSearchParam.Season, TvSearchParam.Ep
+                },
+                MovieSearchParams = new List<MovieSearchParam>
+                {
+                    MovieSearchParam.Q
+                },
+                MusicSearchParams = new List<MusicSearchParam>
+                {
+                    MusicSearchParam.Q
+                },
+                SupportsRawSearch = true
+            };
+
+            caps.Categories.AddCategoryMapping(MejorTorrentCatType.Pelicula, TorznabCatType.Movies, "Pelicula");
+            caps.Categories.AddCategoryMapping(MejorTorrentCatType.Serie, TorznabCatType.TVSD, "Serie");
+            caps.Categories.AddCategoryMapping(MejorTorrentCatType.SerieHd, TorznabCatType.TVHD, "Serie HD");
+            caps.Categories.AddCategoryMapping(MejorTorrentCatType.Musica, TorznabCatType.Audio, "Musica");
             // Other category is disabled because we have problems parsing documentaries
-            //AddCategoryMapping(MejorTorrentCatType.Otro, TorznabCatType.Other, "Otro");
+            //caps.Categories.AddCategoryMapping(MejorTorrentCatType.Otro, TorznabCatType.Other, "Otro");
+
+            return caps;
         }
 
         public override async Task<IndexerConfigurationStatus> ApplyConfiguration(JToken configJson)
