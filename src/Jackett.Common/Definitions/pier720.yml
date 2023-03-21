@@ -167,26 +167,22 @@ search:
     download:
       selector: a.topictitle
       attribute: href
-    size_optional:
+    size:
       selector: div.list-inner div[style="float:right;"]
       optional: true
-    size:
-      text: "{{ if .Result.size_optional }}{{ .Result.size_optional }}{{ else }}1 GB{{ end }}"
-    seeders_optional:
+      default: 1 GB
+    seeders:
       selector: dd.posts span.my_tt.seed
       optional: true
-    seeders:
-      text: "{{ if .Result.seeders_optional }}{{ .Result.seeders_optional }}{{ else }}0{{ end }}"
-    leechers_optional:
+      default: 0
+    leechers:
       selector: dd.posts span.my_tt.leech
       optional: true
-    leechers:
-      text: "{{ if .Result.leechers_optional }}{{ .Result.leechers_optional }}{{ else }}0{{ end }}"
-    grabs_optional:
+      default: 0
+    grabs:
       selector: dd.views span.my_tt.complet
       optional: true
-    grabs:
-      text: "{{ if .Result.grabs_optional }}{{ .Result.grabs_optional }}{{ else }}0{{ end }}"
+      default: 0
     date:
       selector: div.left-box time
     downloadvolumefactor:
