@@ -47,6 +47,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BTSOW
  * BullTorrent
  * Byrutor
+ * Cinecalidad
  * comicat
  * ConCen
  * cpasbien
@@ -57,8 +58,8 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * dmhy
  * Dodder (菟丝子资源社区)
  * DonTorrent
- * EBook Bay (EBB)
  * E-Hentai
+ * EBook Bay (EBB)
  * EpubLibre
  * EXT Torrents
  * ExtraTorrent.st
@@ -106,7 +107,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * PiratBit
  * PornosLab
  * PornoTorrent
- * Portugas
  * ProPorn
  * Rapidzona
  * RARBG
@@ -172,9 +172,9 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BookTracker
  * BootyTape
  * Catorrent
- * Devil-Torrents
  * Darmowe torrenty
  * Deildu
+ * Devil-Torrents
  * DimeADozen (EzTorrent)
  * DXP (Deaf Experts)
  * Electro-Torrent
@@ -189,8 +189,8 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Gay-Torrents.net
  * Genesis-Movement
  * HD-CzTorrent
- * HellTorrents
  * HDGalaKtik
+ * HellTorrents
  * HunTorrent
  * Kinorun
  * Kinozal
@@ -252,8 +252,8 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * AlphaRatio (AR)
  * AmigosShareClub
  * AnimeBytes (AB)
- * AnimeTracker
  * AnimeTorrents (AnT)
+ * AnimeTracker
  * AnimeWorld
  * Anthelion
  * Araba Fenice (Phoenix) [![(invite needed)][inviteneeded]](#)
@@ -306,7 +306,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CGPeers [![(invite needed)][inviteneeded]](#)
  * CHDBits [![(invite needed)][inviteneeded]](#)
  * ChileBT
- * Cinecalidad
  * Cinemageddon [![(invite needed)][inviteneeded]](#)
  * CinemaMovieS_ZT
  * Cinematik [![(invite needed)][inviteneeded]](#)
@@ -374,8 +373,8 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDArea (HDA)
  * HDAtmos
  * HDBits [![(invite needed)][inviteneeded]](#)
+ * HDC (HDCiTY) [![(invite needed)][inviteneeded]](#)
  * HDChina (HDWing) [![(invite needed)][inviteneeded]](#)
- * HDCity [![(invite needed)][inviteneeded]](#)
  * HDFans
  * HDHome (HDBigger) [![(invite needed)][inviteneeded]](#)
  * HDMaYi
@@ -390,8 +389,8 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Hebits
  * HellasHut
  * HHanClub
- * HQMusic
  * House of Devil
+ * HQMusic
  * ICC2022
  * ImmortalSeed (iS)
  * Immortuos
@@ -409,12 +408,11 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * KrazyZone
  * Kufirc
  * LastFiles
- * Lat-Team [![(invite needed)][inviteneeded]](#)
  * Le Saloon
+ * Lat-Team [![(invite needed)][inviteneeded]](#)
  * LearnBits
  * LearnFlakes
  * leech24
- * LegacyHD (HD4Free)
  * LemonHD
  * Les-Cinephiles
  * Libble
@@ -439,6 +437,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * MouseBits
  * Movie-Torrentz
  * Moviesite
+ * MuziekFabriek
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
  * NCore
@@ -462,6 +461,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * PolishSource (PS)
  * PolishTracker
  * Pornbay [![(invite needed)][inviteneeded]](#)
+ * Portugas
  * PotUK
  * Pretome
  * PrivateHD (PHD)
@@ -483,6 +483,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
  * RedBits
+ * ReelFlix
  * Resurrect The Net
  * RetroFlix
  * RevolutionTT
@@ -545,7 +546,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Tornado
  * Torrent Network (TN)
  * Torrent Sector Crew (TSC)
- * Torrent Surf
  * Torrent-Syndikat [![(invite needed)][inviteneeded]](#)
  * TOrrent-tuRK (TORK)
  * Torrent.LT
@@ -583,6 +583,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * xBytesV2
  * XSpeeds (XS)
  * Xthor
+ * XtremeBytes
  * XWT-Classics
  * XWTorrents (XWT)
  * YDYPT
