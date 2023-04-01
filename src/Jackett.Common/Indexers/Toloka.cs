@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using AngleSharp.Html.Parser;
@@ -12,6 +11,7 @@ using Jackett.Common.Services.Interfaces;
 using Jackett.Common.Utils;
 using Newtonsoft.Json.Linq;
 using NLog;
+using static Jackett.Common.Models.IndexerConfig.ConfigurationData;
 using WebClient = Jackett.Common.Utils.Clients.WebClient;
 
 namespace Jackett.Common.Indexers
@@ -46,6 +46,7 @@ namespace Jackett.Common.Indexers
                    cacheService: cs,
                    configData: new ConfigurationDataToloka())
         {
+            configData.AddDynamic("freeleech", new BoolConfigurationItem("Search freeleech only") { Value = false });
         }
 
         private TorznabCapabilities SetCapabilities()
@@ -245,6 +246,9 @@ namespace Jackett.Common.Indexers
                 {"s", "2"}
             };
 
+            if (((BoolConfigurationItem)configData.GetDynamic("freeleech")).Value)
+                qc.Add("sds", "1");
+
             // if the search string is empty use the getnew view
             if (string.IsNullOrWhiteSpace(searchString))
                 qc.Add("nm", searchString);
@@ -312,6 +316,14 @@ namespace Jackett.Common.Indexers
                             MinimumRatio = 1,
                             MinimumSeedTime = 0
                         };
+                        if (row.QuerySelector("img[src=\"images/gold.gif\"]") != null)
+                            release.DownloadVolumeFactor = 0;
+                        else if (row.QuerySelector("img[src=\"images/silver.gif\"]") != null)
+                            release.DownloadVolumeFactor = 0.5;
+                        else if (row.QuerySelector("img[src=\"images/bronze.gif\"]") != null)
+                            release.DownloadVolumeFactor = 0.75;
+                        else
+                            release.DownloadVolumeFactor = 1;
 
                         releases.Add(release);
                     }
