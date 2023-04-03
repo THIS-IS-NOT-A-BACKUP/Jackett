@@ -318,11 +318,13 @@ namespace Jackett.Updater
                 "Definitions/cinefilhd.yml",
                 "Definitions/cloudtorrents.yml",
                 "Definitions/cooltorrent.yml",
+                "Definitions/cpasbiensi.yml",
                 "Definitions/crazyscorner.yml",
                 "Definitions/cryptichaven.yml",
                 "Definitions/czteam.yml",
                 "Definitions/cztorrent.yml",
                 "Definitions/danishbytes.yml", // migrated to C#
+                "Definitions/dariustracker.yml",
                 "Definitions/dark-shadow.yml",
                 "Definitions/darktracker.yml",
                 "Definitions/darmowetorenty.yml", // migrated to C#
@@ -334,6 +336,7 @@ namespace Jackett.Updater
                 "Definitions/devilsplayground.yml",
                 "Definitions/digbt.yml",
                 "Definitions/documentarytorrents.yml",
+                "Definitions/dodder.yml",
                 "Definitions/downloadville.yml",
                 "Definitions/dragonworld.yml",
                 "Definitions/dragonworldreloaded.yml",
