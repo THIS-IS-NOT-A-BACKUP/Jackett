@@ -42,12 +42,9 @@ namespace Jackett.Common.Indexers
 
         private static Regex YearRegex => new Regex(@"\b((?:19|20)\d{2})$", RegexOptions.Compiled);
 
-        private readonly HashSet<string> _excludedProperties = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
-        {
-            "Freeleech"
-        };
-
-        private readonly HashSet<string> _commonReleaseGroupsProperties = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        private static readonly HashSet<string> _ExcludedProperties = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "Freeleech" };
+        private static readonly HashSet<string> _RemuxResolutions = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "1080i", "1080p", "2160p", "4K" };
+        private static readonly HashSet<string> _CommonReleaseGroupsProperties = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
         {
             "Softsubs",
             "Hardsubs",
@@ -377,15 +374,32 @@ namespace Jackett.Common.Indexers
                         // MST with additional 5 hours per GB
                         var minimumSeedTime = 259200 + (int)(size / (int)Math.Pow(1024, 3) * 18000);
 
-                        var properties = WebUtility.HtmlDecode(torrent.Value<string>("Property"))
-                           .Split('|')
-                           .Select(t => t.Trim())
-                           .Where(p => p.IsNotNullOrWhiteSpace())
-                           .ToList();
+                        var propertyList = WebUtility.HtmlDecode(torrent.Value<string>("Property"))
+                             .Split('|')
+                             .Select(t => t.Trim())
+                             .Where(p => p.IsNotNullOrWhiteSpace())
+                             .ToList();
 
-                        properties.RemoveAll(p => _excludedProperties.Any(p.ContainsIgnoreCase));
+                        propertyList.RemoveAll(p => _ExcludedProperties.Any(p.ContainsIgnoreCase));
+                        var properties = new HashSet<string>(propertyList);
 
-                        if (!AllowRaws && properties.Any(p => p.StartsWithIgnoreCase("RAW")))
+                        if (torrent.Value<JToken>("FileList") != null &&
+                            torrent.Value<JToken>("FileList").Any(f => f.Value<string>("filename").ContainsIgnoreCase("Remux")))
+                        {
+                            var resolutionProperty = properties.FirstOrDefault(_RemuxResolutions.ContainsIgnoreCase);
+
+                            if (resolutionProperty.IsNotNullOrWhiteSpace())
+                            {
+                                properties.Add($"{resolutionProperty} Remux");
+                            }
+                        }
+
+                        if (properties.Any(p => p.StartsWithIgnoreCase("M2TS")))
+                        {
+                            properties.Add("BR-DISK");
+                        }
+
+                        if (!AllowRaws && properties.Any(p => p.StartsWithIgnoreCase("RAW") || p.Contains("BR-DISK")))
                         {
                             continue;
                         }
@@ -417,13 +431,24 @@ namespace Jackett.Common.Indexers
 
                         season ??= ParseSeasonFromTitles(synonyms);
 
-                        if (PadEpisode && episode > 0)
+                        if (season > 0 || episode > 0)
                         {
-                            releaseInfo = $" - {episode:00}";
-                        }
-                        else if (season > 0)
-                        {
-                            releaseInfo = $"S{season:00}";
+                            releaseInfo = string.Empty;
+
+                            if (season > 0)
+                            {
+                                releaseInfo = $"S{season:00}";
+
+                                if (episode > 0)
+                                {
+                                    releaseInfo += $"E{episode:00}";
+                                }
+                            }
+
+                            if (PadEpisode && episode > 0)
+                            {
+                                releaseInfo += $" - {episode:00}";
+                            }
                         }
 
                         if (FilterSeasonEpisode)
@@ -522,9 +547,9 @@ namespace Jackett.Common.Indexers
                         }
 
                         // We don't actually have a release name >.> so try to create one
-                        var releaseGroup = properties.LastOrDefault(p => _commonReleaseGroupsProperties.Any(p.StartsWithIgnoreCase));
+                        var releaseGroup = properties.LastOrDefault(p => _CommonReleaseGroupsProperties.Any(p.StartsWithIgnoreCase) && p.Contains("(") && p.Contains(")"));
 
-                        if (releaseGroup.IsNotNullOrWhiteSpace() && releaseGroup.Contains("(") && releaseGroup.Contains(")"))
+                        if (releaseGroup.IsNotNullOrWhiteSpace())
                         {
                             var start = releaseGroup.IndexOf("(", StringComparison.Ordinal);
                             releaseGroup = "[" + releaseGroup.Substring(start + 1, releaseGroup.IndexOf(")", StringComparison.Ordinal) - 1 - start) + "] ";
@@ -619,7 +644,7 @@ namespace Jackett.Common.Indexers
         {
             var advancedSeasonRegex = new Regex(@"(\d+)(st|nd|rd|th) Season", RegexOptions.Compiled | RegexOptions.IgnoreCase);
             var seasonCharactersRegex = new Regex(@"(I{2,})$", RegexOptions.Compiled);
-            var seasonNumberRegex = new Regex(@"([2-9])$", RegexOptions.Compiled);
+            var seasonNumberRegex = new Regex(@"\b([2-9])$", RegexOptions.Compiled);
 
             foreach (var title in titles)
             {
