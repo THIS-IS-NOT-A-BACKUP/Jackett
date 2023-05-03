@@ -384,6 +384,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDTorrents.it [![(invite needed)][inviteneeded]](#)
  * HDTurk
  * HDU
+ * HDVIDEO
  * HDZone
  * Hebits
  * HellasHut
@@ -433,6 +434,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * MMA-Torrents [![(invite needed)][inviteneeded]](#)
  * MNV (Max-New-Vision)
  * MOJBLiNK
+ * MonikaDesign (MDU) [![(invite needed)][inviteneeded]](#)
  * MoreThanTV (MTV)
  * MouseBits
  * Movie-Torrentz
