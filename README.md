@@ -445,6 +445,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Nebulance (NBL) (TransmiTheNet)
  * NicePT
  * NorBits
+ * Ntelogo
  * Old Toons World
  * OpenCD [![(invite needed)][inviteneeded]](#)
  * Orpheus
@@ -481,6 +482,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * R3V WTF! [![(invite needed)][inviteneeded]](#)
  * Racing4Everyone (R4E)
  * RacingForMe (RFM)
+ * RareShare2
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
  * RedBits
