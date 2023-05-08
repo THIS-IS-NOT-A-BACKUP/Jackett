@@ -29,11 +29,14 @@ namespace Jackett.Common.Indexers
 
         public override TorznabCapabilities TorznabCaps => SetCapabilities();
 
-        private string LoginUrl => SiteLink + "login.php";
         private string BrowseUrl => SiteLink + "torrents.php";
-        private static readonly Regex _EpisodeRegex = new Regex(@"(?:[SsEe]\d{2,4}){1,2}");
+        private static readonly Regex _EpisodeRegex = new Regex(@"(?:\[?[SsEe]\d{2,4}){1,2}\]?");
 
-        private new ConfigurationDataBasicLogin configData => (ConfigurationDataBasicLogin)base.configData;
+        private new ConfigurationDataCookie configData
+        {
+            get => (ConfigurationDataCookie)base.configData;
+            set => base.configData = value;
+        }
 
         public BrasilTracker(IIndexerConfigurationService configService, WebClient wc, Logger l, IProtectionService ps,
             ICacheService cs)
@@ -42,7 +45,7 @@ namespace Jackett.Common.Indexers
                    logger: l,
                    p: ps,
                    cacheService: cs,
-                   configData: new ConfigurationDataBasicLogin("BrasilTracker does not return categories in its search results.</br>To add to your Apps' Torznab indexer, replace all categories with 8000(Other).</br>For best results, change the <b>Torrents per page:</b> setting to <b>100</b> on your account profile."))
+                   configData: new ConfigurationDataCookie())
         {
             configData.AddDynamic("freeleech", new BoolConfigurationItem("Search freeleech only") { Value = false });
         }
@@ -69,7 +72,21 @@ namespace Jackett.Common.Indexers
                 }
             };
 
-            caps.Categories.AddCategoryMapping(1, TorznabCatType.Other, "Other");
+            caps.Categories.AddCategoryMapping(16, TorznabCatType.AudioAudiobook, "Audiobooks");
+            caps.Categories.AddCategoryMapping(6, TorznabCatType.TVAnime, "Animes");
+            caps.Categories.AddCategoryMapping(11, TorznabCatType.PC0day, "Aplicativos");
+            caps.Categories.AddCategoryMapping(15, TorznabCatType.Other, "Cursos");
+            caps.Categories.AddCategoryMapping(8, TorznabCatType.TVDocumentary, "Documentários");
+            caps.Categories.AddCategoryMapping(14, TorznabCatType.TVSport, "Esportes");
+            caps.Categories.AddCategoryMapping(3, TorznabCatType.XXX, "Filmes XXX");
+            caps.Categories.AddCategoryMapping(1, TorznabCatType.Movies, "Filmes");
+            caps.Categories.AddCategoryMapping(12, TorznabCatType.BooksComics, "Histórias em Quadrinhos");
+            caps.Categories.AddCategoryMapping(9, TorznabCatType.PCGames, "Jogos");
+            caps.Categories.AddCategoryMapping(13, TorznabCatType.BooksEBook, "Livros");
+            caps.Categories.AddCategoryMapping(10, TorznabCatType.BooksMags, "Revistas");
+            caps.Categories.AddCategoryMapping(2, TorznabCatType.TV, "Séries");
+            caps.Categories.AddCategoryMapping(5, TorznabCatType.AudioVideo, "Show");
+            caps.Categories.AddCategoryMapping(7, TorznabCatType.TV, "Televisão");
 
             return caps;
         }
@@ -77,23 +94,24 @@ namespace Jackett.Common.Indexers
         public override async Task<IndexerConfigurationStatus> ApplyConfiguration(JToken configJson)
         {
             LoadValuesFromJson(configJson);
-            var pairs = new Dictionary<string, string>
+            CookieHeader = configData.Cookie.Value;
+            try
             {
-                { "username", configData.Username.Value },
-                { "password", configData.Password.Value },
-                { "keeplogged", "1" },
-                { "login", "Log in" }
-            };
+                var results = await PerformQuery(new TorznabQuery());
+                if (results.Count() == 0)
+                {
+                    throw new Exception("Found 0 results in the tracker");
+                }
 
-            var result = await RequestLoginAndFollowRedirect(LoginUrl, pairs, null, true, null, LoginUrl, true);
-            await ConfigureIfOK(result.Cookies, result.ContentString?.Contains("logout.php") == true, () =>
+                IsConfigured = true;
+                SaveConfig();
+                return IndexerConfigurationStatus.Completed;
+            }
+            catch (Exception e)
             {
-                var parser = new HtmlParser();
-                var dom = parser.ParseDocument(result.ContentString);
-                var errorMessage = dom.QuerySelector("form#loginform").TextContent.Trim();
-                throw new ExceptionWithConfigData(errorMessage, configData);
-            });
-            return IndexerConfigurationStatus.RequiresTesting;
+                IsConfigured = false;
+                throw new Exception("Your cookie did not work: " + e.Message);
+            }
         }
 
         private static string InternationalTitle(string title)
@@ -147,6 +165,9 @@ namespace Jackett.Common.Indexers
                 {"action", "basic"},
                 {"searchsubmit", "1"}
             };
+            foreach (var cat in MapTorznabCapsToTrackers(query))
+                queryCollection.Add("filter_cat[" + cat + "]", "1");
+
             if (query.IsGenreQuery)
                 queryCollection.Add("taglist", query.Genre);
 
@@ -164,6 +185,7 @@ namespace Jackett.Common.Indexers
                 string groupTitle = null;
                 string groupYearStr = null;
                 Uri groupPoster = null;
+                string category = null;
                 string imdbLink = null;
                 string tmdbLink = null;
                 string genres = null;
@@ -199,7 +221,6 @@ namespace Jackett.Common.Indexers
                         }
                         seasonEp ??= _EpisodeRegex.Match(qDetailsLink.TextContent).Value;
 
-                        ICollection<int> category = new List<int> { TorznabCatType.Other.ID };
                         string yearStr = null;
                         if (row.ClassList.Contains("group") || row.ClassList.Contains("torrent")) // group/ungrouped headers
                         {
@@ -211,7 +232,8 @@ namespace Jackett.Common.Indexers
                                 // valid for torrent grouped but that has only 1 episode yet
                                 yearStr = torrentInfoEl.GetAttribute("data-year");
                             }
-                            yearStr ??= qDetailsLink.NextSibling.TextContent.Trim().TrimStart('[').TrimEnd(']');
+                            yearStr ??= qDetailsLink.NextSibling.TextContent.Trim();
+                            category = Regex.Replace(yearStr, @".+ \[(.+)\]", "$1");
 
                             if (Uri.TryCreate(row.QuerySelector("img[alt=\"Cover\"]")?.GetAttribute("src"),
                                               UriKind.Absolute, out var posterUri))
@@ -237,7 +259,7 @@ namespace Jackett.Common.Indexers
                         var qGrabs = row.QuerySelector("td:nth-last-child(3)");
                         var qSeeders = row.QuerySelector("td:nth-last-child(2)");
                         var qLeechers = row.QuerySelector("td:nth-last-child(1)");
-                        var qFreeLeech = row.QuerySelector("strong[title=\"Free\"]");
+                        var qFreeLeech = row.QuerySelector("strong:contains(\"Free\")");
                         if (row.ClassList.Contains("group_torrent")) // torrents belonging to a group
                         {
                             release.Description = qDetailsLink.TextContent;
@@ -260,7 +282,7 @@ namespace Jackett.Common.Indexers
                                 release.Genres = new List<string>();
                             release.Genres = release.Genres.Union(genres.Replace(", ", ",").Split(',')).ToList();
                         }
-                        release.Category = category;
+                        release.Category = MapTrackerCatDescToNewznab(category);
                         release.Description = release.Description.Replace(" / Free", ""); // Remove Free Tag
                         release.Description = release.Description.Replace("/ WEB ", "/ WEB-DL "); // Fix web/web-dl
                         release.Description = release.Description.Replace("Full HD", "1080p");
