@@ -1,8 +1,12 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Jackett.Common.Extensions;
 using Jackett.Common.Indexers.Abstract;
 using Jackett.Common.Models;
 using Jackett.Common.Services.Interfaces;
@@ -67,7 +71,14 @@ namespace Jackett.Common.Indexers
                 query.ImdbID = null;
             }
 
-            return await base.PerformQuery(query);
+            var releases = await base.PerformQuery(query);
+
+            if (query.SearchTerm.IsNullOrWhiteSpace())
+            {
+                releases = releases.Take(50).ToList();
+            }
+
+            return releases;
         }
 
         protected override bool ReleaseInfoPostParse(ReleaseInfo release, JObject torrent, JObject result)
@@ -152,6 +163,15 @@ namespace Jackett.Common.Indexers
             release.Category = new List<int> { TorznabCatType.Movies.ID };
             if (!string.IsNullOrEmpty(groupSubName))
                 release.Description = groupSubName;
+
+            var time = torrent.Value<string>("time");
+
+            if (time.IsNotNullOrWhiteSpace())
+            {
+                // Time is Chinese Time, add 8 hours difference from UTC
+                release.PublishDate = DateTime.ParseExact($"{time} +08:00", "yyyy-MM-dd HH:mm:ss zzz", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal);
+            }
+
             return true;
         }
     }

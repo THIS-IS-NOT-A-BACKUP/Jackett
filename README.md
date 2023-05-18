@@ -306,6 +306,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CGPeers [![(invite needed)][inviteneeded]](#)
  * CHDBits [![(invite needed)][inviteneeded]](#)
  * ChileBT
+ * CiNEFiLHD
  * Cinemageddon [![(invite needed)][inviteneeded]](#)
  * CinemaMovieS_ZT
  * Cinematik [![(invite needed)][inviteneeded]](#)
@@ -396,6 +397,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * ImmortalSeed (iS)
  * Immortuos
  * Indietorrents [![(invite needed)][inviteneeded]](#)
+ * Infire
  * Insane Tracker
  * IPTorrents (IPT)
  * ItaTorrents
@@ -430,6 +432,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Majomparádé (TurkDepo)
  * MegamixTracker
  * MeseVilág (Fairytale World)
+ * MetalGuru
  * Milkie
  * MIRcrew
  * MMA-Torrents [![(invite needed)][inviteneeded]](#)
@@ -474,6 +477,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * PTerClub
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
+ * PT分享站 (itzmx)
  * PTSBAO
  * PTtime
  * Punk's Horror Tracker
