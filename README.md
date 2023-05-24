@@ -188,7 +188,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Il CorSaRo Blu
  * Kinorun
  * Kinozal
- * Lightning-Tor
  * LostFilm.tv
  * Magnetico (Local DHT) [[site](https://github.com/boramalper/magnetico)]
  * Marine Tracker
@@ -237,14 +236,13 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * 1ptbar
  * 2 Fast 4 You [![(invite needed)][inviteneeded]](#)
  * 2xFree
- * 3ChangTrai (3CT) [![(invite needed)][inviteneeded]](#)
+ * 3ChangTrai (3CT)
  * 3D Torrents (3DT)
  * 4thD (4th Dimension)
  * 52PT
  * 720pier
  * Abnormal
  * ABtorrents (ABT + RNS)
- * Acervos [![(invite needed)][inviteneeded]](#)
  * Acid Lounge (A-L)
  * AcrossTheTasman [![(invite needed)][inviteneeded]](#)
  * Aftershock
@@ -267,7 +265,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * AudioNews (AN)
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
  * AvistaZ (AsiaTorrents)
- * Back-ups [![(invite needed)][inviteneeded]](#)
+ * Back-ups
  * BakaBT
  * BeiTai
  * Best-Core
@@ -353,7 +351,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * GainBound [![(invite needed)][inviteneeded]](#)
  * Gay-Torrents.org
  * GAYtorrent.ru
- * GazelleGames (GGn) [![(invite needed)][inviteneeded]](#)
+ * GazelleGames (GGn)
  * Generation-Free
  * GigaTorrents
  * GimmePeers (formerly ILT)
@@ -428,7 +426,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Locadora
  * LosslessClub [![(invite needed)][inviteneeded]](#)
  * LST
- * M-Team TP (MTTP) [![(invite needed)][inviteneeded]](#)
+ * M-Team TP (MTTP)
  * MaDs Revolution
  * magic-heaven
  * Magico (Trellas) [![(invite needed)][inviteneeded]](#)
@@ -503,15 +501,14 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * RevolutionTT
  * Romanian Metal Torrents (RMT) [![(invite needed)][inviteneeded]](#)
  * RPTorrents
- * SceneHD  [![(invite needed)][inviteneeded]](#)
+ * SceneHD [![(invite needed)][inviteneeded]](#)
  * SceneRush
  * SceneTime
  * SDBits [![(invite needed)][inviteneeded]](#)
  * Secret Cinema
  * SeedFile
  * Shareisland
- * SharkPT
- * Shazbat [![(invite needed)][inviteneeded]](#)
+ * Shazbat
  * SiamBIT
  * SkipTheCommercials
  * SkipTheTrailers
@@ -578,7 +575,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TorrentSeeds (TS)
  * TotallyKids (TK)
  * ToTheGlory (TTG) [![(invite needed)][inviteneeded]](#)
- * TranceTraffic [![(invite needed)][inviteneeded]](#)
+ * TranceTraffic
  * Trezzor [![(invite needed)][inviteneeded]](#)
  * TurkSeed
  * TurkTorrent (TT)
@@ -593,6 +590,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * UnleashTheCartoons
  * UnlimitZ
  * Uploads
+ * UTOPIA
  * White Angel
  * World-In-HD [![(invite needed)][inviteneeded]](#)
  * World-of-Tomorrow

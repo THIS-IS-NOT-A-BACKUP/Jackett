@@ -262,6 +262,7 @@ namespace Jackett.Updater
                 "Definitions/7torrents.yml",
                 "Definitions/DasUnerwartete.yml",
                 "Definitions/academictorrents.yml",
+                "Definitions/acervos-api.yml",
                 "Definitions/aither.yml", // switch to *-API #8682
                 "Definitions/alein.yml",
                 "Definitions/alexfilm.yml",
@@ -440,6 +441,7 @@ namespace Jackett.Updater
                 "Definitions/leparadisdunet.yml",
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro
+                "Definitions/lightning-tor.yml",
                 "Definitions/mactorrents.yml",
                 "Definitions/magnet4you.yml",
                 "Definitions/magnetdl.yml",
@@ -532,6 +534,7 @@ namespace Jackett.Updater
                 "Definitions/sharespacedb.yml",
                 "Definitions/shareuniversity.yml",
                 "Definitions/sharingue.yml",
+                "Definitions/sharkpt.yml",
                 "Definitions/shellife.yml",
                 "Definitions/shokweb.yml",
                 "Definitions/skipthecommercials.yml", // switch to *-API #8682
