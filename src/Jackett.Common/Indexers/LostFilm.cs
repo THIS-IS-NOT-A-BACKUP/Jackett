@@ -24,9 +24,10 @@ namespace Jackett.Common.Indexers
         public override string Id => "lostfilm";
         public override string Name => "LostFilm.tv";
         public override string Description => "Unique portal about foreign series";
-        public override string SiteLink { get; protected set; } = "https://www.lostfilm.run/";
+        public override string SiteLink { get; protected set; } = "https://www.lostfilm.life/";
         public override string[] AlternativeSiteLinks => new[]
         {
+            "https://www.lostfilm.life/",
             "https://www.lostfilm.run/",
             "https://www.lostfilmtv.site/",
             "https://www.lostfilm.tv/",
@@ -40,7 +41,7 @@ namespace Jackett.Common.Indexers
         public override string[] LegacySiteLinks => new[]
         {
             "https://lostfilm.site",
-            "https://lostfilm.tw/",
+            "https://lostfilm.tw/"
         };
         public override string Language => "ru-RU";
         public override string Type => "semi-private";
