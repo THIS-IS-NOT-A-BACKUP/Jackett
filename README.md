@@ -136,7 +136,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Torrents.csv
  * TorrentSir (토렌트썰)
  * TorrentView (토렌트뷰)
- * TorrentWhiz ( 토렌트위즈)
+ * TorrentWhiz (토렌트위즈)
  * Torrentz2eu
  * Torrentz2nz
  * TrahT
@@ -239,6 +239,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * 2xFree
  * 3ChangTrai (3CT)
  * 3D Torrents (3DT)
+ * 3Wmg
  * 4thD (4th Dimension)
  * 52PT
  * 720pier
@@ -350,6 +351,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * FinElite (FE)
  * FinVip
  * Flux-Zone
+ * Free Farm (自由农场)
  * FunFile (FF)
  * FunkyTorrents (FT)
  * Fuzer (FZ)
