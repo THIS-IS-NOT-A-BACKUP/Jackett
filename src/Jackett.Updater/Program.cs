@@ -318,6 +318,7 @@ namespace Jackett.Updater
                 "Definitions/channelx.yml",
                 "Definitions/cili180.yml", // renamed to liaorencili
                 "Definitions/cilipro.yml",
+                "Definitions/cinefilhd.yml",
                 "Definitions/cloudtorrents.yml",
                 "Definitions/cooltorrent.yml",
                 "Definitions/cpasbiensi.yml",
@@ -442,6 +443,7 @@ namespace Jackett.Updater
                 "Definitions/legacyhd.yml", // renamed realflix
                 "Definitions/legittorrents.yml",
                 "Definitions/lemencili.yml",
+                "Definitions/lemonhd.yml",
                 "Definitions/leparadisdunet.yml",
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro

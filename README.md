@@ -308,7 +308,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CHDBits [![(invite needed)][inviteneeded]](#)
  * cheggit
  * ChileBT
- * CiNEFiLHD
  * Cinemageddon [![(invite needed)][inviteneeded]](#)
  * CinemaMovieS_ZT
  * Cinematik [![(invite needed)][inviteneeded]](#)
@@ -425,7 +424,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * LearnBits
  * LearnFlakes
  * leech24
- * LemonHD
  * Les-Cinephiles
  * Lesbians4u
  * Libble
