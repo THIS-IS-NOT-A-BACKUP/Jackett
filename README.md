@@ -97,6 +97,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * NNTT
  * NoNaMe Club (NNM-Club)
  * Nyaa.si
+ * OKPT
  * OneJAV
  * ParnuXi
  * PC-torrent
@@ -273,6 +274,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Best-Core
  * BeyondHD (BHD)
  * Bibliotik
+ * biho (必火pt)
  * Bit-Bázis
  * BIT-HDTV
  * Bitded
@@ -345,6 +347,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Fantastic Heaven
  * Fantastiko
  * Fappaizuri
+ * FastScene
  * Femdomcult
  * FileList (FL)
  * FinElite (FE)
@@ -420,6 +423,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Kufirc
  * LastFiles
  * Le Saloon
+ * LaidBackManor
  * Lat-Team [![(invite needed)][inviteneeded]](#)
  * LearnBits
  * LearnFlakes
