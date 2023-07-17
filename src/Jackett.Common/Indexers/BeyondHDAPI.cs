@@ -124,11 +124,14 @@ namespace Jackett.Common.Indexers
             else if (query.IsMovieSearch)
                 postData.Add(BHDParams.categories, "Movies");
 
-            var imdbId = ParseUtil.GetImdbId(query.ImdbID);
-            if (imdbId != null)
-                postData.Add(BHDParams.imdb_id, imdbId.ToString());
-            if (query.IsTmdbQuery)
-                postData.Add(BHDParams.tmdb_id, query.TmdbID.Value.ToString());
+            if (query.IsImdbQuery)
+            {
+                postData.Add(BHDParams.imdb_id, query.ImdbIDShort);
+            }
+            else if (query.IsTmdbQuery)
+            {
+                postData.Add(BHDParams.tmdb_id, query.TmdbID.ToString());
+            }
 
             var bhdResponse = await GetBHDResponse(apiUrl, postData);
             var releaseInfos = bhdResponse.results.Select(mapToReleaseInfo);
