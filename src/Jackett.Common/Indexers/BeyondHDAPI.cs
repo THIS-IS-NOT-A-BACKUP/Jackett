@@ -25,6 +25,8 @@ namespace Jackett.Common.Indexers
         public override string Language => "en-US";
         public override string Type => "private";
 
+        public override bool SupportsPagination => true;
+
         public override TorznabCapabilities TorznabCaps => SetCapabilities();
 
         private readonly string APIBASE = "https://beyond-hd.me/api/torrents/";
@@ -111,18 +113,38 @@ namespace Jackett.Common.Indexers
             };
 
             if (configData.FilterFreeleech.Value)
+            {
                 postData.Add(BHDParams.freeleech, "1");
+            }
+
             if (configData.FilterLimited.Value)
+            {
                 postData.Add(BHDParams.limited, "1");
+            }
+
             if (configData.FilterRefund.Value)
+            {
                 postData.Add(BHDParams.refund, "1");
+            }
+
             if (configData.FilterRewind.Value)
+            {
                 postData.Add(BHDParams.rewind, "1");
+            }
+
+            if (configData.SearchTypes.Values.Any())
+            {
+                postData.Add(BHDParams.types, string.Join(",", configData.SearchTypes.Values));
+            }
 
             if (query.IsTVSearch)
+            {
                 postData.Add(BHDParams.categories, "TV");
+            }
             else if (query.IsMovieSearch)
+            {
                 postData.Add(BHDParams.categories, "Movies");
+            }
 
             if (query.IsImdbQuery)
             {
@@ -131,6 +153,12 @@ namespace Jackett.Common.Indexers
             else if (query.IsTmdbQuery)
             {
                 postData.Add(BHDParams.tmdb_id, query.TmdbID.ToString());
+            }
+
+            if (query.Limit > 0 && query.Offset > 0)
+            {
+                var page = (query.Offset / query.Limit) + 1;
+                postData.Add("page", page.ToString());
             }
 
             var bhdResponse = await GetBHDResponse(apiUrl, postData);
