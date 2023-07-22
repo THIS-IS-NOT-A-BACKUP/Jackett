@@ -160,17 +160,14 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Anime-Free
  * AnimeLayer
  * ArenaBG
- * BitNova
  * BookTracker
  * BootyTape
  * Catorrent
- * Darmowe torrenty
  * Deildu
  * Demonoid
  * Devil-Torrents
  * DXP (Deaf Experts)
  * Electro-Torrent
- * EliteTorrent-pl
  * EniaHD
  * Erai-Raws
  * Ex-torrenty
@@ -224,7 +221,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TribalMixes
  * Union Fansub
  * UniOtaku
- * vTorrent
  * xTorrenty
  * YggTorrent (YGG)
  * ZOMB
