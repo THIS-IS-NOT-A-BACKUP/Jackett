@@ -353,7 +353,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * FunkyTorrents (FT)
  * FutureTorrent [![(invite needed)][inviteneeded]](#)
  * Fuzer (FZ)
- * GainBound [![(invite needed)][inviteneeded]](#)
  * Gamera (駕瞑羅)
  * Gay-Torrents.org
  * GAYtorrent.ru
@@ -467,6 +466,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Orpheus
  * OnlyEncodes
  * OshenPT
+ * Ostwiki
  * OurBits (HDPter)
  * P2PBG
  * Panda
@@ -485,11 +485,12 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Pretome
  * PrivateHD (PHD)
  * ProAudioTorrents (PAT)
+ * PT分享站 (itzmx)
  * PTChina (铂金学院)
  * PTerClub
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
- * PT分享站 (itzmx)
+ * PTLSP
  * PTSBAO
  * PTtime
  * Punk's Horror Tracker
