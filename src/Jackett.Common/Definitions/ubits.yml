@@ -177,7 +177,13 @@ search:
         img.pro_2up: 2
         "*": 1
     minimumratio:
-      text: 0.8
+      case:
+        img.hitandrun: 100 # dummy MR to ensure HnR MST is met
+        "*": 0.8
+    minimumseedtime:
+      case:
+        img.hitandrun: 259200
+        "*": 8640000 # dummy MST to ensure non-HnR MR is met
     description:
       selector: td:nth-child(2)
       remove: a, b, font, img, span
