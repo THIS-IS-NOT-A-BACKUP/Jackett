@@ -372,6 +372,7 @@ namespace Jackett.Updater
                 "Definitions/filebase.yml",
                 "Definitions/film-paleis.yml",
                 "Definitions/filmsclub.yml",
+                "Definitions/firebit.yml",
                 "Definitions/ftuapps.yml",
                 "Definitions/gfxpeers.yml",
                 "Definitions/focusx.yml",
@@ -633,6 +634,7 @@ namespace Jackett.Updater
                 "Definitions/underverse.yml",
                 "Definitions/underversel.yml",
                 "Definitions/uniotaku.yml", // to be migrated to c#
+                "Definitions/uploads.yml",
                 "Definitions/utorrents.yml", // same as SzeneFZ now
                 "Definitions/vanila.yml",
                 "Definitions/vhstapes.yml",
