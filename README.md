@@ -267,7 +267,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Best-Core
  * BeyondHD (BHD)
  * Bibliotik
- * biho (必火pt)
  * Bit-Bázis
  * BIT-HDTV
  * Bitded
@@ -303,7 +302,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CHDBits [![(invite needed)][inviteneeded]](#)
  * cheggit
  * ChileBT
- * CiNEFiLHD
  * Cinemageddon [![(invite needed)][inviteneeded]](#)
  * CinemaMovieS_ZT
  * Cinematik [![(invite needed)][inviteneeded]](#)
@@ -318,7 +316,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * DANISH BYTES
  * Dark-Shadow
  * DataScene (DS)
- * DataTalli
  * DesiTorrents
  * Diablo Torrent [![(invite needed)][inviteneeded]](#)
  * DICMusic
@@ -541,7 +538,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TeamHD
  * TeamOS
  * TEKNO3D [![(invite needed)][inviteneeded]](#)
- * TellyTorrent
  * teracod (Movie Zone)
  * The Falling Angels (TFA)
  * The Geeks

@@ -287,6 +287,7 @@ namespace Jackett.Updater
                 "Definitions/b2s-share.yml",
                 "Definitions/baibako.yml", // renamed rudub #5673
                 "Definitions/beyond-hd-oneurl.yml", // #12993
+                "Definitions/biho.yml",
                 "Definitions/bigtorrent.yml", // merged with eStone #12352
                 "Definitions/bigtower.yml",
                 "Definitions/bit-titan.yml",
@@ -320,6 +321,7 @@ namespace Jackett.Updater
                 "Definitions/channelx.yml",
                 "Definitions/cili180.yml", // renamed to liaorencili
                 "Definitions/cilipro.yml",
+                "Definitions/cinefilhd.yml",
                 "Definitions/cloudtorrents.yml",
                 "Definitions/cooltorrent.yml",
                 "Definitions/cpasbiensi.yml",
@@ -332,6 +334,7 @@ namespace Jackett.Updater
                 "Definitions/darktracker.yml",
                 "Definitions/darmowetorenty.yml", // migrated to C#
                 "Definitions/datascene.yml", // switch to *-API #8682
+                "Definitions/datatalli.yml",
                 "Definitions/demonsite.yml",
                 "Definitions/desireleasers.yml",
                 "Definitions/desitorrents.yml", // switch to *-API #8682
@@ -572,6 +575,7 @@ namespace Jackett.Updater
                 "Definitions/tbplus.yml",
                 "Definitions/tehconnection.yml",
                 "Definitions/tellytorrent.yml", // switch to *-API #8682
+                "Definitions/tellytorrent-api.yml",
                 "Definitions/tenyardtracker.yml", // to be migrated to c#, #795
                 "Definitions/tfile.yml",
                 "Definitions/theaudioscene.yml",
