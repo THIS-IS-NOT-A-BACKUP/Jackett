@@ -21,6 +21,7 @@ caps:
     - {id: 6, cat: TV/Anime, desc: "Українські мультсеріали HD, UHD Українські мультсеріали"}
     - {id: 39, cat: TV/Documentary, desc: "Українська документалістика HD, UHD"}
     - {id: 9, cat: TV/Documentary, desc: "Українська документалістика HD, UHD Українська документалістика"}
+    - {id: 175, cat: Movies/HD, desc: "Озвучений контент Новинки фільмів HD, UHD"}
     - {id: 13, cat: Movies/SD, desc: "Озвучений контент Фільми SD"}
     - {id: 12, cat: Movies/HD, desc: "Озвучений контент Фільми HD"}
     - {id: 147, cat: Movies/UHD, desc: "Озвучений контент Фільми UHD"}
@@ -178,7 +179,7 @@ search:
   keywordsfilters:
     - name: re_replace # S01 to сезон 1
       args: ["(?i)\\bS0*(\\d+)\\b", "сезон $1"]
-    - name: re_replace # E01 to сезон 1
+    - name: re_replace # E01 to сері 1
       args: ["(?i)\\bE0*(\\d+)\\b", "сері $1"]
     - name: re_replace # S01E01 to сезон 1 сері 1
       args: ["(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "сезон $1 сері $2"]
