@@ -41,7 +41,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BitRu
  * BitSearch
  * BT.etree
- * BTDIGG
  * BTMET
  * BTSOW
  * BullTorrent
@@ -330,6 +329,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Empornium (EMP) [![(invite needed)][inviteneeded]](#)
  * eShareNet
  * eStone (XiDER, BeLoad, BigTorrent)
+ * Exitorrent.org [![(invite needed)][inviteneeded]](#)
  * ExoticaZ (YourExotic)
  * ExtremeBits
  * ExtremeTorrents
@@ -465,6 +465,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * P2PBG
  * Panda
  * Party-Tracker
+ * PassThePopcorn (PTP)
  * Peeratiko
  * Peers.FM
  * PigNetwork
