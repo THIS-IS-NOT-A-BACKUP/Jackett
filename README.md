@@ -110,6 +110,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Seedoff
  * Sexy-Pics
  * Shana Project
+ * ShizaProject
  * ShowRSS
  * SimpleAnime
  * Solid Torrents
@@ -180,6 +181,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HellTorrents
  * HunTorrent
  * Il CorSaRo Blu
+ * ilDraGoNeRo
  * Kinorun
  * Kinozal
  * LostFilm.tv
@@ -188,6 +190,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Masters-TB
  * Mazepa
  * Metal Tracker
+ * MIRcrew
  * MovieWorld (Flicker)
  * MuseBootlegs (MB)
  * MVGroup Forum
@@ -309,7 +312,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Coastal-Crew
  * Concertos
  * CrazyHD
- * CrazySpirits
  * CrnaBerza
  * Dajiao (打胶) [![(invite needed)][inviteneeded]](#)
  * DANISH BYTES
@@ -438,7 +440,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * MeseVilág (Fairytale World)
  * MetalGuru [![(invite needed)][inviteneeded]](#)
  * Milkie
- * MIRcrew
  * MMA-Torrents [![(invite needed)][inviteneeded]](#)
  * MNV (Max-New-Vision)
  * MOJBLiNK
@@ -597,6 +598,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * UnleashTheCartoons
  * UnlimitZ
  * UTOPIA
+ * WDT (Wrestling Desires Torrents / Ultimate Wrestling Torrents)
  * White Angel
  * WinterSakura
  * World-In-HD [![(invite needed)][inviteneeded]](#)
