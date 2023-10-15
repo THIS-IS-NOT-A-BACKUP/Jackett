@@ -333,6 +333,7 @@ namespace Jackett.Updater
                 "Definitions/cztorrent.yml",
                 "Definitions/danishbytes.yml", // migrated to C#
                 "Definitions/dariustracker.yml",
+                "Definitions/dark-shadow.yml",
                 "Definitions/darktracker.yml",
                 "Definitions/darmowetorenty.yml", // migrated to C#
                 "Definitions/datascene.yml", // switch to *-API #8682
@@ -403,6 +404,7 @@ namespace Jackett.Updater
                 "Definitions/hd4free.yml",
                 "Definitions/hdai.yml",
                 "Definitions/hdbc.yml", // renamed to hdbitscom
+                "Definitions/hdbits.yml",
                 "Definitions/hdbitscom.yml",
                 "Definitions/hdcenter.yml",
                 "Definitions/hdcity.yml", // moved to pixelados
