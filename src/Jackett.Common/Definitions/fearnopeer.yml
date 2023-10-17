@@ -1,26 +1,29 @@
 ---
-id: blutopia-api
-name: Blutopia (API)
-description: "Blutopia (BLU) is a Private Torrent Tracker for HD MOVIES / TV"
+id: fearnopeer
+name: FearNoPeer
+description: "FearNoPear is a Private Torrent Tracker for MOVIES / TV / GENERAL"
 language: en-US
 type: private
 encoding: UTF-8
 links:
-  - https://blutopia.cc/
-legacylinks:
-  - https://blutopia.xyz/
+  - https://fearnopeer.com/
 
 caps:
   categorymappings:
-    - {id: 1, cat: Movies, desc: "Movie"}
-    - {id: 2, cat: TV, desc: "TV Show"}
-    - {id: 3, cat: Movies/Other, desc: "FANRES"}
-    - {id: 5, cat: Movies/Other, desc: "Trailer"}
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV"}
+    - {id: 3, cat: Audio, desc: "Music"}
+    - {id: 6, cat: TV/Anime, desc: "Anime"}
+    - {id: 10, cat: TV, desc: "TV Pack"}
+    - {id: 4, cat: PC/Games, desc: "Games"}
+    - {id: 5, cat: PC/0day, desc: "Application"}
+    - {id: 9, cat: TV/Sport, desc: "Sport"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
 
 settings:
   - name: apikey
@@ -29,7 +32,7 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://blutopia.cc/\" target=\"_blank\">Blutopia</a> account <i>My Security</i> page and clicking on the <b>API Token</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://fearnopeer.com/\" target=\"_blank\">FearNoPeer</a> account <i>My Security</i> page and clicking on the <b>API Token</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -159,10 +162,10 @@ search:
       case:
         False: 1 # normal
         True: 2 # double
-# global MR is 0.4 but torrents must be seeded for 7 days regardless of ratio
+# global MR is 0.5 but torrents must be seeded for 4 days regardless of ratio
 #    minimumratio:
-#      text: 0.4
+#      text: 0.5
     minimumseedtime:
-      # 7 day (as seconds = 7 x 24 x 60 x 60)
-      text: 604800
-# json UNIT3D 7.0.0b
+      # 4 day (as seconds = 4 x 24 x 60 x 60)
+      text: 345600
+# json UNIT3D 7.0.0

@@ -312,6 +312,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Coastal-Crew
  * Concertos
  * CrazyHD
+ * CrazySpirits
  * CrnaBerza
  * Dajiao (打胶) [![(invite needed)][inviteneeded]](#)
  * DANISH BYTES
@@ -340,6 +341,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Fantastiko
  * Fappaizuri
  * FastScene
+ * FearNoPeer
  * Femdomcult
  * FileList (FL)
  * FinElite (FE) [![(invite needed)][inviteneeded]](#)
