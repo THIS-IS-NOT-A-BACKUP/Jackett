@@ -316,6 +316,7 @@ namespace Jackett.Updater
                 "Definitions/btstornet.yml",
                 "Definitions/btworld.yml",
                 "Definitions/btxpress.yml",
+                "Definitions/bulltorrent.yml",
                 "Definitions/casatorrent.yml", // renamed to teamctgame
                 "Definitions/casstudiotv.yml",
                 "Definitions/ccfbits.yml",
@@ -373,6 +374,7 @@ namespace Jackett.Updater
                 "Definitions/extratorrent-cd.yml",
                 "Definitions/extratorrent-it.yml",
                 "Definitions/extratorrentclone.yml",
+                "Definitions/extremetorrents.yml",
                 "Definitions/fantasticheaven.yml",
                 "Definitions/feedurneed.yml", // merged with devilsplayground #6872
                 "Definitions/fenyarnyek-tracker.yml",
@@ -643,6 +645,7 @@ namespace Jackett.Updater
                 "Definitions/turknova.yml",
                 "Definitions/twilight.yml",
                 "Definitions/twilightszoom.yml",
+                "Definitionstwisted-music.yml",
                 "Definitions/u-torrents.yml",
                 "Definitions/uhd-heaven.yml",
                 "Definitions/ultimategamerclub.yml",
