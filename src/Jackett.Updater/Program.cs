@@ -273,6 +273,7 @@ namespace Jackett.Updater
                 "Definitions/anidex.yml", // migrated to C#
                 "Definitions/animeclipse.yml",
                 "Definitions/animeitalia.yml",
+                "Definitions/animetracker.yml",
                 "Definitions/animeworld.yml", // switch to *-API #8682
                 "Definitions/aox.yml",
                 "Definitions/apollo.yml", // migrated to C# gazelle base tracker
@@ -287,6 +288,7 @@ namespace Jackett.Updater
                 "Definitions/b2s-share.yml",
                 "Definitions/baibako.yml", // renamed rudub #5673
                 "Definitions/beyond-hd-oneurl.yml", // #12993
+                "Definitions/biatch.yml",
                 "Definitions/biho.yml",
                 "Definitions/bigtorrent.yml", // merged with eStone #12352
                 "Definitions/bigtower.yml",
@@ -648,6 +650,7 @@ namespace Jackett.Updater
                 "Definitions/u-torrents.yml",
                 "Definitions/uhd-heaven.yml",
                 "Definitions/ultimategamerclub.yml",
+                "Definitions/ultra-hd.yml",
                 "Definitions/ultrahdclub.yml",
                 "Definitions/underverse.yml",
                 "Definitions/underversel.yml",
