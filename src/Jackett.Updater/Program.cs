@@ -298,6 +298,7 @@ namespace Jackett.Updater
                 "Definitions/bithq.yml",
                 "Definitions/bitme.yml",
                 "Definitions/bitnova.yml",
+                "Definitions/bitofvalor.yml",
                 "Definitions/bittorrentam.yml",
                 "Definitions/blubits.yml",
                 "Definitions/bluesbrothers.yml",
@@ -487,6 +488,7 @@ namespace Jackett.Updater
                 "Definitions/movietorrent.yml", // will need c# #11284
                 "Definitions/moviezone.yml", // migrated to teracod #9743
                 "Definitions/music-master.yml",
+                "Definitions/muziekfabriek.yml",
                 "Definitions/nachtwerk.yml",
                 "Definitions/nbtorrents.yml",
                 "Definitions/nbtorrents-api.yml",
