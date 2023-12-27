@@ -316,6 +316,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CrnaBerza
  * Dajiao (打胶) [![(invite needed)][inviteneeded]](#)
  * DANISH BYTES
+ * Dark-Shadow
  * DataScene (DS)
  * DesiTorrents
  * Diablo Torrent
@@ -366,6 +367,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HaiDan
  * Haitang
  * HappyFappy
+ * Hares Club (白兔俱乐部) [![(invite needed)][inviteneeded]](#)
  * Hawke-uno
  * HD Dolby
  * HD-Forever (HDF)
