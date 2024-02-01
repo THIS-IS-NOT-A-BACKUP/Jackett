@@ -437,7 +437,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * LST
  * M-Team TP (MTTP)
  * MaDs Revolution
- * Magico (Trellas) [![(invite needed)][inviteneeded]](#)
  * Majomparádé (TurkDepo)
  * Making Off
  * Mansão dos Animes (MDAN)
@@ -568,6 +567,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TLFBits [![(invite needed)][inviteneeded]](#)
  * TmGHuB
  * Toca Share
+ * ToonsForMe
  * Tornado
  * Torrent Network (TN)
  * Torrent Sector Crew (TSC)
@@ -594,6 +594,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * ToTheGlory (TTG) [![(invite needed)][inviteneeded]](#)
  * TrackerMK
  * TranceTraffic
+ * Trellas (Magico) [![(invite needed)][inviteneeded]](#)
  * TreZzoR [![(invite needed)][inviteneeded]](#)
  * TurkTorrent (TT)
  * TV Chaos UK (TVCUK)
