@@ -322,6 +322,7 @@ namespace Jackett.Updater
                 "Definitions/btworld.yml",
                 "Definitions/btxpress.yml",
                 "Definitions/bulltorrent.yml",
+                "Definitions/cartoonchaos.yml",
                 "Definitions/casatorrent.yml", // renamed to teamctgame
                 "Definitions/casstudiotv.yml",
                 "Definitions/ccfbits.yml",
@@ -652,6 +653,7 @@ namespace Jackett.Updater
                 "Definitions/torrentz2k.yml",
                 "Definitions/torrof.yml",
                 "Definitions/torviet.yml",
+                "Definitions/totallykids.yml",
                 "Definitions/trackeros-api.yml",
                 "Definitions/trackeros.yml", // switch to *-API #12807
                 "Definitions/tspate.yml",
