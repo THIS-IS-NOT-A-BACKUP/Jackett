@@ -46,7 +46,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Byrutor
  * Cinecalidad
  * comicat
- * ConCen
  * cpasbien
  * cpasbienClone
  * CrackingPatching
@@ -65,7 +64,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * GloDLS
  * GTorrent.pro
  * Idope
- * Il Corsaro Nero
  * Internet Archive (archive.org)
  * Isohunt2
  * iTorrent
@@ -308,6 +306,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CinemaZ (EuTorrents)
  * Classix
  * Coastal-Crew
+ * ConCen [![(invite needed)][inviteneeded]](#)
  * Concertos
  * CrazySpirits
  * CrnaBerza
