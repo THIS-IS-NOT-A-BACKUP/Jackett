@@ -422,6 +422,7 @@ namespace Jackett.Updater
                 "Definitions/hdcity.yml", // moved to pixelados
                 "Definitions/hdclub.yml",
                 "Definitions/hddisk.yml",
+                "Definitions/hddolby.yml",
                 "Definitions/hdhouse.yml",
                 "Definitions/hdme.yml",
                 "Definitions/hdmonkey.yml",
@@ -430,6 +431,7 @@ namespace Jackett.Updater
                 "Definitions/hdreactor.yml", // renamed to hdhouse
                 "Definitions/hdspain.yml",
                 "Definitions/hdstreet.yml",
+                "Definitions/hdvideo.yml",
                 "Definitions/hdzone.yml", // renamed to hdfun
                 "Definitions/hellastz.yml",
                 "Definitions/hidden-palace.yml",
@@ -630,6 +632,7 @@ namespace Jackett.Updater
                 "Definitions/torrentbomb.yml",
                 "Definitions/torrentcouch.yml",
                 "Definitions/torrentdb.yml",
+                "Definitions/torrentdownload.yml",
                 "Definitions/torrentfactory.yml",
                 "Definitions/torrentgalaxyorg.yml", // renamed to torrentgalaxy
                 "Definitions/torrenthane.yml",
