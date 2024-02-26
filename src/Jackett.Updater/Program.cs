@@ -275,6 +275,7 @@ namespace Jackett.Updater
                 "Definitions/animeitalia.yml",
                 "Definitions/animetracker.yml",
                 "Definitions/animeworld.yml", // switch to *-API #8682
+                "Definitions/anitoons.yml",
                 "Definitions/aox.yml",
                 "Definitions/apollo.yml", // migrated to C# gazelle base tracker
                 "Definitions/archetorrent.yml",
@@ -395,7 +396,6 @@ namespace Jackett.Updater
                 "Definitions/freedomhd.yml",
                 "Definitions/freetorrent.yml",
                 "Definitions/freshmeat.yml",
-                "Definitions/frozenlayer.yml",
                 "Definitions/fullmixmusic.yml",
                 "Definitions/funreleases.yml",
                 "Definitions/fusionmayhem.yml",
@@ -445,7 +445,6 @@ namespace Jackett.Updater
                 "Definitions/icetorrent.yml", // migrated to C# XtremeZone base tracker
                 "Definitions/idopeclone.yml",
                 "Definitions/ihdbits.yml",
-                "Definitions/ilcorsaronero.yml",
                 "Definitions/ilcorsaroverde.yml",
                 "Definitions/iloveclassics.yml",
                 "Definitions/infinityt.yml",

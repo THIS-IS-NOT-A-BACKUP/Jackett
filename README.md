@@ -59,11 +59,13 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * EXT Torrents
  * ExtraTorrent.st
  * EZTV
+ * Frozen Layer
  * GamesTorrents
  * GkTorrent
  * GloDLS
  * GTorrent.pro
  * Idope
+ * Il Corsaro Nero
  * Internet Archive (archive.org)
  * Isohunt2
  * iTorrent
@@ -246,7 +248,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * AnimeTorrents (AnT)
  * AnimeTorrents.ro (Anime Torrents Romania)
  * AnimeWorld
- * AniToons
  * Anthelion
  * Araba Fenice (Phoenix) [![(invite needed)][inviteneeded]](#)
  * ArabP2P
@@ -389,6 +390,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDU
  * hdvbits
  * HDVIDEO
+ * Heavens-Hell
  * Hebits
  * HellasHut
  * HHanClub
