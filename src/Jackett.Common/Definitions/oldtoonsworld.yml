@@ -51,6 +51,10 @@ settings:
     options:
       desc: desc
       asc: asc
+  - name: info_activity
+    type: info
+    label: Account Inactivity
+    default: "<ul><li>You must log in once every 60 days or seed at least 1 torrent to not get disabled</li><li>Once disabled, you have another 60 days to log back in and have your account re-activated. You may need to contact Helpdesk to do so</li><li>Disabled account will be deleted after 180 days of inactivity</li></ul>"
 
 login:
   path: /api/torrents
@@ -162,4 +166,10 @@ search:
       case:
         False: 1 # normal
         True: 2 # double
+# global MR is 0.4 but torrents must be seeded for 7 days regardless of ratio
+#    minimumratio:
+#      text: 0.4
+    minimumseedtime:
+      # 7 day (as seconds = 7 x 24 x 60 x 60)
+      text: 604800
 # json UNIT3D 7.2.5
