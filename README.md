@@ -228,7 +228,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * 2xFree
  * 3ChangTrai (3CT)
  * 3D Torrents (3DT)
- * 3Wmg
  * 4thD (4th Dimension)
  * 52PT
  * 720pier
@@ -570,6 +569,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TLFBits [![(invite needed)][inviteneeded]](#)
  * TmGHuB
  * Toca Share
+ * Tormac
  * Tornado
  * Torrent Network (TN)
  * Torrent Sector Crew (TSC)
