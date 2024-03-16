@@ -64,13 +64,18 @@ download:
       selector: :root
       filters:
         - name: regexp
-          args: "\"name\": \"(.+?)\","
+          args: "status\": \\w+, \"name\": \"(.+?)\", \"short_name"
 
 search:
   paths:
     - path: "get-posts/order:{{ .Config.sort }}{{ range .Categories }}:category:{{.}}{{end}}{{ if or .Query.IMDBID .Keywords }}:keywords:{{ or .Query.IMDBID .Keywords }}{{ else }}{{ end }}:paginate_by:100:format:json/"
       response:
         type: json
+
+  keywordsfilters:
+    - name: re_replace
+      args: ["\\W+", " "]
+    - name: trim
 
   rows:
     selector: results
