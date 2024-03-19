@@ -37,8 +37,8 @@ namespace Jackett.Common.Indexers
 
         public override TorznabCapabilities TorznabCaps => SetCapabilities();
 
-        private string LoginUrl1 => SiteLink + "checkpoint/API";
-        private string LoginUrl2 => SiteLink + "checkpoint/";
+        private string LoginUrl1 => SiteLink + "login";
+        private string LoginUrl2 => SiteLink + "login/API";
         private string SearchUrl => SiteLink + "browse/";
 
         private new ConfigurationDataSpeedCD configData => (ConfigurationDataSpeedCD)base.configData;
@@ -51,9 +51,11 @@ namespace Jackett.Common.Indexers
                    p: ps,
                    cacheService: cs,
                    configData: new ConfigurationDataSpeedCD(
-                       @"Speed.Cd have increased their security. If you are having problems please check the security tab
-                    in your Speed.Cd profile. Eg. Geo Locking, your seedbox may be in a different country to the one where you login via your
-                    web browser.<br><br>For best results, change the 'Torrents per page' setting to 100 in 'Profile Settings > Torrents'."))
+                       @"Speed.Cd have increased their security. If you are having problems please check the security tab in your 
+                    Speed.Cd profile. Eg. Geo Locking, your seedbox may be in a different country to the one where you login via your
+                    web browser.<br><br>For best results, change the 'Torrents per page' setting to 100 in<br>'Profile Settings > Torrents'.
+                    <br><br>This site may use Cloudflare DDoS Protection, therefore Jackett requires <a 
+                    href='https://github.com/Jackett/Jackett#configuring-flaresolverr' target='_blank'>FlareSolverr</a> to access it."))
         {
         }
 
