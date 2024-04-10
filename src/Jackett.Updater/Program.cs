@@ -284,6 +284,7 @@ namespace Jackett.Updater
                 "Definitions/asgaard.yml",
                 "Definitions/ast4u.yml", // renamed to animeworld #10578
                 "Definitions/asylumshare.yml",
+                "Definitions/at12project.yml",
                 "Definitions/audiobookbay.yml", // migrated to C#
                 "Definitions/audiobooktorrents.yml", // renamed to abtorrents
                 "Definitions/avg.yml",
@@ -385,6 +386,7 @@ namespace Jackett.Updater
                 "Definitions/extratorrentclone.yml",
                 "Definitions/extremetorrents.yml",
                 "Definitions/fantasticheaven.yml",
+                "Definitions/fastscene.yml",
                 "Definitions/feedurneed.yml", // merged with devilsplayground #6872
                 "Definitions/fenyarnyek-tracker.yml",
                 "Definitions/filebase.yml",
@@ -479,6 +481,7 @@ namespace Jackett.Updater
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro
                 "Definitions/lightning-tor.yml",
+                "Definitions/limetorrentsclone.yml",
                 "Definitions/mactorrents.yml",
                 "Definitions/magicheaven.yml",
                 "Definitions/magico.yml", // renamed to trellas
@@ -619,6 +622,7 @@ namespace Jackett.Updater
                 "Definitions/thehorrorcharnel.yml",
                 "Definitions/the-madhouse.yml",
                 "Definitions/themoviecave.yml",
+                "Definitions/therebels-api.yml",
                 "Definitions/theresurrection.yml",
                 "Definitions/theshinning.yml", // switch to *-API #13751
                 "Definitions/thespit.yml",
