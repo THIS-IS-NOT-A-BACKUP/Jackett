@@ -1,35 +1,22 @@
 ---
-id: tocashare
-name: Toca Share
-description: "Toca Share is a PORTUGUESE Private Torrent Tracker for MOVIES / TV / GENERAL"
-language: pt-PT
+id: rockethd
+name: RocketHD
+description: "RocketHD is a GERMAN Private Torrent Tracker for MOVIES / TV"
+language: de-DE
 type: private
 encoding: UTF-8
 links:
-  - https://tocashare.com/
-legacylinks:
-  - https://tocashare.biz/
+  - https://r0k3t.li/
 
 caps:
   categorymappings:
-    - {id: 1, cat: Movies, desc: "Filme"}
-    - {id: 2, cat: TV, desc: "Seriado"}
-    - {id: 3, cat: Audio, desc: "Som (Musica)"}
-    - {id: 4, cat: Console, desc: "Jogo"}
-    - {id: 5, cat: PC, desc: "App"}
-    - {id: 6, cat: Books/EBook, desc: "E-Books"}
-    - {id: 7, cat: Other, desc: "Cursos"}
-    - {id: 8, cat: XXX/ImageSet, desc: "Fotos Adultas"}
-    - {id: 9, cat: Audio/Audiobook, desc: "Audio E-Book"}
-    - {id: 10, cat: XXX, desc: "XXX"}
-    - {id: 11, cat: Audio/Video, desc: "Shows"}
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
-    book-search: [q]
-    music-search: [q]
 
 settings:
   - name: apikey
@@ -38,7 +25,7 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://tocashare.biz/\" target=\"_blank\">Toca Share</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://r0k3t.li/\" target=\"_blank\">RocketHD</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -63,10 +50,6 @@ settings:
     options:
       desc: desc
       asc: asc
-  - name: info_activity
-    type: info
-    label: Account Inactivity
-    default: "The inactivation system was created with the purpose of encouraging member participation. This way, after 7 days without accessing the website, 30 BONs will be deducted per day. If your account balance reaches 0 and you don't have any torrents being seeded, it will be automatically deactivated."
 
 login:
   path: /api/torrents
@@ -99,7 +82,7 @@ search:
     "free[]": "{{ if .Config.freeleech }}100{{ else }}{{ end }}"
     sortField: "{{ .Config.sort }}"
     sortDirection: "{{ .Config.type }}"
-    perPage: 75
+    perPage: 100
 
   keywordsfilters:
     - name: re_replace
@@ -135,9 +118,7 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: ["(?i)(Cinema TV)", "Cinema_TV"]
-        - name: re_replace
-          args: ["(?i)(Ficção científica)", "Ficção_científica"]
+          args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: replace
           args: [" & ", "_&_"]
     description:
