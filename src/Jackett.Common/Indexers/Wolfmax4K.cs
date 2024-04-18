@@ -108,16 +108,17 @@ namespace Jackett.Common.Indexers
             var searchToken = await GetSearchTokenAsync();
 
             query = SanitizeTorznabQuery(query);
+
+            var maxPages = query.SearchTerm.IsNullOrWhiteSpace() ? 1 : 3;
+
             if (query.SearchTerm.IsNullOrWhiteSpace())
             {
                 query.SearchTerm = "%";
             }
 
-            var maxPages = query.SearchTerm.IsNullOrWhiteSpace() ? 1 : 3;
-
             for (var i = 1; i <= maxPages; i++)
             {
-                var result = await DoSeachAsync(query, searchToken, i);
+                var result = await DoSearchAsync(query, searchToken, i);
                 try
                 {
                     // Parse results
@@ -181,7 +182,7 @@ namespace Jackett.Common.Indexers
             return myDoc.QuerySelector("input[name='token']")?.GetAttribute("value");
         }
 
-        private async Task<WebResult> DoSeachAsync(TorznabQuery query, string searchToken, int page = 1)
+        private async Task<WebResult> DoSearchAsync(TorznabQuery query, string searchToken, int page = 1)
         {
             var body = new Dictionary<string, string>
             {
