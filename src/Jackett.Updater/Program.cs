@@ -415,6 +415,7 @@ namespace Jackett.Updater
                 "Definitions/greeklegends.yml",
                 "Definitions/greekteam.yml",
                 "Definitions/gtorrent.yml",
+                "Definitions/gtorrentpro.yml",
                 "Definitions/hachede-c.yml",
                 "Definitions/hachede.yml",
                 "Definitions/hamsterstudio.yml",
@@ -491,6 +492,7 @@ namespace Jackett.Updater
                 "Definitions/manicomioshare.yml",
                 "Definitions/mediamaatjes.yml",
                 "Definitions/megabliz.yml",
+                "Definitions/mendigosdaweb.yml",
                 "Definitions/metal-iplay-ro.yml", // renamed to romanianmetaltorrents
                 "Definitions/microbit.yml",
                 "Definitions/mkvcage.yml",
