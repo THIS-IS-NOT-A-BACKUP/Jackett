@@ -44,6 +44,7 @@ namespace Jackett.Common.Indexers
                    p: ps,
                    cs: cs,
                    supportsFreeleechTokens: true,
+                   supportsFreeleechOnly: true,
                    has2Fa: false,
                    useApiKey: true,
                    usePassKey: true,
@@ -236,6 +237,11 @@ namespace Jackett.Common.Indexers
                 queryCollection.Add($"artistcheck[{i++}]", cat);
             }
 
+            if (configData.FreeleechOnly is { Value: true })
+            {
+                queryCollection.Set("freetorrent", "1");
+            }
+
             // remove . as not used in titles
             searchUrl += "?" + queryCollection.GetQueryString();
 
@@ -265,9 +271,10 @@ namespace Jackett.Common.Indexers
 
                 foreach (var gObj in JObject.FromObject(json["response"]))
                 {
+                    var groupId = int.Parse(gObj.Key);
                     var group = gObj.Value as JObject;
 
-                    if (group["Torrents"].Type == JTokenType.Array && group["Torrents"] is JArray array && array.Count == 0)
+                    if (group["Torrents"].Type == JTokenType.Array && group["Torrents"] is JArray { Count: 0 })
                     {
                         continue;
                     }
@@ -280,15 +287,27 @@ namespace Jackett.Common.Indexers
                     foreach (var tObj in JObject.FromObject(group["Torrents"]))
                     {
                         var torrent = tObj.Value as JObject;
-                        var torrentId = torrent.Value<string>("ID");
+
+                        var torrentFreeTorrent = torrent.Value<string>("FreeTorrent");
+                        var freeTorrent = torrentFreeTorrent.IsNotNullOrWhiteSpace() && int.TryParse(torrentFreeTorrent, out var freeValue) ? freeValue : 0;
+
+                        var downloadVolumeFactor = freeTorrent >= 1 ? 0 : 1;
+
+                        // Skip non-freeleech results when freeleech only is set
+                        if (configData.FreeleechOnly is { Value: true } && downloadVolumeFactor != 0.0)
+                        {
+                            continue;
+                        }
+
+                        var torrentId = torrent.Value<int>("ID");
 
                         if (categories.Length == 0)
                         {
                             categories = MapTrackerCatToNewznab(torrent.Value<string>("CategoryID")).ToArray();
                         }
 
-                        var details = new Uri(DetailsUrl + torrentId);
-                        var link = new Uri(DownloadUrl + torrentId);
+                        var details = GetInfoUrl(groupId, torrentId);
+                        var link = GetDownloadUrl(torrentId, false);
 
                         var title = WebUtility.HtmlDecode(torrent.Value<string>("ReleaseTitle"));
                         var groupYear = group.Value<int>("year");
@@ -334,8 +353,6 @@ namespace Jackett.Common.Indexers
                             title += $" [{string.Join(", ", tags)}]";
                         }
 
-                        var torrentFreeTorrent = torrent.Value<string>("FreeTorrent");
-                        var freeTorrent = torrentFreeTorrent.IsNotNullOrWhiteSpace() && int.TryParse(torrentFreeTorrent, out var freeValue) ? freeValue : 0;
 
                         var release = new ReleaseInfo
                         {
@@ -350,8 +367,8 @@ namespace Jackett.Common.Indexers
                             Seeders = torrent.Value<int>("Seeders"),
                             Peers = torrent.Value<int>("Seeders") + torrent.Value<int>("Leechers"),
                             Files = torrent.Value<int>("FileCount"),
+                            DownloadVolumeFactor = downloadVolumeFactor,
                             UploadVolumeFactor = freeTorrent >= 2 ? 0 : 1,
-                            DownloadVolumeFactor = freeTorrent >= 1 ? 0 : 1,
                             MinimumRatio = 1,
                             MinimumSeedTime = 288000, // 80 hours
                         };
@@ -364,7 +381,10 @@ namespace Jackett.Common.Indexers
                 OnParseError(response.ContentString, ex);
             }
 
-            return releases;
+            // order by date
+            return releases
+                   .OrderByDescending(o => o.PublishDate)
+                   .ToArray();
         }
     }
 }
