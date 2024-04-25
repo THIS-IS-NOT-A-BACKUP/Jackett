@@ -330,6 +330,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Exitorrent.org [![(invite needed)][inviteneeded]](#)
  * ExoticaZ (YourExotic)
  * ExtremeBits
+ * F1Carreras
  * Falkon Vision Team
  * FANO.IN [![(invite needed)][inviteneeded]](#)
  * Fantastiko [![(invite needed)][inviteneeded]](#)
@@ -421,7 +422,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Last Digital Underground (LDU)
  * LastFiles
  * LaidBackManor
- * Lat-Team [![(invite needed)][inviteneeded]](#)
+ * Lat-Team
  * Le Saloon [![(invite needed)][inviteneeded]](#)
  * Le-Cinephile
  * LearnBits
