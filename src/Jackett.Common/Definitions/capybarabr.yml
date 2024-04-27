@@ -39,10 +39,10 @@ settings:
     type: checkbox
     label: Search freeleech only
     default: false
-  - name: single_file_release_use_filename
+  - name: use_single_file_release_use_filename
     type: checkbox
-    label: Use filename as title for single file releases
-    default: true
+    label: Use filename as the title for single file releases
+    default: false
   - name: sort
     type: select
     label: Sort requested from site
@@ -116,7 +116,7 @@ search:
     files:
       selector: num_file
     title:
-      text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
+      text: "{{ if and (.Config.use_single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
     details:
       selector: details_link
     download:
@@ -183,4 +183,4 @@ search:
     minimumseedtime:
       # 7 days (as seconds = 7 x 24 x 60 x 60)
       text: 604800
-# json UNIT3D 8.0.2
+# json UNIT3D 8.0.2 (custom)
