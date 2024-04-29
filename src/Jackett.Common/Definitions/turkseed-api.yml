@@ -1,25 +1,32 @@
 ---
-id: reelflix-api
-name: ReelFLiX (API)
-description: "ReelFLiX (HD4Free,LegacyHD) is a Private Torrent Tracker for HD MOVIES"
-language: en-US
+id: turkseed-api
+name: TurkSeed
+description: "TurkSeed is a TURKISH Private Torrent Tracker for MOVIES / TV / GENERAL"
+language: tr-TR
 type: private
 encoding: UTF-8
 links:
-  - https://reelflix.xyz/
-legacylinks:
-  - https://legacyhd.org/
+  - https://turkseed.com/
 
 caps:
   categorymappings:
-    - {id: 1, cat: Movies, desc: "Movie"}
+    - {id: 1, cat: Movies, desc: "Film"}
+    - {id: 6, cat: TV, desc: "Dizi Show"}
+    - {id: 2, cat: Movies, desc: "Yerli Film"}
+    - {id: 5, cat: TV/Foreign, desc: "Yabanci Dizi"}
+    - {id: 3, cat: Console, desc: "Oyunlar"}
+    - {id: 13, cat: TV, desc: "AMAZON"}
+    - {id: 14, cat: TV, desc: "NETFLİX"}
+    - {id: 15, cat: TV, desc: "DİSNEY+"}
+    - {id: 16, cat: TV, desc: "TODD"}
+    - {id: 17, cat: TV, desc: "TV+"}
+    - {id: 18, cat: TV, desc: "BLUTV"}
+    - {id: 19, cat: TV, desc: "EXXEN"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
-    music-search: [q]
-    book-search: [q]
 
 settings:
   - name: apikey
@@ -28,7 +35,7 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://reelflix.xyz/\" target=\"_blank\">ReelFlix</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://turkseed.com/\" target=\"_blank\">TurkSeed</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -56,7 +63,7 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "To avoid your account being disabled, you must login at least once every 90 days OR have a .torrent actively announcing to the tracker. Please be aware! If you are using any form of automation and it has been 90+ days since your last login, and your client stops seeding, your account will be immediately disabled at midnight UTC if you don't login or resume seeding. There is no 90-day grace period if seeding stops; only logging into the site counts. It is always a good idea to periodically login to check the status of your account."
+    default: "Accounts that do not download a 15GB torrent from our site within a month will receive a warning (will be closed)! Accounts that do not upload (seed, share) 20gb on our site within a month will receive a warning (will be closed)! The account that receives three warnings will be automatically closed! No objections are accepted to the deletion of accounts that have not been on our site for six months and have not been active in any way!"
 
 login:
   path: /api/torrents
@@ -131,10 +138,6 @@ search:
     genre:
       selector: meta.genres
       filters:
-        - name: re_replace
-          args: ["(?i)(Science Fiction)", "Science_Fiction"]
-        - name: re_replace
-          args: ["(?i)(TV Movie)", "TV_Movie"]
         - name: replace
           args: [" & ", "_&_"]
     description:
@@ -172,5 +175,8 @@ search:
         False: 1 # normal
         True: 2 # double
     minimumratio:
-      text: 1.0
-# json UNIT3D 8.1.1
+      text: 0.6
+    minimumseedtime:
+      # 36 hours (as seconds = 36 x 60 x 60)
+      text: 129600
+# json UNIT3D 8.1.0
