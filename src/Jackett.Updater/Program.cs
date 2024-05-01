@@ -570,6 +570,7 @@ namespace Jackett.Updater
                 "Definitions/renegade.yml",
                 "Definitions/retroflix.yml", // migrated to C#
                 "Definitions/rgu.yml",
+                "Definitions/rmhd.yml",
                 "Definitions/rns.yml", // site merged with audiobooktorrents
                 "Definitions/rockhardlossless.yml",
                 "Definitions/rodvd.yml",
@@ -675,6 +676,7 @@ namespace Jackett.Updater
                 "Definitions/turknova.yml",
                 "Definitions/turkseed.yml",
                 "Definitions/turktracker.yml",
+                "Definitions/tvroad.yml",
                 "Definitions/twilight.yml",
                 "Definitions/twilightszoom.yml",
                 "Definitions/twisted-music.yml",
