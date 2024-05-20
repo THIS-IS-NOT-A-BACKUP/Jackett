@@ -291,7 +291,8 @@ namespace Jackett.Updater
                 "Definitions/awesomehd.yml", // migrated to C#
                 "Definitions/b2s-share.yml",
                 "Definitions/baibako.yml", // renamed rudub #5673
-                "Definitions/beyond-hd", // migrated to C#
+                "Definitions/beitai.yml",
+                "Definitions/beyond-hd.yml", // migrated to C# API
                 "Definitions/beyond-hd-oneurl.yml", // #12993
                 "Definitions/biatch.yml",
                 "Definitions/biho.yml",
