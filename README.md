@@ -50,7 +50,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * cpasbien
  * cpasbienClone
  * CrackingPatching
- * Demonoid
  * DivxTotal
  * dmhy
  * DonTorrent
@@ -332,7 +331,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * ExoticaZ (YourExotic)
  * ExtremeBits
  * F1Carreras
- * Falkon Vision Team
  * FANO.IN [![(invite needed)][inviteneeded]](#)
  * Fantastiko [![(invite needed)][inviteneeded]](#)
  * Fappaizuri
