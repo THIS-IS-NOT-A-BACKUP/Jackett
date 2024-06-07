@@ -119,7 +119,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * torrent.by
  * torrent-pirat
  * Torrent9
- * Torrent9 clone
  * Torrent911
  * TorrentFunk
  * TorrentDownloads
@@ -158,7 +157,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BootyTape
  * Catorrent
  * Deildu
- * Demonoid
  * Devil-Torrents
  * DreamingTree
  * DXP (Deaf Experts)
@@ -208,6 +206,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SkTorrent-org
  * themixingbowl (TMB)
  * Toloka.to
+ * Torrent9-tel
  * TorrentMasters
  * Torrents-Local
  * TorrentDownload
