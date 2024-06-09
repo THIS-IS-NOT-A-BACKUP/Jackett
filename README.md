@@ -527,6 +527,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SceneTime
  * Secret Cinema
  * SeedFile
+ * SFP (Share Friends Projekt)
  * Shadowflow (影) [![(invite needed)][inviteneeded]](#)
  * Shareisland
  * SharkPT
@@ -597,6 +598,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TorrentLeech (TL)
  * TorrentLeech.pl
  * TorrentSeeds (TS)
+ * ToSky
  * ToTheGlory (TTG) [![(invite needed)][inviteneeded]](#)
  * TrackerMK
  * TranceTraffic
