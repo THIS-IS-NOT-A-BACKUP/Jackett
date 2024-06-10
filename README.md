@@ -119,7 +119,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * torrent.by
  * torrent-pirat
  * Torrent9
- * Torrent911
  * TorrentFunk
  * TorrentDownloads
  * TorrentGalaxy (TGx)
@@ -206,6 +205,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * SkTorrent-org
  * themixingbowl (TMB)
  * Toloka.to
+ * Torrent911
  * Torrent9-tel
  * TorrentMasters
  * Torrents-Local
@@ -376,6 +376,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDFans
  * HDFun (HDZone)
  * HDHome (HDBigger) [![(invite needed)][inviteneeded]](#)
+ * HDKylin (麒麟)
  * HDMaYi (小蚂蚁PT站)
  * HDPT (明教) [![(invite needed)][inviteneeded]](#)
  * HDRoute [![(invite needed)][inviteneeded]](#)
