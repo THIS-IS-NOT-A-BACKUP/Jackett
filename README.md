@@ -303,6 +303,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CrabPT (蟹黄堡)
  * CrazySpirits
  * CrnaBerza
+ * cyanbug (大青虫)
  * Dajiao (打胶) [![(invite needed)][inviteneeded]](#)
  * DANISH BYTES
  * Darius Tracker
@@ -956,7 +957,7 @@ dotnet publish Jackett.Server -f net8.0 --self-contained -r osx-x64 -c Debug # t
 
 
 ```bash
-sudo apt install nuget msbuild dotnet-sdk-6.0 # install build tools (Debian/ubuntu)
+sudo apt install nuget msbuild dotnet-sdk-8.0 # install build tools (Debian/ubuntu)
 git clone https://github.com/Jackett/Jackett.git
 cd Jackett/src
 
