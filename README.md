@@ -453,7 +453,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * MonikaDesign (MDU)
  * MoreThanTV (MTV) [![(invite needed)][inviteneeded]](#)
  * MouseBits
- * Movie-Torrentz
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
  * NCore [![(invite needed)][inviteneeded]](#)
@@ -496,7 +495,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * PTerClub (PT之友俱乐部)
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
- * PTLSP
  * PTSBAO (烧包) [![(invite needed)][inviteneeded]](#)
  * PTtime
  * PTVicomo
@@ -633,6 +631,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * XWTorrents (XWT)
  * YDYPT (伊甸园PT)
  * YggTorrent (YGG)
+ * YOiNKED
  * Zamunda.net
  * Zelka.org
  * ZmPT (织梦)

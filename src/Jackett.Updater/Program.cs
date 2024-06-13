@@ -508,6 +508,7 @@ namespace Jackett.Updater
                 "Definitions/movcr.yml",
                 "Definitions/moviesite.yml",
                 "Definitions/movietorrent.yml", // will need c# #11284
+                "Definitions/movietorrentz.yml",
                 "Definitions/movieworld.yml",
                 "Definitions/moviezone.yml", // migrated to teracod #9743
                 "Definitions/mteamtp.yml", // migrated to C# (API)
@@ -561,6 +562,7 @@ namespace Jackett.Updater
                 "Definitions/prostylex.yml",
                 "Definitions/ps4-torrent.yml",
                 "Definitions/pt99.yml",
+                "Definitions/ptlsp.yml",
                 "Definitions/ptmsg.yml",
                 "Definitions/purovicio.yml",
                 "Definitions/puurhollands.yml",
