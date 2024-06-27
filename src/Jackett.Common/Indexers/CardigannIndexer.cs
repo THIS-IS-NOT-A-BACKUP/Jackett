@@ -174,6 +174,9 @@ namespace Jackett.Common.Indexers
                         case "info":
                             item = new DisplayInfoConfigurationItem(itemName, Setting.Default);
                             break;
+                        case "info_category_8000":
+                            item = new DisplayInfoConfigurationItem($"About {Definition.Name} Categories", $"{Definition.Name} does not return categories in its search results.</br>To add to your Apps' Torznab indexer, replace all categories with 8000(Other).");
+                            break;
                         case "info_cookie":
                             item = new DisplayInfoConfigurationItem("How to get the Cookie", "<ol><li>Login to this tracker with your browser</li><li>If present in the login page, ensure you have the <b>Remember me</b> ticked and the <b>Log Me Out if IP Changes</b> unticked when you login</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>");
                             break;
@@ -669,37 +672,47 @@ namespace Jackett.Common.Indexers
                 }
 
                 // selector inputs
-                if (Login.Selectorinputs != null)
+                if (Login.Selectorinputs != null && Login.Selectorinputs.Any())
                 {
-                    foreach (var Selectorinput in Login.Selectorinputs)
+                    foreach (var selectorInput in Login.Selectorinputs)
                     {
-                        string value = null;
                         try
                         {
-                            value = handleSelector(Selectorinput.Value, landingResultDocument.FirstElementChild);
-                            pairs[Selectorinput.Key] = value;
+                            var value = handleSelector(selectorInput.Value, landingResultDocument.FirstElementChild, required: !selectorInput.Value.Optional);
+
+                            if (selectorInput.Value.Optional && value == null)
+                            {
+                                continue;
+                            }
+
+                            pairs[selectorInput.Key] = value;
                         }
                         catch (Exception ex)
                         {
-                            throw new Exception(string.Format("Error while parsing selector input={0}, selector={1}, value={2}: {3}", Selectorinput.Key, Selectorinput.Value.Selector, value, ex.Message));
+                            throw new Exception($"Error while parsing selector input={selectorInput.Key}, selector={selectorInput.Value.Selector}: {ex.Message}", ex);
                         }
                     }
                 }
 
                 // getselector inputs
-                if (Login.Getselectorinputs != null)
+                if (Login.Getselectorinputs != null && Login.Getselectorinputs.Any())
                 {
-                    foreach (var Selectorinput in Login.Getselectorinputs)
+                    foreach (var selectorInput in Login.Getselectorinputs)
                     {
-                        string value = null;
                         try
                         {
-                            value = handleSelector(Selectorinput.Value, landingResultDocument.FirstElementChild);
-                            queryCollection[Selectorinput.Key] = value;
+                            var value = handleSelector(selectorInput.Value, landingResultDocument.FirstElementChild, required: !selectorInput.Value.Optional);
+
+                            if (selectorInput.Value.Optional && value == null)
+                            {
+                                continue;
+                            }
+
+                            queryCollection[selectorInput.Key] = value;
                         }
                         catch (Exception ex)
                         {
-                            throw new Exception(string.Format("Error while parsing get selector input={0}, selector={1}, value={2}: {3}", Selectorinput.Key, Selectorinput.Value.Selector, value, ex.Message));
+                            throw new Exception($"Error while parsing get selector input={selectorInput.Key}, selector={selectorInput.Value.Selector}: {ex.Message}", ex);
                         }
                     }
                 }
@@ -1242,14 +1255,16 @@ namespace Jackett.Common.Indexers
             if (Selector.Selector != null)
             {
                 var selector_Selector = applyGoTemplateText(Selector.Selector, variables);
-                if (Dom.Matches(selector_Selector))
-                    selection = Dom;
-                else
-                    selection = QuerySelector(Dom, selector_Selector);
+
+                selection = Dom.Matches(selector_Selector) ? Dom : QuerySelector(Dom, selector_Selector);
+
                 if (selection == null)
                 {
                     if (required)
-                        throw new Exception(string.Format("Selector \"{0}\" didn't match {1}", selector_Selector, Dom.ToHtmlPretty()));
+                    {
+                        throw new Exception($"Selector \"{selector_Selector}\" didn't match {Dom.ToHtmlPretty()}");
+                    }
+
                     return null;
                 }
             }
@@ -1289,7 +1304,10 @@ namespace Jackett.Common.Indexers
                 if (value == null)
                 {
                     if (required)
-                        throw new Exception(string.Format("Attribute \"{0}\" is not set for element {1}", Selector.Attribute, selection.ToHtmlPretty()));
+                    {
+                        throw new Exception($"Attribute \"{Selector.Attribute}\" is not set for element {selection.ToHtmlPretty()}");
+                    }
+
                     return null;
                 }
             }

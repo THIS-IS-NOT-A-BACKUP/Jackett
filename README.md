@@ -430,6 +430,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Le-Cinephile
  * LearnBits
  * LearnFlakes
+ * Leech24
  * Les-Cinephiles
  * Lesbians4u
  * Libble
@@ -521,6 +522,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Romanian Metal Torrents (RMT)
  * RoTorrent
  * Rousi
+ * RPTScene (RPTorrents)
  * SATClubbing
  * SceneHD [![(invite needed)][inviteneeded]](#)
  * SceneLinks (SL)
