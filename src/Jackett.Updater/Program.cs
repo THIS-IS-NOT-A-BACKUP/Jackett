@@ -602,6 +602,7 @@ namespace Jackett.Updater
                 "Definitions/shareuniversity.yml",
                 "Definitions/sharingue.yml",
                 "Definitions/shellife.yml",
+                "Definitions/sharkpt.yml",
                 "Definitions/shokweb.yml",
                 "Definitions/skipthecommercials.yml", // switch to *-API #8682
                 "Definitions/skytorrents-lol.yml",
@@ -657,6 +658,7 @@ namespace Jackett.Updater
                 "Definitions/torrentcouch.yml",
                 "Definitions/torrentdb.yml",
                 "Definitions/torrentfactory.yml",
+                "Definitions/torrentgalaxy.yml",
                 "Definitions/torrentgalaxyorg.yml", // renamed to torrentgalaxy
                 "Definitions/torrenthane.yml",
                 "Definitions/torrentkim.yml",
