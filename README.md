@@ -170,6 +170,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * File-Tracker
  * Gay-Torrents.net
  * Genesis-Movement
+ * GOOD tracker
  * HD-CzTorrent
  * HDGalaKtik
  * HellTorrents
@@ -379,7 +380,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDFun (HDZone)
  * HDHome (HDBigger) [![(invite needed)][inviteneeded]](#)
  * HDKylin (麒麟)
- * HDMaYi (小蚂蚁PT站)
  * HDPT (明教) [![(invite needed)][inviteneeded]](#)
  * HDRoute [![(invite needed)][inviteneeded]](#)
  * HDSky [![(invite needed)][inviteneeded]](#)
@@ -463,7 +463,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * NorBits
  * NORDiCHD
  * Ntelogo
- * OKFUN PT
  * OKPT
  * Old Greek Tracker
  * Old Toons World
@@ -531,7 +530,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Secret Cinema
  * SeedFile
  * SFP (Share Friends Projekt)
- * Shadowflow (影) [![(invite needed)][inviteneeded]](#)
  * Shareisland
  * Shazbat
  * SiamBIT

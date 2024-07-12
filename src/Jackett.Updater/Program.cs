@@ -435,6 +435,7 @@ namespace Jackett.Updater
                 "Definitions/hdclub.yml",
                 "Definitions/hddisk.yml",
                 "Definitions/hdhouse.yml",
+                "Definitions/hdmayi.yml",
                 "Definitions/hdme.yml",
                 "Definitions/hdmonkey.yml",
                 "Definitions/hdolimpo.yml", // migrated to UNIT3D API
@@ -534,6 +535,7 @@ namespace Jackett.Updater
                 "Definitions/nyoo.yml",
                 "Definitions/oasis.yml",
                 "Definitions/obscure.yml",
+                "Definitions/okfunpt.yml",
                 "Definitions/omgwtftrackr.yml",
                 "Definitions/oncesearch.yml",
                 "Definitions/onlineselfeducation.yml",
@@ -598,6 +600,7 @@ namespace Jackett.Updater
                 "Definitions/secretcinema.yml", // migrated to C# gazelle base tracker
                 "Definitions/seedpeer.yml",
                 "Definitions/sexxi.yml",
+                "Definitions/shadowflow.yml",
                 "Definitions/sharefiles.yml",
                 "Definitions/shareisland.yml", // switch to *-API #8682
                 "Definitions/sharespacedb.yml",
