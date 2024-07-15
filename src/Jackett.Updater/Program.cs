@@ -334,6 +334,7 @@ namespace Jackett.Updater
                 "Definitions/casatorrent.yml", // renamed to teamctgame
                 "Definitions/casstudiotv.yml",
                 "Definitions/ccfbits.yml",
+                "Definitions/centraltorrent.yml",
                 "Definitions/channelx.yml",
                 "Definitions/cheggit.yml",
                 "Definitions/cili180.yml", // renamed to liaorencili
@@ -583,6 +584,7 @@ namespace Jackett.Updater
                 "Definitions/rgu.yml",
                 "Definitions/rmhd.yml",
                 "Definitions/rns.yml", // site merged with audiobooktorrents
+                "Definitions/rockethd.yml",
                 "Definitions/rockhardlossless.yml",
                 "Definitions/rodvd.yml",
                 "Definitions/rofd.yml",
