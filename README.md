@@ -31,7 +31,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * ACG.RIP
  * Anidex
  * AniLibria
- * Anime Time
  * Anime Tosho
  * AniRena
  * AniSource
@@ -376,7 +375,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDBits [![(invite needed)][inviteneeded]](#)
  * HDCiTY (HDC) [![(invite needed)][inviteneeded]](#)
  * HDFans
- * HDFun (HDZone)
  * HDHome (HDBigger) [![(invite needed)][inviteneeded]](#)
  * HDKylin (麒麟)
  * HDPT (明教) [![(invite needed)][inviteneeded]](#)
@@ -433,13 +431,11 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Lesbians4u
  * Libble
  * LibraNet (LN)
- * LilleSky.org
  * LinkoManija
  * Locadora
  * LosslessClub [![(invite needed)][inviteneeded]](#)
  * LST
  * M-Team TP (MTTP) [![(invite needed)][inviteneeded]](#)
- * MaDs Revolution
  * Majomparádé (TurkDepo)
  * Making Off
  * Mansão dos Animes (MDAN)
@@ -627,7 +623,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * XtremeBytes
  * XWT-Classics
  * XWTorrents (XWT)
- * YDYPT (伊甸园PT)
  * YggTorrent (YGG)
  * YOiNKED
  * Zamunda.net

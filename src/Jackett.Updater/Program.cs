@@ -276,6 +276,7 @@ namespace Jackett.Updater
                 "Definitions/anime-free.yml",
                 "Definitions/animeclipse.yml",
                 "Definitions/animeitalia.yml",
+                "Definitions/animetime.yml",
                 "Definitions/animetracker.yml",
                 "Definitions/animeworld.yml", // switch to *-API #8682
                 "Definitions/anitoons.yml",
@@ -435,6 +436,7 @@ namespace Jackett.Updater
                 "Definitions/hdcity.yml", // moved to pixelados
                 "Definitions/hdclub.yml",
                 "Definitions/hddisk.yml",
+                "Definitions/hdfun.yml",
                 "Definitions/hdhouse.yml",
                 "Definitions/hdmayi.yml",
                 "Definitions/hdme.yml",
@@ -489,8 +491,10 @@ namespace Jackett.Updater
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro
                 "Definitions/lightning-tor.yml",
+                "Definitions/lilleskyorg.yml",
                 "Definitions/limetorrentsclone.yml",
                 "Definitions/mactorrents.yml",
+                "Definitions/madsrevolution.yml",
                 "Definitions/magicheaven.yml",
                 "Definitions/magico.yml", // renamed to trellas
                 "Definitions/magnet4you.yml",
@@ -731,6 +735,7 @@ namespace Jackett.Updater
                 "Definitions/xtremefile.yml",
                 "Definitions/xtremezone.yml", // migrated to C# XtremeZone base tracker
                 "Definitions/xxxtorrents.yml",
+                "Definitions/ydypt.yml",
                 "Definitions/yingk.yml",
                 "Definitions/yourexotic.yml", // renamed to exoticaz
                 "Definitions/zooqle.yml",
