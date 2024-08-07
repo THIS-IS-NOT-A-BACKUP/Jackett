@@ -55,6 +55,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * DonTorrent
  * E-Hentai
  * EBook Bay (EBB)
+ * Elitetorrent.wf
  * EpubLibre
  * EXT Torrents
  * ExtraTorrent.st
@@ -521,7 +522,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * RPTScene (RPTorrents)
  * SATClubbing
  * SceneHD [![(invite needed)][inviteneeded]](#)
- * SceneLinks (SL)
  * SceneRush
  * SceneTime
  * Secret Cinema
