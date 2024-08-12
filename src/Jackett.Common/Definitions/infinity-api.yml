@@ -1,30 +1,22 @@
 ---
-id: lst
-name: LST
-description: "LST is an English Private tracker for MOVIES / TV / GENERAL"
+id: infinity-api
+name: INFINITY (API)
+description: "INFINITY is a Private Torrent Tracker for MOVIES / TV"
 language: en-US
 type: private
 encoding: UTF-8
 links:
-  - https://lst.gg/
+  - https://infinitylibrary.net/
 
 caps:
   categorymappings:
     - {id: 1, cat: Movies, desc: "Movies"}
     - {id: 2, cat: TV, desc: "TV"}
-    - {id: 6, cat: TV/Anime, desc: "Anime"}
-    - {id: 3, cat: Audio, desc: "Music"}
-    - {id: 4, cat: Console, desc: "Game"}
-    - {id: 5, cat: PC, desc: "Application"}
-    - {id: 8, cat: XXX, desc: "XXX"}
-    - {id: 9, cat: Books/EBook, desc: "Ebook/Manga"}
-    - {id: 10, cat: Other, desc: "Education"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
-    music-search: [q]
 
 settings:
   - name: apikey
@@ -33,7 +25,7 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://lst.gg/\" target=\"_blank\">LST</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://infinitylibrary.net/\" target=\"_blank\">INFINITY</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -58,10 +50,6 @@ settings:
     options:
       desc: desc
       asc: asc
-  - name: info_activity
-    type: info
-    label: Account Inactivity
-    default: "Accounts get disabled after 90 days of no logins or any sort of activity. Accounts will also get soft deleted after 120 days."
 
 login:
   path: /api/torrents
@@ -177,10 +165,4 @@ search:
       case:
         False: 1 # normal
         True: 2 # double
-# global MR is 1.0 but torrents must be seeded for 5 days regardless of ratio
-#    minimumratio:
-#      text: 1.0
-    minimumseedtime:
-      # 7 days (as seconds = 7 x 24 x 60 x 60)
-      text: 604800
 # json UNIT3D 8.1.3
