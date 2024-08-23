@@ -448,6 +448,7 @@ namespace Jackett.Updater
                 "Definitions/hdreactor.yml", // renamed to hdhouse
                 "Definitions/hdspain.yml",
                 "Definitions/hdstreet.yml",
+                "Definitions/hdvbits.yml",
                 "Definitions/hdzone.yml", // renamed to hdfun
                 "Definitions/heavens-hell.yml",
                 "Definitions/hellastz.yml",
@@ -456,6 +457,7 @@ namespace Jackett.Updater
                 "Definitions/hon3yhd.yml",
                 "Definitions/horriblesubs.yml",
                 "Definitions/horrorsite.yml",
+                "Definitions/hqmusic.yml",
                 "Definitions/hqsource.yml",
                 "Definitions/hush.yml",
                 "Definitions/hyperay.yml",
@@ -624,6 +626,7 @@ namespace Jackett.Updater
                 "Definitions/skytorrents.yml",
                 "Definitions/skytorrentsclone.yml", // renamed to skytorrents-lol
                 "Definitions/skytorrentsclone2.yml", // renamed to skytorrents-to
+                "Definitions/slosoul.yml",
                 "Definitions/soundpark.yml",
                 "Definitions/spacetorrent.yml",
                 "Definitions/speed-share.yml",
