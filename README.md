@@ -438,6 +438,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Locadora
  * LosslessClub [![(invite needed)][inviteneeded]](#)
  * LST
+ * LustHive
  * M-Team TP (MTTP) [![(invite needed)][inviteneeded]](#)
  * MaDs Revolution
  * Majomparádé (TurkDepo)
@@ -613,6 +614,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * upload.cx
  * Upscale Vault
  * UTOPIA
+ * Vault network
  * WDT (Wrestling Desires Torrents / Ultimate Wrestling Torrents)
  * White Angel
  * WinterSakura
