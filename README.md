@@ -282,7 +282,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BlueBird
  * BlurayTracker
  * Blutopia (BLU)
- * Bolly (Telly)
  * Borgzelle [![(invite needed)][inviteneeded]](#)
  * Boxing Torrents
  * Brasil Tracker
@@ -597,7 +596,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TorrentLeech (TL)
  * TorrentLeech.pl
  * TorrentSeeds (TS)
- * ToSky
  * ToTheGlory (TTG) [![(invite needed)][inviteneeded]](#)
  * TrackerMK
  * TranceTraffic
