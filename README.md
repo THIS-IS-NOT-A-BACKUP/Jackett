@@ -280,7 +280,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * BJ-Share (BJ) [![(invite needed)][inviteneeded]](#)
  * BlueBird
  * BlurayTracker
- * Blutopia (BLU)
  * Borgzelle [![(invite needed)][inviteneeded]](#)
  * Boxing Torrents
  * Brasil Tracker
@@ -600,7 +599,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TranceTraffic
  * Trellas (Magico) [![(invite needed)][inviteneeded]](#)
  * TreZzoR
- * TurkNova
  * TurkSeed
  * TurkTorrent (TT)
  * TV Chaos UK (TVCUK)

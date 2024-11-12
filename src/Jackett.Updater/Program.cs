@@ -314,6 +314,7 @@ namespace Jackett.Updater
                 "Definitions/blubits.yml",
                 "Definitions/bluesbrothers.yml",
                 "Definitions/blutopia.yml", // switch to *-API #8682
+                "Definitions/blutopia-api.yml",
                 "Definitions/bolly-api.yml",
                 "Definitions/brasiltracker.yml", // migrated to C#
                 "Definitions/breizhpeers.yml",
@@ -720,6 +721,7 @@ namespace Jackett.Updater
                 "Definitions/tspate.yml",
                 "Definitions/ttobogo.yml",
                 "Definitions/ttsweb.yml",
+                "Definitions/turknova.yml",
                 "Definitions/turkseed.yml",
                 "Definitions/turktracker.yml",
                 "Definitions/tvroad.yml",
