@@ -380,6 +380,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * HDAtmos
  * HDBits [![(invite needed)][inviteneeded]](#)
  * HDCiTY (HDC) [![(invite needed)][inviteneeded]](#)
+ * HDClone
  * HDFans
  * HDHome (HDBigger) [![(invite needed)][inviteneeded]](#)
  * HDKylin (麒麟)
@@ -519,6 +520,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Resurrect The Net [![(invite needed)][inviteneeded]](#)
  * RetroFlix
  * RevolutionTT [![(invite needed)][inviteneeded]](#)
+ * RocketHD
  * Romanian Metal Torrents (RMT)
  * RoTorrent
  * Rousi
