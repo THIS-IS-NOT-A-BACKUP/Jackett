@@ -309,7 +309,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CGPeers [![(invite needed)][inviteneeded]](#)
  * CHDBits [![(invite needed)][inviteneeded]](#)
  * ChileBT
- * CineClassics
  * Cinemageddon [![(invite needed)][inviteneeded]](#)
  * CinemaMovieS_ZT
  * Cinematik
@@ -533,6 +532,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Romanian Metal Torrents (RMT)
  * RoTorrent
  * Rousi
+ * SAMARITANO
  * SATClubbing
  * SceneHD [![(invite needed)][inviteneeded]](#)
  * SceneRush
@@ -571,7 +571,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * The Old School
  * The Paradiese
  * The Place [![(invite needed)][inviteneeded]](#)
- * The Shinning (TsH)
  * The Show
  * The Vault [![(invite needed)][inviteneeded]](#)
  * The-New-Fun
