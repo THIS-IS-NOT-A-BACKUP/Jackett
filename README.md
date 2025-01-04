@@ -22,7 +22,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
 #### Supported Systems
 * Windows 10 Version 1607+ or greater [supported operating systems here](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#windows)
 * Linux [supported operating systems here](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#linux)
-* macOS 12.0+ (Monterey) or greater [supported operating systems here](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#macos)
+* macOS 13.0+ (Ventura) or greater [supported operating systems here](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#macos)
 
 #### Supported Trackers
 <details> <summary> <b> Supported Public Trackers </b> </summary>
@@ -727,17 +727,18 @@ Using the "all" indexer has no advantages (besides reduced management overhead),
 To get all Jackett indexers including their capabilities you can use `t=indexers` on the "all" indexer. To get only configured/unconfigured indexers you can also add `configured=true/false` as a query parameter.
 
 ## Installation on Windows
-We recommend you install Jackett as a Windows service using the supplied installer. You may also download the zipped version if you would like to configure everything manually.
+We recommend you install Jackett as a Windows service using the supplied [Windows installer](https://github.com/Jackett/Jackett/releases/latest/download/Jackett.Installer.Windows.exe). You may also download the [zipped version](https://github.com/Jackett/Jackett/releases/latest/download/Jackett.Binaries.Windows.zip) if you would like to configure everything manually.
 
 To get started with using the installer for Jackett, follow the steps below:
 
 1. Check if you need any .NET prerequisites installed, see https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net80#dependencies
-2. Download the latest version of the Windows installer, "Jackett.Installer.Windows.exe" from the [releases](https://github.com/Jackett/Jackett/releases/latest) page.
-3. When prompted if you would like this app to make changes to your computer, select "yes".
-4. If you would like to install Jackett as a Windows Service, make sure the "Install as Windows Service" checkbox is filled.
-5. Once the installation has finished, check the "Launch Jackett" box to get started.
-6. Navigate your web browser to http://127.0.0.1:9117
-7. You're now ready to begin adding your trackers and using Jackett.
+2. Download the latest version of the [Windows installer](https://github.com/Jackett/Jackett/releases/latest/download/Jackett.Installer.Windows.exe)
+3. Run the Jackett.Installer.Windows.exe program.
+4. When prompted if you would like this app to make changes to your computer, select "yes".
+5. If you would like to install Jackett as a Windows Service, make sure the "Install as Windows Service" checkbox is filled.
+6. Once the installation has finished, check the "Launch Jackett" box to get started.
+7. Navigate your web browser to http://127.0.0.1:9117
+8. You're now ready to begin adding your trackers and using Jackett.
 
 When installed as a service the tray icon acts as a way to open/start/stop Jackett. If you opted to not install it as a service then Jackett will run its web server from the tray tool.
 
@@ -808,7 +809,7 @@ On an Ubuntu 16 system: [chrisjohnson00.jackett](https://galaxy.ansible.com/chri
 ## Installation on macOS
 
 ### Prerequisites
-macOS 12.0+ (Monterey) or greater
+macOS 13.0+ (Ventura) or greater
 
 ### Install as service
 1. Download and extract the latest `Jackett.Binaries.macOS.tar.gz` or `Jackett.Binaries.macOSARM64.tar.gz` release from the [releases](https://github.com/Jackett/Jackett/releases/latest) page.
