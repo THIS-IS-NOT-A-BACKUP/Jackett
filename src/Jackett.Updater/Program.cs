@@ -345,6 +345,7 @@ namespace Jackett.Updater
                 "Definitions/cili180.yml", // renamed to liaorencili
                 "Definitions/cilipro.yml",
                 "Definitions/cinefilhd.yml",
+                "Definitions/classix.yml",
                 "Definitions/cloudtorrents.yml",
                 "Definitions/cooltorrent.yml",
                 "Definitions/cpasbiensi.yml",
@@ -398,6 +399,7 @@ namespace Jackett.Updater
                 "Definitions/extratorrentclone.yml",
                 "Definitions/extremetorrents.yml",
                 "Definitions/fantasticheaven.yml",
+                "Definitions/fantastiko.yml",
                 "Definitions/fastscene.yml",
                 "Definitions/feedurneed.yml", // merged with devilsplayground #6872
                 "Definitions/fenyarnyek-tracker.yml",
@@ -603,6 +605,7 @@ namespace Jackett.Updater
                 "Definitions/redtopia.yml",
                 "Definitions/reelflix.yml", // switch to *-API #8682
                 "Definitions/renegade.yml",
+                "Definitions/resurrectthenet.yml",
                 "Definitions/retroflix.yml", // migrated to C#
                 "Definitions/rgu.yml",
                 "Definitions/rmhd.yml",
@@ -663,6 +666,7 @@ namespace Jackett.Updater
                 "Definitions/tellytorrent-api.yml",
                 "Definitions/tenyardtracker.yml", // to be migrated to c#, #795
                 "Definitions/tfile.yml",
+                "Definitions/tgay.yml",
                 "Definitions/theaudioscene.yml",
                 "Definitions/the-crazy-ones.yml",
                 "Definitions/the-devils-lounge.yml",

@@ -311,7 +311,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * CinemaMovieS_ZT
  * Cinematik
  * CinemaZ (EuTorrents)
- * Classix
  * Coastal-Crew
  * ConCen [![(invite needed)][inviteneeded]](#)
  * Concertos
@@ -345,7 +344,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * ExtremeBits
  * F1Carreras
  * FANO.IN [![(invite needed)][inviteneeded]](#)
- * Fantastiko [![(invite needed)][inviteneeded]](#)
  * Fappaizuri
  * FearNoPeer
  * Femdomcult
@@ -524,7 +522,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
  * ReelFlix
- * Resurrect The Net [![(invite needed)][inviteneeded]](#)
  * RetroFlix
  * RevolutionTT [![(invite needed)][inviteneeded]](#)
  * RocketHD
@@ -561,7 +558,6 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TeamOS
  * TEKNO3D [![(invite needed)][inviteneeded]](#)
  * teracod (Movie Zone)
- * TGay
  * The Crazy Ones
  * The Falling Angels (TFA)
  * The Geeks
