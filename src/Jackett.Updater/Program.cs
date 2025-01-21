@@ -439,6 +439,7 @@ namespace Jackett.Updater
                 "Definitions/hachede.yml",
                 "Definitions/hamsterstudio.yml",
                 "Definitions/haresclub.yml",
+                "Definitions/hd4fans.yml",
                 "Definitions/hd4free.yml",
                 "Definitions/hdai.yml",
                 "Definitions/hdbc.yml", // renamed to hdbitscom
@@ -538,6 +539,7 @@ namespace Jackett.Updater
                 "Definitions/mteamtp2fa.yml", // migrated to C# (API)
                 "Definitions/music-master.yml",
                 "Definitions/muziekfabriek.yml",
+                "Definitions/myporno.yml",
                 "Definitions/nachtwerk.yml",
                 "Definitions/nbtorrents.yml",
                 "Definitions/nbtorrents-api.yml",
