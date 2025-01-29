@@ -418,6 +418,7 @@ namespace Jackett.Updater
                 "Definitions/freedomhd.yml",
                 "Definitions/freetorrent.yml",
                 "Definitions/freshmeat.yml",
+                "Definitions/frozenlayer.yml",
                 "Definitions/fullmixmusic.yml",
                 "Definitions/funreleases.yml",
                 "Definitions/fusionmayhem.yml",
@@ -501,6 +502,7 @@ namespace Jackett.Updater
                 "Definitions/leaguehd.yml", // renamed to lemonhd
                 "Definitions/lechaudron.yml",
                 "Definitions/leech24.yml", // switch to *-API #12553
+                "Definitions/leech24-api.yml",
                 "Definitions/legacyhd.yml", // renamed to realflix
                 "Definitions/legittorrents.yml",
                 "Definitions/lemencili.yml",
@@ -641,6 +643,7 @@ namespace Jackett.Updater
                 "Definitions/shellife.yml",
                 "Definitions/sharkpt.yml",
                 "Definitions/shokweb.yml",
+                "Definitions/simpleanime.yml",
                 "Definitions/skipthecommercials.yml", // switch to *-API #8682
                 "Definitions/skipthecommercials-api.yml",
                 "Definitions/skipthetrailers.yml",
