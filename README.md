@@ -102,6 +102,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * OxTorrent-vip
  * OpenSharing
  * PC-torrent
+ * plugintorrent
  * PornoTorrent
  * PornRips
  * Postman
@@ -137,6 +138,7 @@ A third-party Golang SDK for Jackett is available from [webtor-io/go-jackett](ht
  * TorrentQQ (토렌트큐큐)
  * Torrents.csv
  * TorrentSir (토렌트썰)
+ * torrentssg (토렌트쓱)
  * TorrentView (토렌트뷰)
  * Torrentz2nz
  * TrahT
