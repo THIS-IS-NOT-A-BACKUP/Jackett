@@ -51,7 +51,6 @@ Prior versions of Jackett are no longer supported.
  * BlueRoms
  * BT.etree
  * BTdirectory (BT目录)
- * BTMET
  * BTSOW
  * Byrutor
  * Cinecalidad
@@ -320,7 +319,6 @@ Prior versions of Jackett are no longer supported.
  * CrazySpirits
  * CrnaBerza
  * cyanbug (大青虫)
- * Dajiao (打胶) [![(invite needed)][inviteneeded]](#)
  * DANISH BYTES
  * Dark-Shadow
  * Das Unerwartete (D-U)

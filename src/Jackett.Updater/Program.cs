@@ -329,6 +329,7 @@ namespace Jackett.Updater
                 "Definitions/btdb.yml",
                 "Definitions/bteye.yml",
                 "Definitions/btgigs.yml",
+                "Definitions/btmet.yml",
                 "Definitions/btkitty.yml",
                 "Definitions/btmirror.yml",
                 "Definitions/btstornet.yml",
@@ -355,6 +356,7 @@ namespace Jackett.Updater
                 "Definitions/cryptichaven.yml",
                 "Definitions/czteam.yml",
                 "Definitions/cztorrent.yml",
+                "Definitions/dajiao.yml",
                 "Definitions/danishbytes.yml", // migrated to C#
                 "Definitions/dariustracker.yml",
                 "Definitions/darktracker.yml",
