@@ -141,7 +141,7 @@ Prior versions of Jackett are no longer supported.
  * Torrents.csv
  * TorrentSir (토렌트썰)
  * torrentssg (토렌트쓱)
- * TorrentView (토렌트뷰)
+ * Torrenttip
  * Torrentz2nz
  * TrahT
  * truPornolabs
@@ -321,6 +321,7 @@ Prior versions of Jackett are no longer supported.
  * cyanbug (大青虫)
  * DANISH BYTES
  * Dark-Shadow
+ * Darkpeers
  * Das Unerwartete (D-U)
  * DataScene (DS)
  * DesiTorrents [![(invite needed)][inviteneeded]](#)
@@ -340,6 +341,7 @@ Prior versions of Jackett are no longer supported.
  * eStone (BigTorrent)
  * Exitorrent.org [![(invite needed)][inviteneeded]](#)
  * ExoticaZ (YourExotic)
+ * Explosiv-World
  * ExtremeBits
  * F1Carreras
  * FANO.IN [![(invite needed)][inviteneeded]](#)
@@ -579,7 +581,6 @@ Prior versions of Jackett are no longer supported.
  * Torrent Heaven (Dutch)
  * Torrent Network (TN)
  * Torrent Trader [![(invite needed)][inviteneeded]](#)
- * Torrent-Explosiv
  * Torrent-Syndikat [![(invite needed)][inviteneeded]](#)
  * TOrrent-tuRK (TORK)
  * Torrent.LT
