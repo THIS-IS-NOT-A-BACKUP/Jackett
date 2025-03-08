@@ -140,8 +140,9 @@ Prior versions of Jackett are no longer supported.
  * TorrentQQ (토렌트큐큐)
  * Torrents.csv
  * TorrentSir (토렌트썰)
+ * Torrentsome (토렌트썸)
  * torrentssg (토렌트쓱)
- * Torrenttip
+ * Torrenttip (토렌트팁)
  * Torrentz2nz
  * TrahT
  * truPornolabs
@@ -382,6 +383,7 @@ Prior versions of Jackett are no longer supported.
  * HD-UNiT3D
  * HDArea (HDA)
  * HDAtmos
+ * HDBao
  * HDBits [![(invite needed)][inviteneeded]](#)
  * HDCiTY (HDC) [![(invite needed)][inviteneeded]](#)
  * HDClone
@@ -592,7 +594,6 @@ Prior versions of Jackett are no longer supported.
  * Torrenteros (TTR)
  * TorrentHR
  * Torrenting (TT)
- * Torrentland
  * TorrentLeech (TL)
  * TorrentLeech.pl [![(invite needed)][inviteneeded]](#)
  * TorrentSeeds (TS)
