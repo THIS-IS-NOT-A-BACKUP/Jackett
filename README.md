@@ -437,6 +437,7 @@ Prior versions of Jackett are no longer supported.
  * Le-Cinephile
  * LearnBits
  * LearnFlakes
+ * Leech24
  * LemonHD [![(invite needed)][inviteneeded]](#)
  * Lesbians4u
  * Libble
@@ -533,7 +534,7 @@ Prior versions of Jackett are no longer supported.
  * SAMARITANO
  * SATClubbing
  * SceneHD [![(invite needed)][inviteneeded]](#)
- * SceneRush
+ * SceneRush [![(invite needed)][inviteneeded]](#)
  * SceneTime
  * Secret Cinema
  * SeedFile
