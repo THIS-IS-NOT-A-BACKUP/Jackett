@@ -279,6 +279,7 @@ Prior versions of Jackett are no longer supported.
  * Bit-Bázis
  * BIT-HDTV
  * Bitded
+ * bitGAMER
  * Bithorlo (BHO)
  * BitHUmen [![(invite needed)][inviteneeded]](#)
  * Bitpalace
@@ -441,6 +442,7 @@ Prior versions of Jackett are no longer supported.
  * Leech24
  * LemonHD [![(invite needed)][inviteneeded]](#)
  * Lesbians4u
+ * LetSeed
  * Libble
  * LibraNet (LN)
  * LinkoManija
@@ -490,7 +492,7 @@ Prior versions of Jackett are no longer supported.
  * PassThePopcorn (PTP) [![(invite needed)][inviteneeded]](#)
  * Peeratiko
  * Peers.FM
- * Phoenix Project [![(invite needed)][inviteneeded]](#)
+ * Phoenix Project
  * PigNetwork (猪猪网)
  * PixelCove (Ultimate Gamer)
  * PiXELHD (PxHD) [![(invite needed)][inviteneeded]](#)
