@@ -1,22 +1,25 @@
 ---
-id: laidbackmanor
-name: LaidBackManor (API)
-description: "LaidBackManor (LBM) is a Private Torrent Tracker for MOVIES / TV / GENERAL"
+id: rastastugan-api
+name: Rastastugan (API)
+description: "Rastastugan is a NORDIC Private Torrent Tracker for MOVIES / TV / GENERAL"
 language: en-US
 type: private
 encoding: UTF-8
 links:
-  - https://laidbackmanor.xyz/
+  - https://rastastugan.org/
 
 caps:
   categorymappings:
     - {id: 1, cat: Movies, desc: "Movie"}
     - {id: 2, cat: TV, desc: "TV"}
     - {id: 3, cat: Audio, desc: "Music"}
-    - {id: 4, cat: Console, desc: "Game"}
-    - {id: 5, cat: PC, desc: "Application"}
-    - {id: 6, cat: Books, desc: "Books"}
-    - {id: 8, cat: TV/Sport, desc: "Sports"}
+    - {id: 4, cat: PC, desc: "App"}
+    - {id: 5, cat: Console, desc: "Game"}
+    - {id: 7, cat: Audio/Audiobook, desc: "Audiobook"}
+    - {id: 8, cat: Books, desc: "Book"}
+    - {id: 9, cat: Audio/Other, desc: "Podcast"}
+    - {id: 10, cat: TV/Sport, desc: "Sport"}
+    - {id: 6, cat: XXX, desc: "XXX"}
 
   modes:
     search: [q]
@@ -32,11 +35,15 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://laidbackmanor.xyz/\" target=\"_blank\">LaidBackManor</a> account <i>My Security</i> page and clicking on the <b>API Token</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://rastastugan.org/\" target=\"_blank\">Rastastugan</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
     default: false
+  - name: single_file_release_use_filename
+    type: checkbox
+    label: Use filename as title for single file releases
+    default: true
   - name: sort
     type: select
     label: Sort requested from site
@@ -56,7 +63,7 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "Any accounts that are Not Active, Uploading/Downloading will be Pruned Without Warning."
+    default: "You must log in to the website or the tracker must register activity from your Announce URL once every 90 days or your account will be disabled."
 
 login:
   path: /api/torrents
@@ -87,7 +94,7 @@ search:
     imdbId: "{{ .Query.IMDBIDShort }}"
     tmdbId: "{{ .Query.TMDBID }}"
     tvdbId: "{{ .Query.TVDBID }}"
-    free: "{{ if .Config.freeleech }}1{{ else }}{{ end }}"
+    "free[]": "{{ if .Config.freeleech }}100{{ else }}{{ end }}"
     sortField: "{{ .Config.sort }}"
     sortDirection: "{{ .Config.type }}"
     perPage: 100
@@ -103,12 +110,21 @@ search:
   fields:
     category:
       selector: category_id
-    title:
+    title_optional:
       selector: name
+    title_filename:
+      selector: "files[0].name"
+      optional: true
+    files:
+      selector: num_file
+    title:
+      text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
     details:
       selector: details_link
     download:
       selector: download_link
+    infohash:
+      selector: info_hash
     poster:
       selector: meta.poster
       filters:
@@ -124,8 +140,6 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: ["(?i)^None$", ""]
-        - name: re_replace
           args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: re_replace
           args: ["(?i)(TV Movie)", "TV_Movie"]
@@ -133,8 +147,6 @@ search:
           args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
-    files:
-      selector: num_file
     seeders:
       selector: seeders
     leechers:
@@ -146,12 +158,17 @@ search:
       selector: created_at
       filters:
         - name: append
-          args: " +00:00" # GMT
+          args: " -02:00" # WGT
         - name: dateparse
           args: "MM/dd/yyyy HH:mm:ss zzz"
     size:
       selector: size
-    downloadvolumefactor:
+    _featured:
+      selector: featured
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
+    downloadvolumefactor_freeleech:
       # api returns 0%, 25%, 50%, 75%, 100%
       selector: freeleech
       case:
@@ -161,13 +178,20 @@ search:
         75%: 0.25
         100%: 0 # freeleech
         "*": 0 # catch errors
-    uploadvolumefactor:
-      # api returns 0=false, 1=true
+    downloadvolumefactor:
+      text: "{{ if .Result._featured }}0{{ else }}{{ .Result.downloadvolumefactor_freeleech }}{{ end }}"
+    uploadvolumefactor_double_upload:
+      # api returns False, True
       selector: double_upload
       case:
-        0: 1 # normal
-        1: 2 # double
+        False: 1 # normal
+        True: 2 # double
+    uploadvolumefactor:
+      text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
+# global MR is 0.8 but torrents must be seeded for 7 days regardless of ratio
+#    minimumratio:
+#      text: 0.8
     minimumseedtime:
-      # 3 days (as seconds = 3 x 24 x 60 x 60)
-      text: 259200
-# json UNIT3D 6.4.1
+      # 7 days (as seconds = 7 x 24 x 60 x 60)
+      text: 604800
+# json UNIT3D 8.3.6

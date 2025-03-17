@@ -422,7 +422,6 @@ Prior versions of Jackett are no longer supported.
  * JME-REUNIT3D
  * JoyHD [![(invite needed)][inviteneeded]](#)
  * JPopsuki
- * JPTV
  * KamePT [![(invite needed)][inviteneeded]](#)
  * Karagarga [![(invite needed)][inviteneeded]](#)
  * Keep Friends [![(invite needed)][inviteneeded]](#)
@@ -526,6 +525,7 @@ Prior versions of Jackett are no longer supported.
  * RacingForMe (RFM)
  * Rain
  * RareShare2
+ * Rastastugan
  * Red Leaves (红叶) [![(invite needed)][inviteneeded]](#)
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
