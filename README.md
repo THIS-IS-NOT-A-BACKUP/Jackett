@@ -76,7 +76,6 @@ Prior versions of Jackett are no longer supported.
  * Internet Archive (archive.org)
  * Isohunt2
  * iTorrent
- * JAV-Torrent
  * kickasstorrents.to
  * kickasstorrents.ws
  * Knaben
@@ -228,7 +227,6 @@ Prior versions of Jackett are no longer supported.
  * themixingbowl (TMB)
  * Toloka
  * TorrentMasters
- * Torrents-Local
  * TribalMixes
  * Union Fansub
  * UniOtaku
@@ -285,7 +283,6 @@ Prior versions of Jackett are no longer supported.
  * BitHUmen [![(invite needed)][inviteneeded]](#)
  * Bitpalace
  * BitPorn
- * Bitspyder
  * BitTorrentFiles
  * BiTTuRK
  * BJ-Share (BJ) [![(invite needed)][inviteneeded]](#)

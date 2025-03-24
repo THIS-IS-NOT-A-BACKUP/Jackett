@@ -310,6 +310,7 @@ namespace Jackett.Updater
                 "Definitions/bitnova.yml",
                 "Definitions/bitofvalor.yml",
                 "Definitions/bitsexy.yml",
+                "Definitions/bitspyder.yml",
                 "Definitions/bitstream.yml",
                 "Definitions/bittorrentam.yml",
                 "Definitions/blubits.yml",
@@ -492,6 +493,7 @@ namespace Jackett.Updater
                 "Definitions/isohunt.yml",
                 "Definitions/iv-torrents.yml",
                 "Definitions/jme-reunit3d.yml", // switch to -API #13043
+                "Definitions/jav-torrent.yml",
                 "Definitions/jptv.yml", // switch to -API #9242
                 "Definitions/jptv-api.yml",
                 "Definitions/kapaki.yml",
@@ -732,6 +734,7 @@ namespace Jackett.Updater
                 "Definitions/torrentseeds.yml", // migrated to c#
                 "Definitions/torrentsmd.yml",
                 "Definitions/torrent-town.yml",
+                "Definitions/torrentslocal.yml",
                 "Definitions/torrentsurf.yml", // renamed xtremebytes #9951
                 "Definitions/torrentv.yml",
                 "Definitions/torrentvault.yml",
