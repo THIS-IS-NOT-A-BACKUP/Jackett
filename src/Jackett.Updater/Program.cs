@@ -449,6 +449,7 @@ namespace Jackett.Updater
                 "Definitions/hd4fans.yml",
                 "Definitions/hd4free.yml",
                 "Definitions/hdai.yml",
+                "Definitions/hdatmos.yml",
                 "Definitions/hdbc.yml", // renamed to hdbitscom
                 "Definitions/hdbits.yml",
                 "Definitions/hdbitscom.yml",
@@ -470,6 +471,7 @@ namespace Jackett.Updater
                 "Definitions/hdstreet.yml",
                 "Definitions/hdpt.yml",
                 "Definitions/hdvbits.yml",
+                "Definitions/hdvideo.yml",
                 "Definitions/hdzone.yml", // renamed to hdfun
                 "Definitions/heavens-hell.yml",
                 "Definitions/hellastz.yml",

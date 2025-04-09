@@ -57,6 +57,7 @@ Prior versions of Jackett are no longer supported.
  * cpasbien
  * cpasbienClone
  * CrackingPatching
+ * DaMagNet
  * DivxTotal
  * dmhy
  * DonTorrent
@@ -382,7 +383,6 @@ Prior versions of Jackett are no longer supported.
  * HD-Torrents (HDT)
  * HD-UNiT3D
  * HDArea (HDA)
- * HDAtmos
  * HDBao
  * HDBits [![(invite needed)][inviteneeded]](#)
  * HDCiTY (HDC) [![(invite needed)][inviteneeded]](#)
@@ -397,7 +397,6 @@ Prior versions of Jackett are no longer supported.
  * HDTorrents.it [PAY2DL]
  * HDTurk
  * HDU
- * HDVIDEO
  * Hebits (HB)
  * HellasHut
  * HHanClub
