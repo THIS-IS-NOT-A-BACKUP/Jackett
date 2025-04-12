@@ -319,6 +319,7 @@ Prior versions of Jackett are no longer supported.
  * CrabPT (蟹黄堡)
  * CrazySpirits
  * CrnaBerza
+ * cspt (财神)
  * cyanbug (大青虫)
  * DANISH BYTES
  * Dark-Shadow
@@ -519,6 +520,7 @@ Prior versions of Jackett are no longer supported.
  * R3V WTF! [![(invite needed)][inviteneeded]](#)
  * Racing4Everyone (R4E)
  * RacingForMe (RFM)
+ * RailgunPT
  * Rain (雨)
  * RareShare2
  * Rastastugan
