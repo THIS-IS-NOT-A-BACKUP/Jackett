@@ -492,6 +492,7 @@ namespace Jackett.Updater
                 "Definitions/iloveclassics.yml",
                 "Definitions/infinityt.yml",
                 "Definitions/inperil.yml",
+                "Definitions/irishtv.yml",
                 "Definitions/isohunt.yml",
                 "Definitions/iv-torrents.yml",
                 "Definitions/jme-reunit3d.yml", // switch to -API #13043
@@ -616,6 +617,7 @@ namespace Jackett.Updater
                 "Definitions/racing4everyone.yml", // switch to *-API #12870 #8682
                 "Definitions/rapidetracker.yml",
                 "Definitions/rarbg.yml", // migrated to C#
+                "Definitions/rareshare2.yml",
                 "Definitions/redbits.yml", // switch to *-API #11540 #8682
                 "Definitions/redbits-api.yml",
                 "Definitions/redtopia.yml",
@@ -747,6 +749,7 @@ namespace Jackett.Updater
                 "Definitions/torrentwtf.yml",
                 "Definitions/torrentz2.yml",
                 "Definitions/torrentz2eu.yml",
+                "Definitions/torrentz2nz.yml",
                 "Definitions/torrentz2k.yml",
                 "Definitions/torrof.yml",
                 "Definitions/torviet.yml",

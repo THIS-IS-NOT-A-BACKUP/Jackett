@@ -142,7 +142,6 @@ Prior versions of Jackett are no longer supported.
  * Torrentsome (토렌트썸)
  * torrentssg (토렌트쓱)
  * Torrenttip (토렌트팁)
- * Torrentz2nz
  * TrahT
  * truPornolabs
  * U3C3
@@ -415,7 +414,6 @@ Prior versions of Jackett are no longer supported.
  * Infire
  * Insane Tracker
  * IPTorrents (IPT)
- * IrishTV (ITV)
  * ItaTorrents
  * JME-REUNIT3D
  * JoyHD (JHD) [![(invite needed)][inviteneeded]](#)
@@ -523,7 +521,6 @@ Prior versions of Jackett are no longer supported.
  * RacingForMe (RFM)
  * RailgunPT
  * Rain (雨)
- * RareShare2
  * Rastastugan
  * Red Leaves (红叶) [![(invite needed)][inviteneeded]](#)
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
