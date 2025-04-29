@@ -83,7 +83,6 @@ Prior versions of Jackett are no longer supported.
  * Knaben
  * LAPUMiA
  * LePorno.info
- * Libronube
  * LimeTorrents
  * LinuxTracker
  * Mac Torrents Download
@@ -431,7 +430,6 @@ Prior versions of Jackett are no longer supported.
  * Lat-Team
  * Le Saloon [![(invite needed)][inviteneeded]](#)
  * Le-Cinephile
- * LearnBits
  * LearnFlakes
  * Leech24
  * LemonHD [![(invite needed)][inviteneeded]](#)

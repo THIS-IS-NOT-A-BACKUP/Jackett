@@ -512,6 +512,7 @@ namespace Jackett.Updater
                 "Definitions/lat-team.yml", // switch to *-API #8682
                 "Definitions/latinop2p.yml",
                 "Definitions/leaguehd.yml", // renamed to lemonhd
+                "Definitions/learnbits.yml",
                 "Definitions/lechaudron.yml",
                 "Definitions/leech24-api.yml",
                 "Definitions/legacyhd.yml", // renamed to realflix
@@ -522,6 +523,7 @@ namespace Jackett.Updater
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro
                 "Definitions/lightning-tor.yml",
+                "Definitions/libronube.yml",
                 "Definitions/lilleskyorg.yml",
                 "Definitions/limetorrentsclone.yml",
                 "Definitions/lusthive.yml",
