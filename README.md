@@ -141,15 +141,12 @@ Prior versions of Jackett are no longer supported.
  * torrentssg (토렌트쓱)
  * Torrenttip (토렌트팁)
  * TrahT
- * truPornolabs
  * U3C3
  * Uindex
- * UnionDHT
  * VSTHouse
  * VST Torrentz
  * VSTorrent
  * Wolfmax4K
- * xxxAdultTorrent
  * XXXClub
  * xxxtor
  * YourBittorrent
