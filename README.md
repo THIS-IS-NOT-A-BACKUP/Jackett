@@ -42,7 +42,6 @@ Prior versions of Jackett are no longer supported.
  * AniSource
  * ApacheTorrent
  * AudioBook Bay (ABB)
- * Badass Torrents
  * Bangumi Moe
  * BigFANGroup
  * BitRu
@@ -71,7 +70,6 @@ Prior versions of Jackett are no longer supported.
  * FilmesHdTorrent
  * Frozen Layer
  * GamesTorrents
- * GloDLS
  * GTorrent.pro
  * Idope
  * ilCorSaRoNeRo
