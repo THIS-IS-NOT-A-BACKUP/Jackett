@@ -80,7 +80,6 @@ Prior versions of Jackett are no longer supported.
  * kickasstorrents.to
  * kickasstorrents.ws
  * Knaben
- * LePorno.info
  * LimeTorrents
  * LinuxTracker
  * Mac Torrents Download
@@ -309,6 +308,7 @@ Prior versions of Jackett are no longer supported.
  * CinemaMovieS_ZT
  * Cinematik
  * CinemaZ (EuTorrents)
+ * ClearJAV
  * Coastal-Music-Crew (C-M-C)
  * ConCen (Conspiracy Central) [![(invite needed)][inviteneeded]](#)
  * Concertos
@@ -612,7 +612,6 @@ Prior versions of Jackett are no longer supported.
  * WinterSakura [![(invite needed)][inviteneeded]](#)
  * World-In-HD [![(invite needed)][inviteneeded]](#)
  * World-of-Tomorrow [![(invite needed)][inviteneeded]](#)
- * Wukong (悟空问道)
  * x-ite.me (XM)
  * Xider-Torrent
  * XSpeeds (XS)
