@@ -84,6 +84,7 @@ Prior versions of Jackett are no longer supported.
  * LinuxTracker
  * Mac Torrents Download
  * Magnet Cat
+ * MagnetDownload
  * MegaPeer
  * MejorTorrent
  * Mikan
@@ -347,7 +348,6 @@ Prior versions of Jackett are no longer supported.
  * Femdomcult
  * FileList (FL)
  * FinElite (FE) [![(invite needed)][inviteneeded]](#)
- * FinVip
  * Flux-Zone
  * Free Farm (自由农场)
  * FSM
@@ -400,7 +400,6 @@ Prior versions of Jackett are no longer supported.
  * House of Devil
  * HQMusic
  * HUDBT (蝴蝶) [![(invite needed)][inviteneeded]](#)
- * ICC2022 (冰淇淋) [![(invite needed)][inviteneeded]](#)
  * ilolicon PT
  * ImmortalSeed (iS)
  * Immortuos
