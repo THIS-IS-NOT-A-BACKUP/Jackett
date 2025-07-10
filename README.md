@@ -108,6 +108,7 @@ Prior versions of Jackett are no longer supported.
  * PornoTorrent
  * PornRips
  * Postman
+ * ptorrents
  * Qbite (Hubite)
  * Rapidzona
  * RedeTorrent
@@ -117,6 +118,7 @@ Prior versions of Jackett are no longer supported.
  * Sexy-Pics
  * Shana Project
  * ShowRSS
+ * SkidrowRepack
  * sosulki
  * SubsPlease
  * sukebei.Nyaa.si
