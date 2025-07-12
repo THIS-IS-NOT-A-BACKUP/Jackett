@@ -273,6 +273,7 @@ Prior versions of Jackett are no longer supported.
  * Best-Core
  * BeyondHD (BHD)
  * Bibliotik [![(invite needed)][inviteneeded]](#)
+ * BigCore
  * Bit-Bázis
  * BIT-HDTV
  * Bitded
@@ -353,7 +354,6 @@ Prior versions of Jackett are no longer supported.
  * FinElite (FE) [![(invite needed)][inviteneeded]](#)
  * Flux-Zone
  * Free Farm (自由农场)
- * FSM
  * FunFile (FF)
  * FunkyTorrents (FT) [![(invite needed)][inviteneeded]](#)
  * FutureTorrent
@@ -514,7 +514,6 @@ Prior versions of Jackett are no longer supported.
  * RailgunPT
  * Rain (雨)
  * Rastastugan
- * Red Leaves (红叶) [![(invite needed)][inviteneeded]](#)
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
  * ReelFlix (HD4Free,LegacyHD)
@@ -524,7 +523,6 @@ Prior versions of Jackett are no longer supported.
  * Romanian Metal Torrents (RMT)
  * Rousi
  * SAMARITANO
- * SATClubbing
  * SceneHD [![(invite needed)][inviteneeded]](#)
  * SceneRush [![(invite needed)][inviteneeded]](#)
  * SceneTime
