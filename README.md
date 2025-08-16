@@ -96,7 +96,6 @@ Prior versions of Jackett are no longer supported.
  * NoNaMe Club (NNM-Club)
  * NorTorrent
  * Nyaa.si
- * NyaaPantsu
  * OneJAV
  * OxTorrent
  * OxTorrent-vip
@@ -473,7 +472,6 @@ Prior versions of Jackett are no longer supported.
  * OurBits (HDPter)
  * P2PBG
  * Panda
- * ParabellumHD
  * Party-Tracker
  * PassThePopcorn (PTP) [![(invite needed)][inviteneeded]](#)
  * Peeratiko
@@ -527,10 +525,12 @@ Prior versions of Jackett are no longer supported.
  * Secret Cinema
  * SeedFile (SF)
  * seedpool
+ * SewerPT (下水道) [![(invite needed)][inviteneeded]](#)
  * SFP (Share Friends Projekt)
  * Shareisland
  * Shazbat
  * SiamBIT
+ * SkipTheCommercials
  * SnowPT (SSPT)
  * SoulVoice (聆音Club) [![(invite needed)][inviteneeded]](#)
  * SpeedApp (SceneFZ, XtreMeZone / MYXZ, ICE Torrent)
