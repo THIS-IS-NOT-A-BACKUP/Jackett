@@ -602,6 +602,7 @@ namespace Jackett.Updater
                 "Definitions/oncesearch.yml",
                 "Definitions/onlineselfeducation.yml",
                 "Definitions/onlyscene.yml",
+                "Definitions/ostwiki.yml",
                 "Definitions/oxtorrent.yml",
                 "Definitions/p2pelite.yml",
                 "Definitions/pandahd.yml",
@@ -840,6 +841,7 @@ namespace Jackett.Updater
                 "Definitions/ydypt.yml",
                 "Definitions/yingk.yml",
                 "Definitions/yourexotic.yml", // renamed to exoticaz
+                "Definitions/zomb.yml",
                 "Definitions/zooqle.yml",
                 "Microsoft.Owin.dll",
                 "Microsoft.Owin.FileSystems.dll",
