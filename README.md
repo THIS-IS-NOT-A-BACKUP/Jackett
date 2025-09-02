@@ -180,7 +180,6 @@ Prior versions of Jackett are no longer supported.
  * Fenyarnyek-Tracker
  * File-Tracker
  * Gay-Torrents.net
- * Genesis-Movement
  * HD-CzTorrent [PAY2DL]
  * HDGalaKtik
  * HellTorrents [PAY2DL]
@@ -437,6 +436,7 @@ Prior versions of Jackett are no longer supported.
  * Locadora
  * LosslessClub [![(invite needed)][inviteneeded]](#)
  * LST
+ * LuckPT [![(invite needed)][inviteneeded]](#)
  * M-Team TP (MTTP) [![(invite needed)][inviteneeded]](#)
  * MaDs Revolution
  * Majomparádé (TurkDepo)
