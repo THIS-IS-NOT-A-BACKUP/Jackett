@@ -62,7 +62,6 @@ Prior versions of Jackett are no longer supported.
  * EBook Bay (EBB)
  * Elitetorrent.wf
  * EpubLibre
- * EXT Torrents
  * ExtraTorrent.st
  * EZTV
  * FileMood
@@ -105,7 +104,6 @@ Prior versions of Jackett are no longer supported.
  * PornRips
  * Postman
  * Qbite (Hubite)
- * Rapidzona
  * RedeTorrent
  * RinTorNeT
  * RuTor
