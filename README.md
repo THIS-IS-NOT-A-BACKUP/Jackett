@@ -124,6 +124,7 @@ Prior versions of Jackett are no longer supported.
  * torrent.by
  * torrent-pirat
  * Torrent9
+ * TorrentControl
  * TorrentDosFilmes
  * TorrentDownload
  * TorrentGalaxyClone
@@ -472,7 +473,6 @@ Prior versions of Jackett are no longer supported.
  * PassThePopcorn (PTP) [![(invite needed)][inviteneeded]](#)
  * Peeratiko
  * Peers.FM
- * Phoenix Project
  * PigNetwork (猪猪网)
  * PixelCove (Ultimate Gamer)
  * PiXELHD (PxHD) [![(invite needed)][inviteneeded]](#)
