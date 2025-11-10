@@ -133,9 +133,7 @@ Prior versions of Jackett are no longer supported.
  * TorrentProject2
  * TorrentQQ (토렌트큐큐)
  * Torrents.csv
- * TorrentSir (토렌트썰)
  * Torrentsome (토렌트썸)
- * torrentssg (토렌트쓱)
  * Torrenttip (토렌트팁)
  * TrahT
  * U3C3
