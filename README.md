@@ -270,7 +270,6 @@ Prior versions of Jackett are no longer supported.
  * BitHUmen
  * Bitpalace
  * BitPorn
- * BitSexy
  * BitTorrentFiles
  * BiTTuRK
  * BJ-Share (BJ) [![(invite needed)][inviteneeded]](#)
@@ -388,7 +387,6 @@ Prior versions of Jackett are no longer supported.
  * HELLENIC-HD
  * HHanClub
  * HHD
- * HomePornTorrents (HPT)
  * House of Devil
  * HQMusic
  * HUDBT (蝴蝶) [![(invite needed)][inviteneeded]](#)
