@@ -418,6 +418,7 @@ Prior versions of Jackett are no longer supported.
  * LearnFlakes
  * Leech24
  * LemonHD [![(invite needed)][inviteneeded]](#)
+ * LemonHD.net
  * Lesbians4u
  * LetSeed
  * Libble
@@ -607,7 +608,6 @@ Prior versions of Jackett are no longer supported.
  * XtremeBytes (TorrentSurf)
  * XWT-Classics
  * XWTorrents (XWT)
- * YggTorrent (YGG)
  * YOiNKED
  * YUSCENE
  * Zamunda.net
