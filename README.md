@@ -125,7 +125,6 @@ Prior versions of Jackett are no longer supported.
  * torrent.by
  * torrent-pirat
  * Torrent9
- * TorrentDosFilmes
  * TorrentDownload
  * TorrentGalaxyClone
  * TorrentKitty
@@ -264,6 +263,7 @@ Prior versions of Jackett are no longer supported.
  * Best-Core
  * BeyondHD (BHD)
  * Bibliotik [![(invite needed)][inviteneeded]](#)
+ * BigBBS
  * BigCore
  * Bit-Bázis
  * BIT-HDTV
