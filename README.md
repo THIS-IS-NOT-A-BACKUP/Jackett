@@ -62,6 +62,7 @@ Prior versions of Jackett are no longer supported.
  * EBook Bay (EBB)
  * Elitetorrent.wf
  * EpubLibre
+ * EXT Torrents
  * ExtraTorrent.st
  * EZTV
  * FileMood
@@ -430,7 +431,7 @@ Prior versions of Jackett are no longer supported.
  * LosslessClub [![(invite needed)][inviteneeded]](#)
  * LST
  * LuckPT [![(invite needed)][inviteneeded]](#)
- * M-Team - TP (MTTP)
+ * M-Team - TP (MTTP) [![(invite needed)][inviteneeded]](#)
  * MaDs Revolution
  * Majomparádé (TurkDepo)
  * Making Off
