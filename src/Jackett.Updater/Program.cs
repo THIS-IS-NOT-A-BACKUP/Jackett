@@ -407,6 +407,7 @@ namespace Jackett.Updater
                 "Definitions/extratorrentclone.yml",
                 "Definitions/extremetorrents.yml",
                 "Definitions/extremlymtorrents.yml",
+                "Definitions/exttorrents.yml",
                 "Definitions/fantasticheaven.yml",
                 "Definitions/fantastiko.yml",
                 "Definitions/fastscene.yml",
@@ -494,6 +495,7 @@ namespace Jackett.Updater
                 "Definitions/ibit.yml",
                 "Definitions/icc2022.yml",
                 "Definitions/icetorrent.yml", // migrated to C# XtremeZone base tracker
+                "Definitions/idope.yml",
                 "Definitions/idopeclone.yml",
                 "Definitions/ihdbits.yml",
                 "Definitions/ilcorsaroverde.yml",
@@ -832,6 +834,7 @@ namespace Jackett.Updater
                 "Definitions/vizuk.yml",
                 "Definitions/vtorrent.yml",
                 "Definitions/waffles.yml",
+                "Definitions/wdt.yml",
                 "Definitions/witchhunter.yml",
                 "Definitions/worldofp2p.yml",
                 "Definitions/worldwidetorrents.yml",
@@ -851,6 +854,7 @@ namespace Jackett.Updater
                 "Definitions/yingk.yml",
                 "Definitions/yggcookie.yml",
                 "Definitions/yggtorrent.yml",
+                "Definitions/yggtorrent-turbo.yml",
                 "Definitions/yourbittorrent.yml",
                 "Definitions/yourexotic.yml", // renamed to exoticaz
                 "Definitions/zetorrents.yml", // renamed to world-torrent #7574

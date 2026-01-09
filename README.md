@@ -63,7 +63,6 @@ Prior versions of Jackett are no longer supported.
  * EBook Bay (EBB)
  * Elitetorrent.wf
  * EpubLibre
- * EXT Torrents
  * ExtraTorrent.st
  * EZTV
  * FileMood
@@ -73,7 +72,6 @@ Prior versions of Jackett are no longer supported.
  * GamesTorrents
  * GTorrent.pro
  * HDRTorrent
- * Idope
  * ilCorSaRoNeRo
  * Internet Archive (archive.org)
  * Isohunt2
@@ -607,7 +605,6 @@ Prior versions of Jackett are no longer supported.
  * Upscale Vault
  * UTOPIA
  * Vault network
- * WDT (Wrestling Desires Torrents / Ultimate Wrestling Torrents)
  * White Angel
  * WinterSakura [![(invite needed)][inviteneeded]](#)
  * World-In-HD [![(invite needed)][inviteneeded]](#)
