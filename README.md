@@ -253,6 +253,7 @@ Prior versions of Jackett are no longer supported.
  * AsianDVDClub (ADC)
  * Audiences
  * AudioNews (AN)
+ * AURA4K
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
  * AvistaZ (AsiaTorrents)
  * Azusa (梓喵) [![(invite needed)][inviteneeded]](#)
@@ -394,6 +395,7 @@ Prior versions of Jackett are no longer supported.
  * House of Devil
  * HQMusic
  * HUDBT (蝴蝶) [![(invite needed)][inviteneeded]](#)
+ * HxPT (好学) [![(invite needed)][inviteneeded]](#) |
  * ImmortalSeed (iS)
  * Immortuos
  * Indietorrents [![(invite needed)][inviteneeded]](#)
@@ -415,6 +417,7 @@ Prior versions of Jackett are no longer supported.
  * KrazyZone
  * Kufei (库非)
  * Kufirc
+ * Kunlun (昆仑)
  * lajidui
  * Last Digital Underground (LDU)
  * LastFiles (LF)
