@@ -557,6 +557,17 @@ namespace Jackett.Common.Indexers.Definitions
                         referer: SiteLink);
 
                     var html = resp.ContentString ?? "";
+
+                    if (!html.Contains("/user/logout"))
+                    {
+                        await ApplyConfiguration(null);
+                        resp = await RequestWithCookiesAndRetryAsync(
+                            url: url,
+                            method: RequestType.GET,
+                            referer: SiteLink);
+                        html = resp.ContentString ?? "";
+                    }
+
                     releases.AddRange(ParseSearchResults(html));
                 }
             }
@@ -861,7 +872,7 @@ namespace Jackett.Common.Indexers.Definitions
                     var seeders = ParseUtil.CoerceInt(row.QuerySelector("td:nth-child(8)")?.TextContent);
                     var leechers = ParseUtil.CoerceInt(row.QuerySelector("td:nth-child(9)")?.TextContent);
 
-                    var details = new Uri(SiteLink + detailsHref.TrimStart('/'));
+                    var details = new Uri(detailsHref);
                     var link = new Uri(
                         $"{SiteLink.TrimEnd('/')}/engine/download_torrent?id={Uri.EscapeDataString(id)}");
 
