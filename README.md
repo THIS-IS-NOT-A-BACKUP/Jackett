@@ -248,6 +248,7 @@ Prior versions of Jackett are no longer supported.
  * Araba Fenice (Phoenix) [![(invite needed)][inviteneeded]](#)
  * ArabicSource
  * ArabP2P
+ * ArabScene [![(invite needed)][inviteneeded]](#)
  * ArabTorrents [![(invite needed)][inviteneeded]](#)
  * AsianCinema
  * AsianDVDClub (ADC)
@@ -574,6 +575,7 @@ Prior versions of Jackett are no longer supported.
  * Toca Share
  * Tormac
  * Tornado
+ * Torr9
  * Torrent Heaven (Dutch)
  * Torrent Network (TN)
  * Torrent Trader [![(invite needed)][inviteneeded]](#)
