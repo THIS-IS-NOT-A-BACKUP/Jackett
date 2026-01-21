@@ -97,7 +97,6 @@ Prior versions of Jackett are no longer supported.
  * NorTorrent
  * Nyaa.si
  * OneJAV
- * OxTorrent
  * OpenSharing
  * PC-torrent
  * Pirate's Paradise
@@ -519,6 +518,7 @@ Prior versions of Jackett are no longer supported.
  * RocketHD
  * Romanian Metal Torrents (RMT)
  * Rousi
+ * Rousi.pro
  * SAMARITANO
  * SBPT
  * SceneHD [![(invite needed)][inviteneeded]](#)
