@@ -150,7 +150,6 @@ Prior versions of Jackett are no longer supported.
 
  * AniDUB
  * AnimeLayer
- * ArenaBG
  * Best-Torrents [PAY2DL]
  * BitMagnet (Local DHT) [[site](https://github.com/bitmagnet-io/bitmagnet)]
  * BookTracker
@@ -278,6 +277,7 @@ Prior versions of Jackett are no longer supported.
  * BiTTuRK
  * BJ-Share (BJ) [![(invite needed)][inviteneeded]](#)
  * BlueBird
+ * BlueTorrents
  * BlurayTracker
  * Blutopia (BLU)
  * Borgzelle [![(invite needed)][inviteneeded]](#)
@@ -505,6 +505,7 @@ Prior versions of Jackett are no longer supported.
  * PTSBAO (烧包) [![(invite needed)][inviteneeded]](#)
  * PTSKIT
  * PTtime
+ * PTzone
  * Punk's Horror Tracker
  * PuntoTorrent [![(invite needed)][inviteneeded]](#)
  * PuTao (葡萄)
@@ -541,6 +542,7 @@ Prior versions of Jackett are no longer supported.
  * Shareisland
  * Shazbat
  * SiamBIT [PAY2DL]
+ * Siqi
  * SkipTheCommercials
  * SnowPT (SSPT)
  * SoulVoice (聆音Club) [![(invite needed)][inviteneeded]](#)
@@ -624,16 +626,13 @@ Prior versions of Jackett are no longer supported.
  * x-ite.me (XM)
  * xloli (ilolicon PT)
  * XSpeeds (XS)
- * Xthor [![(invite needed)][inviteneeded]](#)
  * xTorrenty [![(invite needed)][inviteneeded]](#)
  * XtremeBytes (TorrentSurf)
  * XWT-Classics
  * XWTorrents (XWT)
  * YggTorrent (YGG)
  * YUSCENE
- * Zamunda.net
  * Zappateers
- * Zelka.org
  * ZmPT (织梦)
 </details>
 
