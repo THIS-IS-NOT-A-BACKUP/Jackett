@@ -455,6 +455,7 @@ Prior versions of Jackett are no longer supported.
  * MMA-Torrents [![(invite needed)][inviteneeded]](#)
  * MNV (Max-New-Vision)
  * MOJBLiNK
+ * MomentPT [![(invite needed)][inviteneeded]](#)
  * MonikaDesign (MDU)
  * MoreThanTV (MTV) [![(invite needed)][inviteneeded]](#)
  * MouseBits
@@ -502,6 +503,7 @@ Prior versions of Jackett are no longer supported.
  * PTFans
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
+ * PTLGS [![(invite needed)][inviteneeded]](#)
  * PTSBAO (烧包) [![(invite needed)][inviteneeded]](#)
  * PTSKIT
  * PTtime
@@ -624,6 +626,7 @@ Prior versions of Jackett are no longer supported.
  * World-In-HD [![(invite needed)][inviteneeded]](#)
  * World-of-Tomorrow [![(invite needed)][inviteneeded]](#)
  * x-ite.me (XM)
+ * Xingyung (星陨阁) [![(invite needed)][inviteneeded]](#)
  * xloli (ilolicon PT)
  * XSpeeds (XS)
  * xTorrenty [![(invite needed)][inviteneeded]](#)
