@@ -52,7 +52,6 @@ Prior versions of Jackett are no longer supported.
  * btstate
  * Byrutor
  * Catorrent
- * Cinecalidad
  * cpasbienClone
  * CrackingPatching
  * DaMagNet
@@ -213,7 +212,6 @@ Prior versions of Jackett are no longer supported.
  * TribalMixes
  * Union Fansub
  * UniOtaku
- * ViDEOTEKA (VT)
  * Ztracker
 </details>
 
