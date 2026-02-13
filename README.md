@@ -458,6 +458,7 @@ Prior versions of Jackett are no longer supported.
  * MonikaDesign (MDU)
  * MoreThanTV (MTV) [![(invite needed)][inviteneeded]](#)
  * MouseBits
+ * Muxuege [![(invite needed)][inviteneeded]](#)
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
  * NCore
@@ -502,6 +503,7 @@ Prior versions of Jackett are no longer supported.
  * PTFans
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
+ * PTLAO
  * PTLGS [![(invite needed)][inviteneeded]](#)
  * PTSBAO (烧包) [![(invite needed)][inviteneeded]](#)
  * PTSKIT
