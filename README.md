@@ -90,7 +90,6 @@ Prior versions of Jackett are no longer supported.
  * ApacheTorrent
  * arab-torrents.com
  * AudioBook Bay (ABB)
- * AxelBg
  * Bangumi Moe
  * BigFANGroup
  * BitRu
@@ -200,6 +199,7 @@ Prior versions of Jackett are no longer supported.
 
  * AniDUB
  * AnimeLayer
+ * Axel Torrents
  * Best-Torrents [PAY2DL]
  * BitMagnet (Local DHT) [[site](https://github.com/bitmagnet-io/bitmagnet)]
  * BookTracker
@@ -664,7 +664,7 @@ Prior versions of Jackett are no longer supported.
  * TorrentLeech.pl [![(invite needed)][inviteneeded]](#)
  * ToTheGlory (TTG) [![(invite needed)][inviteneeded]](#)
  * TrackerMK
- * TrackerZero
+ * TrackerZero [PAY2DL]
  * TranceTraffic
  * Trellas (Magico) [![(invite needed)][inviteneeded]](#)
  * TreZzoR
