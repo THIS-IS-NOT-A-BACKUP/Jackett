@@ -93,7 +93,6 @@ Prior versions of Jackett are no longer supported.
  * Bangumi Moe
  * BigFANGroup
  * BitRu
- * BitSearch (Solid Torrents)
  * BluDV
  * BlueRoms
  * BT.etree
@@ -381,7 +380,6 @@ Prior versions of Jackett are no longer supported.
  * Ebooks-Shares [![(invite needed)][inviteneeded]](#)
  * Empornium (EMP) [![(invite needed)][inviteneeded]](#)
  * eMuwarez
- * eShareNet
  * eStone (BigTorrent)
  * Exitorrent.org [![(invite needed)][inviteneeded]](#)
  * ExoticaZ (YourExotic)
