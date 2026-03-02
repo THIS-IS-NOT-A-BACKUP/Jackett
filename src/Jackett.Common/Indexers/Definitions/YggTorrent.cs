@@ -521,7 +521,9 @@ namespace Jackett.Common.Indexers.Definitions
 
             rawQuery = NormalizeFrenchSeasonInRawQuery(rawQuery);
 
-            var keywords = BuildKeywordsFromRaw(rawQuery);
+            var isMovieQuery = IsMovieQuery(query, trackerCats);
+
+            var keywords = BuildKeywordsFromRaw(rawQuery, isMovieQuery);
 
             var order = ((SingleSelectConfigurationItem)configData.GetDynamic(CfgOrder)).Value;
             var sortKey = ((SingleSelectConfigurationItem)configData.GetDynamic(CfgSort)).Value;
@@ -622,10 +624,18 @@ namespace Jackett.Common.Indexers.Definitions
         }
 
         /// <summary>
+        /// Check if the query is a movie query
+        /// </summary>
+        private bool IsMovieQuery(TorznabQuery query, List<int> trackerCats)
+        {
+            return query.IsMovieSearch || (trackerCats?.Any(IsMovieOnlyCategory) ?? false);
+        }
+
+        /// <summary>
         /// Constructs search keywords from the raw query.
         /// Applies configuration options (strip season, enhanced anime)
         /// </summary>
-        private string BuildKeywordsFromRaw(string rawQuery)
+        private string BuildKeywordsFromRaw(string rawQuery, bool isMovieQuery)
         {
             var keywords = rawQuery.Trim();
 
@@ -635,12 +645,12 @@ namespace Jackett.Common.Indexers.Definitions
             var enhancedAnime = GetEnhancedAnimeEnabled();
             var enhancedAnime4 = GetEnhancedAnime4Enabled();
 
-            if (enhancedAnime4)
+            if (enhancedAnime4 && !isMovieQuery)
             {
                 keywords = _StandaloneEpisode4Digits.Replace(keywords, "E$1");
             }
 
-            if (enhancedAnime)
+            if (enhancedAnime && !isMovieQuery)
             {
                 keywords = _StandaloneEpisode3Digits.Replace(keywords, "E$1");
                 keywords = _StandaloneEpisode2Digits.Replace(keywords, "E$1");
@@ -825,6 +835,7 @@ namespace Jackett.Common.Indexers.Definitions
         }
 
         private static bool IsFilmVideoCategory(int c) => c == 2145 || (c >= 2178 && c <= 2187);
+        private static bool IsMovieOnlyCategory(int c) => c == 2183 || c == 2178;
         private static bool IsAudioCategory(int c) => c == 2139 || (c >= 2147 && c <= 2150);
         private static bool IsApplicationCategory(int c) => c == 2144 || (c >= 2171 && c <= 2177);
         private static bool IsGameCategory(int c) => c == 2142 || (c >= 2159 && c <= 2167);
