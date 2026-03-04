@@ -118,7 +118,6 @@ Prior versions of Jackett are no longer supported.
  * Free JAV Torrent
  * Frozen Layer
  * GamesTorrents
- * GTorrent.pro
  * HDRTorrent
  * ilCorSaRoNeRo
  * Internet Archive (archive.org)
@@ -693,7 +692,6 @@ Prior versions of Jackett are no longer supported.
  * XtremeBytes (TorrentSurf)
  * XWT-Classics
  * XWTorrents (XWT)
- * YggTorrent (YGG)
  * YUSCENE
  * Zappateers
  * ZmPT (织梦)
