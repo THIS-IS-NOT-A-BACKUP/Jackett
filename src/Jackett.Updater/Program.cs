@@ -553,6 +553,7 @@ namespace Jackett.Updater
                 "Definitions/magnetdl.yml",
                 "Definitions/maniatorrent.yml",
                 "Definitions/manicomioshare.yml",
+                "Definitions/masters-tb.yml",
                 "Definitions/mediamaatjes.yml",
                 "Definitions/megabliz.yml",
                 "Definitions/megamixtracker.yml",
@@ -669,6 +670,7 @@ namespace Jackett.Updater
                 "Definitions/rodvd.yml",
                 "Definitions/rofd.yml",
                 "Definitions/rotorrent.yml",
+                "Definitions/rousi.yml", // migrated to rousi.pro
                 "Definitions/rptorrents.yml",
                 "Definitions/rptorrents-api.yml", // renamed to rptscene-api
                 "Definitions/rptscene.yml",
