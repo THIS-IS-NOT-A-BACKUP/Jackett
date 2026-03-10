@@ -100,7 +100,6 @@ Prior versions of Jackett are no longer supported.
  * btstate
  * Byrutor
  * Catorrent
- * cpasbienClone
  * CrackingPatching
  * DaMagNet
  * Demonoid Clone
@@ -146,7 +145,6 @@ Prior versions of Jackett are no longer supported.
  * OneJAV
  * OpenSharing
  * PC-torrent
- * Pirate's Paradise
  * plugintorrent
  * PornoTorrent
  * PornRips
@@ -595,7 +593,6 @@ Prior versions of Jackett are no longer supported.
  * seedpool
  * SewerPT (下水道) [![(invite needed)][inviteneeded]](#)
  * SexTorrent
- * SFP (Share Friends Projekt)
  * ShaKaw [![(invite needed)][inviteneeded]](#)
  * Shareisland
  * Shazbat

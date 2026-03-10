@@ -250,6 +250,7 @@ namespace Jackett.Updater
                 "Definitions/3wmg.yml",
                 "Definitions/420files.yml",
                 "Definitions/7torrents.yml",
+                "Definitions/abnormal.yml", // switch to *-API #16657
                 "Definitions/academictorrents.yml",
                 "Definitions/acervos-api.yml",
                 "Definitions/acgsou.yml",
@@ -351,6 +352,7 @@ namespace Jackett.Updater
                 "Definitions/cloudtorrents.yml",
                 "Definitions/cooltorrent.yml",
                 "Definitions/cpabien.yml",
+                "Definitions/cpasbienclone.yml",
                 "Definitions/cpasbiensi.yml",
                 "Definitions/crazyhd.yml",
                 "Definitions/crazyscorner.yml",
@@ -617,6 +619,7 @@ namespace Jackett.Updater
                 "Definitions/passionetorrent.yml",
                 "Definitions/peerjunkies.yml",
                 "Definitions/piratadigital.yml",
+                "Definitions/piratesparadise.yml",
                 "Definitions/piratbit.yml",
                 "Definitions/piratbitl.yml",
                 "Definitions/pirateiro.yml",
@@ -690,6 +693,7 @@ namespace Jackett.Updater
                 "Definitions/seedpeer.yml",
                 "Definitions/sextorrent.yml",
                 "Definitions/sexxi.yml",
+                "Definitions/sfp.yml",
                 "Definitions/shadowflow.yml",
                 "Definitions/sharefiles.yml",
                 "Definitions/shareisland.yml", // switch to *-API #8682
