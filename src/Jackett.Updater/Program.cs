@@ -567,6 +567,7 @@ namespace Jackett.Updater
                 "Definitions/metal-iplay-ro.yml", // renamed to romanianmetaltorrents
                 "Definitions/metalwrks.yml",
                 "Definitions/microbit.yml",
+                "Definitions/mircrew.yml",
                 "Definitions/mkvcage.yml",
                 "Definitions/moecat.yml",
                 "Definitions/mononokebt.yml",
@@ -704,6 +705,7 @@ namespace Jackett.Updater
                 "Definitions/sharespacedb.yml",
                 "Definitions/shareuniversity.yml",
                 "Definitions/sharewood.yml", // switch to *-API #10269
+                "Definitions/sharewood-api.yml",
                 "Definitions/sharingue.yml",
                 "Definitions/shellife.yml",
                 "Definitions/sharkpt.yml",
