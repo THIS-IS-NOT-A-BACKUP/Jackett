@@ -435,6 +435,7 @@ namespace Jackett.Updater
                 "Definitions/freedomhd.yml",
                 "Definitions/freetorrent.yml",
                 "Definitions/freshmeat.yml",
+                "Definitions/frozenlayer.yml",
                 "Definitions/fsm.yml",
                 "Definitions/fullmixmusic.yml",
                 "Definitions/funreleases.yml",
@@ -546,6 +547,7 @@ namespace Jackett.Updater
                 "Definitions/leparadisdunet.yml",
                 "Definitions/lepornoinfo.yml",
                 "Definitions/les-cinephiles.yml",
+                "Definitions/lesbians4u.yml",
                 "Definitions/leporno.yml",
                 "Definitions/liaorencili.yml", // renamed to cilipro
                 "Definitions/lightning-tor.yml",
