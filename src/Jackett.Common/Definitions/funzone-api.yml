@@ -1,32 +1,33 @@
 ---
-id: theoldschool-api
-name: The Old School (API)
-description: "The Old School (TOS) is a FRENCH Private Torrent Tracker for MOVIES / TV / GENERAL"
-language: fr-FR
+id: funzone-api
+name: funZone (API)
+description: "funZone is a ROMANIAN Private Torrent Tracker for MOVIES / TV / GENERAL"
+language: ro-RO
 type: private
 encoding: UTF-8
 links:
-  - https://theoldschool.cc/
+  - https://myfunzone.org/
 
 caps:
   categorymappings:
-    - {id: 1, cat: Movies, desc: "Films"}
-    - {id: 6, cat: Movies, desc: "Films VOSTFR"}
-    - {id: 2, cat: TV, desc: "Series"}
-    - {id: 7, cat: TV, desc: "Series VOSTFR"}
-    - {id: 8, cat: TV, desc: "Series Pack"}
-    - {id: 9, cat: TV, desc: "Series Pack VOSTFR"}
-    - {id: 4, cat: Console, desc: "Jeux"}
-    - {id: 3, cat: Books, desc: "Ebooks"}
-    - {id: 5, cat: PC, desc: "Logiciel"}
-    - {id: 10, cat: TV/Sport, desc: "Sports"}
+    - {id: 1, cat: Movies, desc: "Filme HD"}
+    - {id: 2, cat: TV, desc: "TV"}
+    - {id: 3, cat: Movies, desc: "Filme HD-RO"}
+    - {id: 4, cat: PC/Games, desc: "Jocuri PC"}
+    - {id: 5, cat: Audio, desc: "Muzica"}
+    - {id: 6, cat: PC, desc: "Software"}
+    - {id: 7, cat: TV/Anime, desc: "Anime"}
+    - {id: 8, cat: TV/Documentary, desc: "Documentare"}
+    - {id: 9, cat: TV/Sport, desc: "Sport"}
+    - {id: 10, cat: Console, desc: "Jocuri Console"}
+    - {id: 11, cat: Movies, desc: "Filme Romanesti"}
+    - {id: 12, cat: Movies/Other, desc: "Desene Animate"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
     music-search: [q]
-    book-search: [q]
 
 settings:
   - name: apikey
@@ -35,7 +36,7 @@ settings:
   - name: info_key
     type: info
     label: About your API key
-    default: "Find or Generate a new API Token by accessing your <a href=\"https://theoldschool.cc/\" target=\"_blank\">The Old School</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
+    default: "Find or Generate a new API Token by accessing your <a href=\"https://myfunzone.org/\" target=\"_blank\">funZone</a> account <i>My Settings</i> page and clicking on the <b>API Key</b> tab."
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -44,33 +45,6 @@ settings:
     type: checkbox
     label: Use filename as title for single file releases
     default: true
-  - name: tmdbidonly
-    type: checkbox
-    label: Disable IMDB and TVDB ID search (only support TMDB ID) to potentially improve Sonarr and Radarr results
-    default: false
-  - name: multilang
-    type: checkbox
-    label: Replace MULTi by another language in release name
-    default: false
-  - name: multilanguage
-    type: select
-    label: Replace MULTi by this language
-    default: FRENCH
-    options:
-      FRENCH: FRENCH
-      MULTi FRENCH: MULTi FRENCH
-      ENGLISH: ENGLISH
-      MULTi ENGLISH: MULTi ENGLISH
-      VOSTFR: VOSTFR
-      MULTi VOSTFR: MULTi VOSTFR
-  - name: vostfr
-    type: checkbox
-    label: Replace VOSTFR and SUBFRENCH with ENGLISH
-    default: false
-  - name: vfq
-    type: checkbox
-    label: Replace VFQ with FRENCH
-    default: false
   - name: sort
     type: select
     label: Sort requested from site
@@ -87,10 +61,6 @@ settings:
     options:
       desc: desc
       asc: asc
-  - name: info_activity
-    type: info
-    label: Account Inactivity
-    default: "'Pruning' account<ul><li>Your membership requires that you remain active at TOS.</li><li>To not be disabled, you must log in to the tracker at least once every 90 days or continuously see at least 1 torrent. If you haven't logged in for more than 90 days and you don't have any seed torrents as of midnight UTC, your account will be deactivated.</li><li>To be reactivated, you also have 30 days to log in and show that your account is back to normal.</li><li>Disabled account: 90 days of inactivity and no seed torrent.</li><li>'Pruned' account: Has been deactivated for 30 days , and 90 days of inactivity.</li></ul>"
 
 login:
   path: api/torrents
@@ -118,9 +88,9 @@ search:
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
     episodeNumber: "{{ .Query.Ep }}"
-    imdbId: "{{ if .Config.tmdbidonly }}{{ else }}{{ .Query.IMDBIDShort }}{{ end }}"
+    imdbId: "{{ .Query.IMDBIDShort }}"
     tmdbId: "{{ .Query.TMDBID }}"
-    tvdbId: "{{ if .Config.tmdbidonly }}{{ else }}{{ .Query.TVDBID }}{{ end }}"
+    tvdbId: "{{ .Query.TVDBID }}"
     "free[]": "{{ if .Config.freeleech }}100{{ else }}{{ end }}"
     sortField: "{{ .Config.sort }}"
     sortDirection: "{{ .Config.type }}"
@@ -144,35 +114,12 @@ search:
       optional: true
     files:
       selector: num_file
-    title_phase1:
-      text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
-    title_vfq:
-      text: "{{ .Result.title_phase1 }}"
-      filters:
-        - name: re_replace
-          args: ["(?i)\\b(VFQ)\\b", "FRENCH"]
-    title_phase2:
-      text: "{{ if .Config.vfq }}{{ .Result.title_vfq }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
-    title_vostfr:
-      text: "{{ .Result.title_phase2 }}"
-      filters:
-        - name: re_replace
-          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
-    title_phase3:
-      text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
-    title_multilang:
-      text: "{{ .Result.title_phase3 }}"
-      filters:
-        - name: re_replace
-          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
-      text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase3 }}{{ end }}"
+      text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
     details:
       selector: details_link
     download:
       selector: download_link
-    infohash:
-      selector: info_hash
     poster:
       selector: meta.poster
       filters:
@@ -188,6 +135,10 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
+          args: ["(?i)(Science Fiction)", "Science_Fiction"]
+        - name: re_replace
+          args: ["(?i)(TV Movie)", "TV_Movie"]
+        - name: replace
           args: [" & ", "_&_"]
     _internal:
       selector: internal
@@ -237,10 +188,10 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-# global MR is 0.6 but torrents must be seeded for 2 days regardless of ratio
+# global MR is 0.5 but torrents must be seeded for 3 days regardless of ratio
 #    minimumratio:
-#      text: 0.6
+#      text: 0.5
     minimumseedtime:
-      # 2 days (as seconds = 2 x 24 x 60 x 60)
-      text: 172800
-# json UNIT3D custom edition 2.3.6 (based on 9.1.1)
+      # 3 days (as seconds = 3 x 24 x 60 x 60)
+      text: 259200
+# json UNIT3D 9.2.0
