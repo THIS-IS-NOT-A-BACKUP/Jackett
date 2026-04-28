@@ -92,7 +92,6 @@ Prior versions of Jackett are no longer supported.
  * AudioBook Bay (ABB)
  * Bangumi Moe
  * BigFANGroup
- * BitRu
  * BlueRoms
  * BT.etree
  * BTdirectory (BT目录)
@@ -638,7 +637,6 @@ Prior versions of Jackett are no longer supported.
  * TLFBits [![(invite needed)][inviteneeded]](#)
  * TmGHuB (TH) [![(invite needed)][inviteneeded]](#)
  * Toca Share
- * TokyoPT [![(invite needed)][inviteneeded]](#)
  * Tormac
  * Tornado
  * Torr9
