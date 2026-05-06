@@ -8,7 +8,6 @@ encoding: UTF-8
 # current (official?) domains list https://loiflix.shop/ilcorsaronero/
 links:
   - https://ilcorsaronero.link/
-  - https://ilcorsaronero.torrentbay.st/
 legacylinks:
   - https://ilcorsaronero.live/
   - https://ilcorsaronero.vip/
@@ -24,6 +23,7 @@ legacylinks:
   - https://ilcorsaronero.torrentbay.net/
   - https://ilcorsaronero.mrunblock.bond/
   - https://ilcorsaronero.nocensor.cloud/
+  - https://ilcorsaronero.torrentbay.st/
 
 caps:
   categorymappings:
