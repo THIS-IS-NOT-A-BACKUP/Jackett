@@ -135,7 +135,6 @@ Prior versions of Jackett are no longer supported.
  * NewStudio
  * Nipponsei
  * NoNaMe Club (NNM-Club)
- * NorTorrent
  * Nyaa.si
  * OneJAV
  * OpenSharing
@@ -279,8 +278,8 @@ Prior versions of Jackett are no longer supported.
  * AlphaRatio (AR)
  * AmigosShareClub (ASC)
  * AnimeBytes (AB)
- * AnimeTorrents (AnT)
  * AnimeTorrents.ro (Anime Torrents Romania)
+ * AnimeZ (AnimeTorrents)
  * AnimeWorld (AW)
  * Anthelion (ANT)
  * Araba Fenice (Phoenix) [![(invite needed)][inviteneeded]](#)

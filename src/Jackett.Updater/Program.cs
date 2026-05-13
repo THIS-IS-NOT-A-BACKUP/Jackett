@@ -608,6 +608,7 @@ namespace Jackett.Updater
                 "Definitions/nnm-club.yml", // renamed to noname-club
                 "Definitions/nntt.yml",
                 "Definitions/nordicplus.yml",
+                "Definitions/nortorrent.yml",
                 "Definitions/nostalgic.yml", // renamed to vhstapes
                 "Definitions/ntelogo.yml",
                 "Definitions/nusantarare.yml",
