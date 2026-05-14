@@ -352,6 +352,7 @@ Prior versions of Jackett are no longer supported.
  * CrnaBerza
  * cspt (财神)
  * cyanbug (大青虫)
+ * CyclingArchiveClub [![(invite needed)][inviteneeded]](#)
  * CZTeam
  * Darkpeers
  * Das Unerwartete (D-U)
@@ -537,6 +538,7 @@ Prior versions of Jackett are no longer supported.
  * Polish Torrent (PTT)
  * PolishTracker [![(invite needed)][inviteneeded]](#)
  * Pornbay [![(invite needed)][inviteneeded]](#)
+ * PornBytes
  * Portugas
  * Pretome
  * PrivateHD (PHD)
@@ -679,6 +681,7 @@ Prior versions of Jackett are no longer supported.
  * WinterSakura [![(invite needed)][inviteneeded]](#)
  * World-In-HD [![(invite needed)][inviteneeded]](#)
  * World-of-Tomorrow [![(invite needed)][inviteneeded]](#)
+ * Xingtan (杏坛) [![(invite needed)][inviteneeded]](#)
  * Xingwan (星湾) [![(invite needed)][inviteneeded]](#)
  * Xingyung (星陨阁) [![(invite needed)][inviteneeded]](#)
  * xloli (ilolicon PT)
