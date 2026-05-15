@@ -490,6 +490,7 @@ Prior versions of Jackett are no longer supported.
  * MetalGuru [![(invite needed)][inviteneeded]](#)
  * MidnightScene
  * Milkie (ME)
+ * Milnueve
  * MMA-Torrents [![(invite needed)][inviteneeded]](#)
  * MNV (Max-New-Vision)
  * MOJBLiNK
