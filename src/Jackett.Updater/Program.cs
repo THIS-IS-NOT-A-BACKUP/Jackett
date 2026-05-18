@@ -474,7 +474,6 @@ namespace Jackett.Updater
                 "Definitions/hd4free.yml",
                 "Definitions/hdai.yml",
                 "Definitions/hdatmos.yml",
-                "Definitions/hdbao.yml",
                 "Definitions/hdbc.yml", // renamed to hdbitscom
                 "Definitions/hdbits.yml",
                 "Definitions/hdbitscom.yml",
@@ -529,6 +528,7 @@ namespace Jackett.Updater
                 "Definitions/iv-torrents.yml",
                 "Definitions/jme-reunit3d.yml", // switch to -API #13043
                 "Definitions/jav-torrent.yml",
+                "Definitions/joyhd.yml",
                 "Definitions/jptv.yml", // switch to -API #9242
                 "Definitions/jptv-api.yml",
                 "Definitions/kapaki.yml",

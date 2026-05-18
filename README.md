@@ -414,6 +414,7 @@ Prior versions of Jackett are no longer supported.
  * HD-Torrents (HDT)
  * HD-UNiT3D
  * HDArea (HDA)
+ * HDBao
  * HDBits [![(invite needed)][inviteneeded]](#)
  * HDCiTY (HDC)
  * HDClone
@@ -446,7 +447,6 @@ Prior versions of Jackett are no longer supported.
  * IPTorrents (IPT)
  * ItaTorrents
  * JME-REUNIT3D
- * JoyHD (JHD) [![(invite needed)][inviteneeded]](#)
  * JPopsuki
  * JPTV4us
  * KamePT [![(invite needed)][inviteneeded]](#)
@@ -497,6 +497,7 @@ Prior versions of Jackett are no longer supported.
  * MonikaDesign (MDU)
  * MoreThanTV (MTV) [![(invite needed)][inviteneeded]](#)
  * MouseBits
+ * Musopia (音乐乌托邦)
  * Muxuege [![(invite needed)][inviteneeded]](#)
  * MyAnonamouse (MAM)
  * MySpleen [![(invite needed)][inviteneeded]](#)
@@ -581,6 +582,7 @@ Prior versions of Jackett are no longer supported.
  * Romanian Metal Torrents (RMT)
  * RoTorrent (ROT)
  * Rousi.pro
+ * RunTheFrames [![(invite needed)][inviteneeded]](#)
  * SAMARITANO
  * SBPT
  * SceneHD [![(invite needed)][inviteneeded]](#)
