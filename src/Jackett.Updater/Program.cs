@@ -424,7 +424,6 @@ namespace Jackett.Updater
                 "Definitions/fantasticheaven.yml",
                 "Definitions/fantastiko.yml",
                 "Definitions/fastscene.yml",
-                "Definitions/fearnopeer.yml",
                 "Definitions/feedurneed.yml", // merged with devilsplayground #6872
                 "Definitions/file-shack.yml",
                 "Definitions/filebase.yml",
@@ -843,6 +842,7 @@ namespace Jackett.Updater
                 "Definitions/turknova.yml",
                 "Definitions/turkseed.yml",
                 "Definitions/turktracker.yml",
+                "Definitions/tvchaosuk.yml",
                 "Definitions/tvroad.yml",
                 "Definitions/twilight.yml",
                 "Definitions/twilightszoom.yml",
