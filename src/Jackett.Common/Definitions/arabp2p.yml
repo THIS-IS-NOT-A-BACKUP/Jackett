@@ -194,13 +194,16 @@ search:
       selector: a[href^="magnet:?xt="]
       attribute: href
       optional: true
+    poster:
+      selector: a.screenshot
+      attribute: rel
     date:
       selector: span.upload-date > span
       attribute: title
       # auto adjusted by site account profile
       filters:
         - name: dateparse
-          args: "MM-yy-dd HH:mm:ss tt"
+          args: "yy-MM-dd hh:mm:ss tt"
     size:
       selector: span.size
     seeders:
