@@ -331,7 +331,6 @@ Prior versions of Jackett are no longer supported.
  * C411
  * cangbaoge (CBG)
  * CapybaraBR
- * Carp-Hunter
  * Carpathians
  * CarPT
  * Cathode-Ray.Tube (CRT)
@@ -432,6 +431,7 @@ Prior versions of Jackett are no longer supported.
  * Hebits (HB)
  * HellasHut
  * HELLENIC-HD
+ * HeroBit
  * HHanClub
  * HHD
  * House of Devil
@@ -695,6 +695,7 @@ Prior versions of Jackett are no longer supported.
  * XWTorrents (XWT)
  * YUSCENE
  * Zappateers
+ * Zenith [![(invite needed)][inviteneeded]](#)
  * ZmPT (织梦)
  * ZRPT (自然) [![(invite needed)][inviteneeded]](#)
 </details>
