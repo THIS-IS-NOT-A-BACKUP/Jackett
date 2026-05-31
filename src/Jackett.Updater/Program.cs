@@ -376,6 +376,7 @@ namespace Jackett.Updater
                 "Definitions/datascene.yml", // switch to *-API #8682
                 "Definitions/datatalli.yml",
                 "Definitions/demonoid.yml",
+                "Definitions/demonoid-clone.yml",
                 "Definitions/demonsite.yml",
                 "Definitions/denofsimps-api.yml",
                 "Definitions/desireleasers.yml",
@@ -482,6 +483,7 @@ namespace Jackett.Updater
                 "Definitions/hdchina.yml",
                 "Definitions/hdcity.yml", // moved to pixelados
                 "Definitions/hdclub.yml",
+                "Definitions/hdcztorrent.yml",
                 "Definitions/hddisk.yml",
                 "Definitions/hdfun.yml",
                 "Definitions/hdhouse.yml",
@@ -588,6 +590,7 @@ namespace Jackett.Updater
                 "Definitions/montorrent.yml",
                 "Definitions/movcr.yml",
                 "Definitions/moviesite.yml",
+                "Definitions/moviesdvdr.yml",
                 "Definitions/movietorrent.yml", // will need c# #11284
                 "Definitions/movietorrentz.yml",
                 "Definitions/movieworld.yml",

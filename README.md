@@ -99,8 +99,6 @@ Prior versions of Jackett are no longer supported.
  * Catorrent
  * CrackingPatching
  * DaMagNet
- * Demonoid Clone
- * DivxTotal
  * dmhy
  * DonTorrent
  * E-Hentai
@@ -128,7 +126,6 @@ Prior versions of Jackett are no longer supported.
  * MejorTorrent
  * Mikan
  * MixTapeTorrent
- * MoviesDVDR
  * MyPornClub
  * nekoBT
  * NewStudio
@@ -209,7 +206,6 @@ Prior versions of Jackett are no longer supported.
  * Fenyarnyek-Tracker
  * File-Tracker
  * Gay-Torrents.net
- * HD-CzTorrent [PAY2DL]
  * HDGalaKtik
  * HellTorrents [PAY2DL]
  * HunTorrent
