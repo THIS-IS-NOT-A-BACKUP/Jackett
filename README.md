@@ -375,7 +375,6 @@ Prior versions of Jackett are no longer supported.
  * F1GP
  * FANO.IN [![(invite needed)][inviteneeded]](#)
  * Fappaizuri
- * FearNoPeer
  * Femdomcult
  * FileList (FL)
  * FinElite (FE) [![(invite needed)][inviteneeded]](#)
@@ -522,6 +521,7 @@ Prior versions of Jackett are no longer supported.
  * OurBits (HDPter)
  * P2PBG [PAY2DL]
  * Panda
+ * ParabellumHD
  * Party-Tracker
  * PassThePopcorn (PTP) [![(invite needed)][inviteneeded]](#)
  * Peeratiko
@@ -688,6 +688,7 @@ Prior versions of Jackett are no longer supported.
  * XtremeBytes (TorrentSurf)
  * XWT-Classics
  * XWTorrents (XWT)
+ * YggReborn
  * YUSCENE
  * Zappateers
  * Zenith [![(invite needed)][inviteneeded]](#)

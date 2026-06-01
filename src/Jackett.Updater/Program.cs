@@ -426,6 +426,7 @@ namespace Jackett.Updater
                 "Definitions/fantasticheaven.yml",
                 "Definitions/fantastiko.yml",
                 "Definitions/fastscene.yml",
+                "Definitions/fearnopeer.yml",
                 "Definitions/feedurneed.yml", // merged with devilsplayground #6872
                 "Definitions/file-shack.yml",
                 "Definitions/filebase.yml",
@@ -636,7 +637,6 @@ namespace Jackett.Updater
                 "Definitions/p2pelite.yml",
                 "Definitions/pandahd.yml",
                 "Definitions/parabellumhd.yml",
-                "Definitions/parabellumhd-api.yml",
                 "Definitions/parnuxi.yml",
                 "Definitions/partis.yml",
                 "Definitions/passionetorrent.yml",
