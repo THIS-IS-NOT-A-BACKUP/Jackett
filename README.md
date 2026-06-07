@@ -373,7 +373,6 @@ Prior versions of Jackett are no longer supported.
  * Explosiv-World (E-W)
  * ExtremeBits
  * F1Carreras
- * F1GP
  * FANO.IN [![(invite needed)][inviteneeded]](#)
  * Fappaizuri
  * Femdomcult
@@ -646,6 +645,7 @@ Prior versions of Jackett are no longer supported.
  * Torrent-Syndikat [![(invite needed)][inviteneeded]](#)
  * TOrrent-tuRK (TORK)
  * Torrent.LT
+ * TorrentAvenue
  * TorrentBD
  * TorrentBytes (TBy) [![(invite needed)][inviteneeded]](#)
  * TorrentCCF (TCCF)
@@ -663,6 +663,7 @@ Prior versions of Jackett are no longer supported.
  * TranceTraffic
  * Trellas (Magico) [![(invite needed)][inviteneeded]](#)
  * TreZzoR
+ * TSDB (The Sports Database)
  * TurkSeed (Aturk)
  * TurkTorrent (TT) [PAY2DL]
  * TVstore
