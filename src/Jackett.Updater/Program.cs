@@ -546,6 +546,7 @@ namespace Jackett.Updater
                 "Definitions/kinonavse100.yml",
                 "Definitions/kisssub.yml",
                 "Definitions/knaben.yml", // migrated to C# API
+                "Definitions/lacale-api.yml",
                 "Definitions/laidbackmanor.yml",
                 "Definitions/lapausetorrents.yml",
                 "Definitions/lat-team.yml", // switch to *-API #8682
@@ -614,6 +615,7 @@ namespace Jackett.Updater
                 "Definitions/nitro.yml",
                 "Definitions/nnm-club.yml", // renamed to noname-club
                 "Definitions/nntt.yml",
+                "Definitions/nordichd.yml",
                 "Definitions/nordicplus.yml",
                 "Definitions/nortorrent.yml",
                 "Definitions/nostalgic.yml", // renamed to vhstapes
