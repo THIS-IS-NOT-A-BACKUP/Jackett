@@ -260,7 +260,6 @@ Prior versions of Jackett are no longer supported.
  * 0day.kiev
  * 13City
  * 1ptbar
- * 3ChangTrai (3CT) [![(invite needed)][inviteneeded]](#)
  * 3D Torrents (3DT)
  * 4thD (4th Dimension) [![(invite needed)][inviteneeded]](#)
  * 52PT
@@ -579,7 +578,6 @@ Prior versions of Jackett are no longer supported.
  * RevolutionTT [![(invite needed)][inviteneeded]](#)
  * RocketHD
  * Romanian Metal Torrents (RMT)
- * RoTorrent (ROT)
  * Rousi.pro
  * RunTheFrames
  * SAMARITANO
@@ -588,6 +586,7 @@ Prior versions of Jackett are no longer supported.
  * SceneRush [![(invite needed)][inviteneeded]](#)
  * SceneTime
  * Secret Cinema
+ * SeedCore (RoTorrent)
  * SeedFile (SF)
  * seedpool
  * SewerPT (下水道) [![(invite needed)][inviteneeded]](#)

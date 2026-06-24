@@ -245,6 +245,7 @@ namespace Jackett.Updater
                 "Definitions/2xfree.yml",
                 "Definitions/24rolika.yml",
                 "Definitions/32pages.yml",
+                "Definitions/3changtrai.yml",
                 "Definitions/3evils.yml",
                 "Definitions/3evils-api.yml",
                 "Definitions/3wmg.yml",
@@ -699,6 +700,7 @@ namespace Jackett.Updater
                 "Definitions/rodvd.yml",
                 "Definitions/rofd.yml",
                 "Definitions/rotorrent.yml",
+                "Definitions/rotorrent-api.yml", // renamed seedcore-api
                 "Definitions/rousi.yml", // migrated to rousi.pro
                 "Definitions/rptorrents.yml",
                 "Definitions/rptorrents-api.yml", // renamed to rptscene-api
