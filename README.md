@@ -375,6 +375,7 @@ Prior versions of Jackett are no longer supported.
  * Explosiv-World (E-W)
  * ExtremeBits
  * F1Carreras
+ * F1GP
  * FANO.IN [![(invite needed)][inviteneeded]](#)
  * Fappaizuri
  * Femdomcult
@@ -482,6 +483,7 @@ Prior versions of Jackett are no longer supported.
  * Mansão dos Animes (MDAN)
  * March [![(invite needed)][inviteneeded]](#)
  * Matrix
+ * Memphis
  * MeseVilág (Fairytale World)
  * MetalGuru [![(invite needed)][inviteneeded]](#)
  * MidnightScene
@@ -665,7 +667,6 @@ Prior versions of Jackett are no longer supported.
  * TranceTraffic
  * Trellas (Magico) [![(invite needed)][inviteneeded]](#)
  * TreZzoR
- * TSDB (The Sports Database)
  * TurkSeed (Aturk)
  * TurkTorrent (TT) [PAY2DL]
  * TVstore
