@@ -459,6 +459,7 @@ namespace Jackett.Updater
                 "Definitions/generationfree.yml", // switch to unit3d api #12982
                 "Definitions/genesismovement.yml",
                 "Definitions/gfxnews.yml",
+                "Definitions/gimmepeers.yml", // merged with revopeers
                 "Definitions/gktorrent.yml", // renamed to zktorrent #15399
                 "Definitions/glodls.yml",
                 "Definitions/gods.yml",
@@ -611,6 +612,7 @@ namespace Jackett.Updater
                 "Definitions/newpct-me.yml",
                 "Definitions/nextjav.yml",
                 "Definitions/nexttorrent.yml",
+                "Definitions/nexum-api.yml",
                 "Definitions/nforce.yml",
                 "Definitions/nitro.yml",
                 "Definitions/nnm-club.yml", // renamed to noname-club
