@@ -94,7 +94,6 @@ Prior versions of Jackett are no longer supported.
  * BlueRoms
  * BT.etree
  * BTdirectory (BT目录)
- * btstate
  * Byrutor
  * Catorrent
  * CrackingPatching
@@ -165,7 +164,6 @@ Prior versions of Jackett are no longer supported.
  * TorrentGalaxyClone
  * TorrentKitty
  * TorrentProject2
- * TorrentQQ (토렌트큐큐)
  * Torrents.csv
  * Torrentsome (토렌트썸)
  * Torrenttip (토렌트팁)
