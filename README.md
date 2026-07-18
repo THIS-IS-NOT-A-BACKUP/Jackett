@@ -83,6 +83,7 @@ Prior versions of Jackett are no longer supported.
  * 1337x
  * 52BT
  * ACG.RIP
+ * Anibt
  * AniLibria
  * AniRena
  * AniSource
@@ -532,7 +533,6 @@ Prior versions of Jackett are no longer supported.
  * Podzemlje
  * Polish Torrent (PTT)
  * PolishTracker [![(invite needed)][inviteneeded]](#)
- * Pornbay [![(invite needed)][inviteneeded]](#)
  * Portugas
  * Pretome
  * PrivateHD (PHD)
