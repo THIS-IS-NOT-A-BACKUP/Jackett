@@ -103,7 +103,6 @@ Prior versions of Jackett are no longer supported.
  * DonTorrent
  * E-Hentai
  * EBook Bay (EBB)
- * Elitetorrent.wf
  * EpubLibre
  * ExtraTorrent.st
  * EZTV
@@ -561,7 +560,6 @@ Prior versions of Jackett are no longer supported.
  * Racing4Everyone (R4E)
  * RacingForMe (RFM)
  * RailgunPT
- * Rain (雨)
  * Rastastugan
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
@@ -573,7 +571,6 @@ Prior versions of Jackett are no longer supported.
  * RocketHD
  * Romanian Metal Torrents (RMT)
  * Rousi.pro
- * RunTheFrames
  * SAMARITANO
  * SBPT
  * SceneHD [![(invite needed)][inviteneeded]](#)
