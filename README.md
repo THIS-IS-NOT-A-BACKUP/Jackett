@@ -402,7 +402,7 @@ Prior versions of Jackett are no longer supported.
  * HD-Olimpo [![(invite needed)][inviteneeded]](#)
  * HD-Only (HDO)
  * HD-Space (HDS)
- * HD-Torrents (HDT)
+ * HD-Torrents (HDT) [![(invite needed)][inviteneeded]](#)
  * HD-UNiT3D
  * HDArea (HDA)
  * HDBao
@@ -631,7 +631,6 @@ Prior versions of Jackett are no longer supported.
  * Toca Share
  * Tormac
  * Tornado
- * Torr9
  * Torrent Heaven (Dutch)
  * Torrent Network (TN)
  * Torrent Trader [![(invite needed)][inviteneeded]](#)
