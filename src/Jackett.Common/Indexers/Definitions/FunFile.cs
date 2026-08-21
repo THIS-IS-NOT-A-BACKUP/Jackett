@@ -30,7 +30,8 @@ namespace Jackett.Common.Indexers.Definitions
 
         public override TorznabCapabilities TorznabCaps => SetCapabilities();
 
-        private string LoginUrl => SiteLink + "takelogin.php";
+        private string LoginUrl => SiteLink + "login.php";
+        private string TakeLoginUrl => SiteLink + "takelogin.php";
         private string SearchUrl => SiteLink + "browse.php";
 
         private new ConfigurationDataCaptchaLogin configData
@@ -74,6 +75,7 @@ namespace Jackett.Common.Indexers.Definitions
                 }
             };
 
+            caps.Categories.AddCategoryMapping(45, TorznabCatType.Other, "0Day");
             caps.Categories.AddCategoryMapping(44, TorznabCatType.TVAnime, "Anime");
             caps.Categories.AddCategoryMapping(22, TorznabCatType.PC, "Applications");
             caps.Categories.AddCategoryMapping(43, TorznabCatType.AudioAudiobook, "Audio Books");
@@ -85,6 +87,8 @@ namespace Jackett.Common.Indexers.Definitions
             caps.Categories.AddCategoryMapping(31, TorznabCatType.PCMobileOther, "Portable");
             caps.Categories.AddCategoryMapping(49, TorznabCatType.Other, "Tutorials");
             caps.Categories.AddCategoryMapping(7, TorznabCatType.TV, "TV");
+            caps.Categories.AddCategoryMapping(48, TorznabCatType.XXXOther, "XXX 0Day");
+            caps.Categories.AddCategoryMapping(46, TorznabCatType.XXX, "XXX Movies");
 
             return caps;
         }
@@ -97,7 +101,7 @@ namespace Jackett.Common.Indexers.Definitions
             var qCaptchaImg = document.QuerySelector("img#captcha");
             if (qCaptchaImg != null)
             {
-                var captchaUrl = SiteLink + qCaptchaImg.GetAttribute("src").TrimStart('/');
+                var captchaUrl = qCaptchaImg.GetAttribute("src");
                 var captchaImage = await RequestWithCookiesAsync(captchaUrl, loginPage.Cookies);
                 configData.CaptchaImage.Value = captchaImage.ContentBytes;
             }
@@ -123,7 +127,7 @@ namespace Jackett.Common.Indexers.Definitions
             {
                 pairs.Add("captcha_code", configData.CaptchaText.Value);
             }
-            var result = await RequestLoginAndFollowRedirect(LoginUrl, pairs, configData.CaptchaCookie.Value, true);
+            var result = await RequestLoginAndFollowRedirect(TakeLoginUrl, pairs, configData.CaptchaCookie.Value, true);
             await ConfigureIfOK(result.Cookies, result.ContentString?.Contains("logout.php") == true, () =>
             {
                 var parser = new HtmlParser();
