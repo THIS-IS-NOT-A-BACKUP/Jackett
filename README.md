@@ -284,7 +284,6 @@ Prior versions of Jackett are no longer supported.
  * AsianDVDClub (ADC)
  * Audiences
  * AudioNews (AN)
- * AURA4K
  * Aussierul.es [![(invite needed)][inviteneeded]](#)
  * AvistaZ (AsiaTorrents)
  * Azusa (梓喵) [![(invite needed)][inviteneeded]](#)
@@ -536,7 +535,6 @@ Prior versions of Jackett are no longer supported.
  * PT分享站 (itzmx)
  * PTCafe (咖啡)
  * PTCC (我的PT)
- * PTCDY (传道院) [![(invite needed)][inviteneeded]](#)
  * PTerClub (PT之友俱乐部)
  * PTFans
  * PTFiles (PTF)
@@ -608,7 +606,6 @@ Prior versions of Jackett are no longer supported.
  * TeamFlix
  * TeamHD
  * TeamOS
- * TEKNO3D [![(invite needed)][inviteneeded]](#)
  * The Brothers
  * The Crazy Ones
  * The Empire (TE)
