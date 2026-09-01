@@ -195,6 +195,7 @@ Prior versions of Jackett are no longer supported.
  * comicat
  * Deildu
  * Devil-Torrents
+ * Draupnirr (Yggrasil)
  * DreamingTree
  * DXP (Deaf Experts)
  * Electro-Torrent
@@ -248,7 +249,6 @@ Prior versions of Jackett are no longer supported.
  * TribalMixes
  * Union Fansub
  * UniOtaku
- * Yggrasil
  * Ztracker
 </details>
 
@@ -471,7 +471,6 @@ Prior versions of Jackett are no longer supported.
  * M-Team - TP (MTTP) [![(invite needed)][inviteneeded]](#)
  * MaDs Revolution
  * Majomparádé (TurkDepo)
- * Making Off
  * Malayabits
  * Mansão dos Animes (MDAN)
  * March [![(invite needed)][inviteneeded]](#)
