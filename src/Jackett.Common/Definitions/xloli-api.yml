@@ -1,26 +1,39 @@
 ---
-id: zmpt-api
-name: ZmPT (织梦) (API)
-description: "ZmPT (织梦) is a CHINESE Private Torrent Tracker for MOVIES / TV / GENERAL"
+id: xloli-api
+name: xloli (API)
+description: "xloli (ilolicon PT) is a CHINESE Private Torrent Tracker for LOLICON / MOVIES / 3X"
 language: zh-CN
 type: private
 encoding: UTF-8
+requestDelay: 2
 links:
-  - https://zmpt.cc/
+  - https://mua.xloli.cc/
+legacylinks:
+  - https://share.ilolicon.com/
 
 caps:
   categorymappings:
-    - {id: 409, cat: Other, desc: "其他 / Misc"}
-    - {id: 422, cat: TV/Documentary, desc: "纪录片 / documentary"}
-    - {id: 417, cat: TV/Anime, desc: "动漫 / Anime"}
-    - {id: 427, cat: Audio/Video, desc: "短剧 / Short Play"}
-    - {id: 401, cat: Movies, desc: "电影 / Movies"}
-    - {id: 402, cat: TV, desc: "电视剧 / TV Series"}
-    - {id: 403, cat: TV, desc: "综艺 / TV Shows"}
-    - {id: 423, cat: Audio, desc: "音乐 / Music"}
-    - {id: 424, cat: Audio/Audiobook, desc: "有声书 / Audiobook"}
-    - {id: 425, cat: PC, desc: "软件 / Software"}
-    - {id: 426, cat: Console, desc: "游戏 / Game"}
+    - {id: 401, cat: Movies, desc: "电影(Movie)"}
+    - {id: 402, cat: TV, desc: "电视剧(TV Series)"}
+    - {id: 430, cat: TV, desc: "综艺(TV Show)"}
+    - {id: 405, cat: TV/Anime, desc: "动画(Animation)"}
+    - {id: 408, cat: Audio, desc: "音乐(Music)"}
+    - {id: 410, cat: Audio/Video, desc: "舞台演出(Stage Performance)"}
+    - {id: 404, cat: TV/Documentary, desc: "纪录片(Documentary)"}
+    - {id: 412, cat: Console, desc: "游戏(Game)"}
+    - {id: 413, cat: PC, desc: "软件(Software)"}
+    - {id: 411, cat: Other, desc: "漫画/CG杂图/动漫杂志(Photo)"}
+    - {id: 420, cat: XXX, desc: "AV(有码/Censored)"}
+    - {id: 419, cat: XXX, desc: "AV(无码/Uncensored)"}
+    - {id: 423, cat: XXX/Other, desc: "里番(Hanime)"}
+    - {id: 425, cat: XXX/Other, desc: "H-2D同人动画(H 2D doujin anime)"}
+    - {id: 426, cat: XXX/Other, desc: "H-3D同人动画(H 3D doujin anime)"}
+    - {id: 424, cat: XXX/Other, desc: "H-漫画(H Manga)"}
+    - {id: 427, cat: XXX/ImageSet, desc: "H-CG杂图(H-CG)"}
+    - {id: 418, cat: XXX/ImageSet, desc: "写真(Picture)"}
+    - {id: 429, cat: XXX/Other, desc: "音声(Audio)"}
+    - {id: 428, cat: XXX/Other, desc: "H-游戏(H Game)"}
+    - {id: 422, cat: XXX, desc: "H-综艺(H TV Show)"}
 
   modes:
     search: [q]
@@ -35,7 +48,7 @@ settings:
   - name: info_apikey
     type: info
     label: About your API Token
-    default: "Find/Generate an API token from your <a href=\"https://zmpt.cc/usercp.php\" target=\"_blank\">ZmPT</a> account control panel."
+    default: "Find/Generate an API token from your <a href=\"https://mua.xloli.cc/usercp.php\" target=\"_blank\">xloli</a> account control panel."
   - name: passkey
     type: text
     label: Passkey
@@ -59,13 +72,14 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "Account retention rules:<ol><li>Dou Sheng users and above will be retained forever</li><li>Dou Huang and above will not have their account deleted after parking (in the control panel)</li><li>Users with a parked account will be deleted if they do not log in for 180 consecutive days</li><li>Users with a non-parked account will be banned if they do not log in for 45 consecutive days</li><li>Users with no traffic (ie, upload/download data are both 0) will be banned if they do not log in for 7 consecutive days.</li></ol>"
+    default: "Cherish your user account. Inactive accounts would be deleted based on the following rules:<ol><li>Veteran User or above would never be deleted.</li><li>Elite User or above would never be deleted if parked (at User CP).</li><li>Parked accounts would be deleted if users have not logged in for more than 400 days in a row.</li><li>Unparked accounts would be deleted if users have not logged in for more than 150 days in a row.</li><li>Accounts with both uploaded and downloaded amount being 0 would be deleted if users have not logged in for more than 100 days in a row.</li></ol>"
 
 login:
   path: api/v1/torrents
   method: get
   inputs:
     per_page: 1
+  # this site returns 0 bytes when the api token is not accepted, which I don't think we can trap :-(
   error:
     - selector: :root:contains("login.php?returnto")
       message:
@@ -138,12 +152,4 @@ search:
       selector: promotion_info.down_multiplier
     uploadvolumefactor:
       selector: promotion_info.up_multiplier
-    minimumratio:
-      # H&R 1.0
-      # normal 0.4
-      text: 1.0
-    minimumseedtime:
-      # H&R 3 days (as seconds = 3 x 24 x 60 x 60)
-      # normal 1 day (as seconds = 24 x 60 x 60)
-      text: 259200
-# JSON API NexusPHP v1.9.9 2025-10-02
+# JSON API NexusPHP v1.10.2 2026-04-11
