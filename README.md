@@ -304,7 +304,6 @@ Prior versions of Jackett are no longer supported.
  * Bitded
  * bitGAMER
  * BitHUmen
- * Bitpalace
  * BitPorn
  * BitTorrentFiles
  * BiTTuRK
@@ -338,7 +337,6 @@ Prior versions of Jackett are no longer supported.
  * CinemaZ (EuTorrents)
  * ClearJAV
  * Coastal-Music-Crew (C-M-C)
- * ConCen (Conspiracy Central) [![(invite needed)][inviteneeded]](#)
  * Concertos
  * CrabPT (蟹黄堡)
  * CrazySpirits
@@ -614,6 +612,7 @@ Prior versions of Jackett are no longer supported.
  * The Falling Angels (TFA)
  * The Geeks
  * The Kitchen (TK)
+ * The New Heaven [![(invite needed)][inviteneeded]](#)
  * The New Retro
  * The Occult (TO)
  * The Old School (TOS)
