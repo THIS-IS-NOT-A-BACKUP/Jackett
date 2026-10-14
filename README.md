@@ -109,7 +109,6 @@ Prior versions of Jackett are no longer supported.
  * EZTV
  * FileMood
  * Free JAV Torrent
- * GamesTorrents
  * HDRTorrent
  * Internet Archive (archive.org)
  * kickasstorrents.to
@@ -364,6 +363,7 @@ Prior versions of Jackett are no longer supported.
  * Drugari
  * DS-Reloaded
  * dubhe (天枢) [![(invite needed)][inviteneeded]](#)
+ * EchelonHD
  * Empornium (EMP) [![(invite needed)][inviteneeded]](#)
  * eMuwarez
  * eStone (BigTorrent)
