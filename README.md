@@ -222,7 +222,6 @@ Prior versions of Jackett are no longer supported.
  * New-Team
  * NewStudio (login)
  * NoNaMe Club (NNM-Club) (login)
- * Polskie-Torrenty
  * PornoLab
  * Postman (login)
  * ProPorno
@@ -363,7 +362,6 @@ Prior versions of Jackett are no longer supported.
  * Drugari
  * DS-Reloaded
  * dubhe (天枢) [![(invite needed)][inviteneeded]](#)
- * EchelonHD
  * Empornium (EMP) [![(invite needed)][inviteneeded]](#)
  * eMuwarez
  * eStone (BigTorrent)
