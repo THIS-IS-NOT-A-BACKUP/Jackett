@@ -118,7 +118,6 @@ Prior versions of Jackett are no longer supported.
  * Mac Torrents Download
  * Magnet Cat
  * MagnetDownload
- * Magnetz
  * MegaPeer
  * MejorTorrent
  * Mikan
@@ -209,6 +208,7 @@ Prior versions of Jackett are no longer supported.
  * Kinozal
  * LostFilm.tv
  * Magnetico (Local DHT) [[site](https://github.com/boramalper/magnetico)]
+ * Magnetz
  * Marine Tracker
  * Mazepa
  * Metal Tracker
@@ -538,7 +538,6 @@ Prior versions of Jackett are no longer supported.
  * PTFans
  * PTFiles (PTF)
  * PThome [![(invite needed)][inviteneeded]](#)
- * PTLAO
  * PTLGS [![(invite needed)][inviteneeded]](#)
  * PTSBAO (烧包) [![(invite needed)][inviteneeded]](#)
  * PTSKIT
