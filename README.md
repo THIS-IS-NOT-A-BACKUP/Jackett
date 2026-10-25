@@ -293,6 +293,7 @@ Prior versions of Jackett are no longer supported.
  * BeyondHD (BHD)
  * Bibliotik [![(invite needed)][inviteneeded]](#)
  * BigCore
+ * BinaryBay
  * Bit-Bázis
  * BIT-HDTV
  * BitAgent
@@ -303,7 +304,6 @@ Prior versions of Jackett are no longer supported.
  * BitTorrentFiles
  * BiTTuRK
  * BJ-Share (BJ) [![(invite needed)][inviteneeded]](#)
- * BlueBird
  * BlueTorrents
  * BlurayTracker
  * Blutopia (BLU)
@@ -543,7 +543,6 @@ Prior versions of Jackett are no longer supported.
  * PTSKIT
  * PTTey [![(invite needed)][inviteneeded]](#)
  * PTtime
- * PTYING (樱花)
  * PTzone
  * Punk's Horror Tracker
  * PuntoTorrent [![(invite needed)][inviteneeded]](#)
