@@ -293,6 +293,7 @@ Prior versions of Jackett are no longer supported.
  * Best-Core
  * BeyondHD (BHD)
  * Bibliotik [![(invite needed)][inviteneeded]](#)
+ * BigBBS
  * BigCore
  * BinaryBay
  * Bit-Bázis
@@ -563,10 +564,11 @@ Prior versions of Jackett are no longer supported.
  * RetroFlix
  * RetroMoviesClub (RMC)
  * RetroToon
- * RevoPeers [PAY2DL]
+ * RevoPeers [PAY2DL] [![(invite needed)][inviteneeded]](#)
  * RocketHD
  * Romanian Metal Torrents (RMT)
  * Rousi.pro
+ * Sagmire
  * SAMARITANO
  * SAPIbr (Toca Share)
  * SBPT
