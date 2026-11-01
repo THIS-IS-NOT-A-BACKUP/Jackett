@@ -347,6 +347,7 @@ Prior versions of Jackett are no longer supported.
  * Das Unerwartete (D-U)
  * DataScene (DS)
  * DaXiangJiao (大香蕉)
+ * Deep-Water [![(invite needed)][inviteneeded]](#)
  * Depth Studio
  * DesiGaane (DG) [![(invite needed)][inviteneeded]](#)
  * DesiTorrents
@@ -522,7 +523,6 @@ Prior versions of Jackett are no longer supported.
  * Periodical [![(invite needed)][inviteneeded]](#)
  * Phoenix Project
  * PhoenixPT (凤凰PT)
- * PigNetwork (猪猪网)
  * PixelCove (Ultimate Gamer)
  * PiXELHD (PxHD) [![(invite needed)][inviteneeded]](#)
  * PlayletPT [![(invite needed)][inviteneeded]](#)
@@ -582,6 +582,7 @@ Prior versions of Jackett are no longer supported.
  * seedpool
  * SewerPT (下水道) [![(invite needed)][inviteneeded]](#)
  * SexTorrent
+ * Shadow
  * Shadowbit
  * ShaKaw [![(invite needed)][inviteneeded]](#)
  * Shareisland
@@ -688,6 +689,7 @@ Prior versions of Jackett are no longer supported.
  * Zappateers
  * Zenith [![(invite needed)][inviteneeded]](#)
  * ZmPT (织梦)
+ * ZooToons [![(invite needed)][inviteneeded]](#)
  * ZRPT (自然) [![(invite needed)][inviteneeded]](#)
 </details>
 
