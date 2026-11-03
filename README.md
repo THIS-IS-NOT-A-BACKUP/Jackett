@@ -81,6 +81,7 @@ Prior versions of Jackett are no longer supported.
 
  * ØMagnet
  * 1337x
+ * 1TamilMV
  * 52BT
  * ACG.RIP
  * Anibt
@@ -559,6 +560,7 @@ Prior versions of Jackett are no longer supported.
  * RacingForMe (RFM)
  * RailgunPT
  * Rastastugan
+ * Red Angel
  * Red Star Torrent (RST) [![(invite needed)][inviteneeded]](#)
  * Redacted (PassTheHeadphones)
  * ReelFlix (HD4Free,LegacyHD)
