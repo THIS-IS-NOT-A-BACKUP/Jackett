@@ -409,6 +409,7 @@ Prior versions of Jackett are no longer supported.
  * HDArea (HDA)
  * HDBao
  * HDBits [![(invite needed)][inviteneeded]](#)
+ * HDChina (HDWing) [![(invite needed)][inviteneeded]](#)
  * HDCiTY (HDC)
  * HDClone
  * HDFans
@@ -430,7 +431,6 @@ Prior versions of Jackett are no longer supported.
  * House of Devil
  * HQMusic [![(invite needed)][inviteneeded]](#)
  * HUDBT (蝴蝶) [![(invite needed)][inviteneeded]](#)
- * HxPT (好学) [![(invite needed)][inviteneeded]](#)
  * ImmortalSeed (iS)
  * Immortuos
  * Indietorrents [![(invite needed)][inviteneeded]](#)
