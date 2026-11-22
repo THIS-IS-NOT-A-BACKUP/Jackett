@@ -202,7 +202,6 @@ Prior versions of Jackett are no longer supported.
  * Gay-Torrents.net
  * HDGalaKtik
  * HellTorrents [PAY2DL]
- * HunTorrent
  * Il CorSaRo Blu
  * ilDraGoNeRo
  * Kinorun
@@ -486,7 +485,6 @@ Prior versions of Jackett are no longer supported.
  * MMA-Torrents [![(invite needed)][inviteneeded]](#)
  * MNV (Max-New-Vision)
  * MOJBLiNK
- * MomentPT [![(invite needed)][inviteneeded]](#)
  * MonikaDesign (MDU)
  * MouseBits
  * Musopia (音乐乌托邦)
